@@ -66,7 +66,9 @@ cxy <- suppressWarnings(st_coordinates(st_centroid(
   geom |> inner_join(fr |> select(tract_id), by = "tract_id"))))
 xlim <- quantile(cxy[, 1], c(.01, .93)) + c(-7000, 7000)
 ylim <- quantile(cxy[, 2], c(.02, .98)) + c(-7000, 7000)
-BLUES <- c("#c6dbef", "#9ecae1", "#6baed6", "#3182bd", "#08519c")
+# top-quintile-segregated destinations (over destination tracts in the OD)
+thr <- od |> distinct(w_tract, d_wac) |> filter(!is.na(d_wac)) |>
+  pull(d_wac) |> quantile(0.8)
 
 ## ---- basemap anchors ---------------------------------------------------------
 counties_sf <- geom |>
@@ -120,33 +122,36 @@ theme_flow <- theme_void(base_size = 10) +
 
 shed_panel <- function(origins, title) {
   f_all <- od |> filter(h_tract %in% origins, !is.na(d_wac))
-  fw <- with(f_all, sum(d_wac * S000) / sum(S000))  # statistic on ALL flows,
-  # matching the paper's wexp construct (same-tract commutes included);
-  # arcs below drop same-tract flows only because geom_curve cannot draw them
+  # statistics on ALL flows (matching the paper's wexp construct; same-tract
+  # commutes included even though geom_curve cannot draw them)
+  fw     <- with(f_all, sum(d_wac * S000) / sum(S000))
+  pct_hi <- with(f_all, 100 * sum(S000[d_wac >= thr]) / sum(S000))
   f <- f_all |> filter(S000 >= 5, h_tract != w_tract) |>
-    mutate(q = ntile(d_wac, 5), w = S000 / max(S000)) |>
-    arrange(S000)
+    mutate(w = S000 / max(S000), hi = d_wac >= thr) |>
+    arrange(hi, S000)          # gray first, blue drawn on top
   ggplot() +
     base_layers() +
     geom_sf(data = geom |> filter(tract_id %in% origins),
-            fill = "#efc9b8", alpha = .40, color = "#c8825f",
+            fill = "#f3d8ca", alpha = .45, color = "#c8825f",
             linewidth = .3) +
-    geom_curve(data = f, aes(x = xh, y = yh, xend = xw, yend = yw,
-                             color = factor(q), linewidth = w,
-                             alpha = pmin(.75, .12 + .5 * sqrt(w))),
-               curvature = 0.18) +
-    scale_color_manual(values = BLUES,
-                       labels = c("least segregated", "2nd", "3rd", "4th",
-                                  "most segregated"),
-                       name = "destination workplace-location D (quintile)") +
-    scale_linewidth(range = c(.12, 1.1), guide = "none") +
+    geom_curve(data = f |> filter(!hi),
+               aes(x = xh, y = yh, xend = xw, yend = yw, linewidth = w,
+                   alpha = pmin(.38, .08 + .3 * sqrt(w))),
+               color = "#c9c7c0", curvature = 0.18) +
+    geom_curve(data = f |> filter(hi),
+               aes(x = xh, y = yh, xend = xw, yend = yw, linewidth = w,
+                   alpha = pmin(.85, .25 + .5 * sqrt(w))),
+               color = "#08519c", curvature = 0.18) +
+    scale_linewidth(range = c(.15, 1.3), guide = "none") +
     scale_alpha_identity() +
     coord_sf(xlim = xlim, ylim = ylim, expand = FALSE) +
     labs(title = title,
          subtitle = sprintf(
-           "origins shaded; arcs: flows >= 5 workers between distinct tracts (statistic includes all flows) | flow-weighted destination D = %.3f",
-           fw)) +
-    theme_flow
+           "%.0f%% of commuters work in a top-quintile-segregated location\nflow-weighted destination D = %.3f",
+           pct_hi, fw)) +
+    theme_flow +
+    theme(plot.subtitle = element_text(size = 9, lineheight = 1.15,
+                                       color = "#08519c", face = "bold"))
 }
 
 fr_s <- fr |> arrange(d_whiteblack_rac_half)
@@ -155,8 +160,17 @@ pF1 <- (shed_panel(head(fr_s, n10)$tract_id,
                    "A. Least-segregated decile of neighborhoods") |
         shed_panel(tail(fr_s, n10)$tract_id,
                    "B. Most-segregated decile of neighborhoods")) +
-  patchwork::plot_layout(guides = "collect") &
-  theme(legend.position = "bottom")
+  patchwork::plot_annotation(
+    title = "Whose commutes end in segregated workplaces? (Denver MSA, 2023)",
+    caption = paste(
+      "Blue arcs: flows into a workplace location in the top quintile of",
+      "workplace-location segregation; gray: all other flows. Arcs show",
+      "flows >= 5 workers between distinct tracts; statistics include all",
+      "flows. Origin neighborhoods shaded (some extend beyond the cropped",
+      "frame). Triangles: major employment centers."),
+    theme = theme(plot.title = element_text(size = 12),
+                  plot.caption = element_text(size = 7.5, color = "#52514e",
+                                              hjust = 0)))
 ggsave(file.path(DIR_CO_FIG, "p4_figF1_commute_sheds.png"), pF1,
        width = 13.4, height = 7, dpi = 350, bg = "white")
 
