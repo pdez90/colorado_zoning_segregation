@@ -1,0 +1,4 @@
+"tercile","n_tracts","pct_reslow_of_res","d_whiteblack_rac_half","wexp_whiteblack_wac_half","jobs_housing_ratio","mean_dist_km","eff_n_dest","dist_cbd_km","pct_black_rac","income_percapita_k"
+1,219,16.691,0.02,0.021,3.041,13.518,90.371,11.821,8.641,56.109
+2,219,72.824,0.028,0.022,1.142,15.077,101.719,16.209,6.099,56.631
+3,218,95.531,0.05,0.027,1.806,19.228,89.02,22.781,3.677,67.091

@@ -1,0 +1,16 @@
+"zone_group","GenZone2","n"
+"commercial","Commercial",5015
+"industrial","Industrial",3789
+"mixed_res","MixedUseRes_High",777
+"mixed_res","MixedUseRes_Low",55
+"mixed_res","MixedUseRes_Med",1900
+"mixed_res","MixedUseRes_MedHigh",3014
+"mixed_res","MixedUse_Conditional",218
+"mobile_home","MobileHome",84
+"open_civic","Civic",894
+"open_civic","OpenSpace",3058
+"res_low","Residential_Low",67023
+"res_midhigh","Residential_High",369
+"res_midhigh","Residential_Med",12077
+"res_midhigh","Residential_MedHigh",1988
+"uncertain","Uncertain",567

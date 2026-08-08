@@ -1,0 +1,10 @@
+"measure","pct_res_low","pct_reslow_of_res","pct_adu_res","pct_grouphome_res","zoning_entropy","pct_job_zone","pct_mixed_res","pct_industrial","pct_commercial"
+"pct_res_low",1,0.91,0.08,0.18,-0.4,-0.73,-0.6,-0.29,-0.22
+"pct_reslow_of_res",0.91,1,0.05,0.21,-0.26,-0.7,-0.69,-0.13,-0.1
+"pct_adu_res",0.08,0.05,1,0.17,-0.12,0.01,0.02,0.03,-0.07
+"pct_grouphome_res",0.18,0.21,0.17,1,-0.16,-0.14,-0.12,-0.05,-0.03
+"zoning_entropy",-0.4,-0.26,-0.12,-0.16,1,0.19,-0.07,0.32,0.29
+"pct_job_zone",-0.73,-0.7,0.01,-0.14,0.19,1,0.82,0.42,0.26
+"pct_mixed_res",-0.6,-0.69,0.02,-0.12,-0.07,0.82,1,-0.04,-0.09
+"pct_industrial",-0.29,-0.13,0.03,-0.05,0.32,0.42,-0.04,1,-0.01
+"pct_commercial",-0.22,-0.1,-0.07,-0.03,0.29,0.26,-0.09,-0.01,1

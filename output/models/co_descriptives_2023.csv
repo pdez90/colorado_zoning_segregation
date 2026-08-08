@@ -1,0 +1,4 @@
+"reslow_tercile","n","pct_res_low","pct_adu_res","zoning_entropy","pct_job_zone","d_whiteblack_rac_half","wexp_whiteblack_wac_half","mean_dist_km","eff_n_dest","jobs_housing_ratio","pct_black_rac","income_percapita_k"
+1,219,10.322,64.526,0.474,50.794,0.025,0.022,14.053,86.876,4.434,8.482,56.286
+2,219,55.571,64.254,0.55,19.522,0.027,0.023,15.232,100.485,1.101,5.97,57.023
+3,218,85.9,74.424,0.243,5.91,0.046,0.026,18.534,93.771,0.466,3.967,66.362

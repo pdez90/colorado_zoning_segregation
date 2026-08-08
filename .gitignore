@@ -1,0 +1,4 @@
+clean/
+*.rds
+.DS_Store
+rosm.cache/
