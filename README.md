@@ -1,20 +1,21 @@
-# Where Segregation Follows Workers to Work
+# When Segregation Follows Workers to Work
 
-**Commuting geography, zoning, and metropolitan spatial structure in the Denver region.**
-Replication code and outputs for a manuscript prepared for the *Journal of the American Planning Association* (draft: `Paper4_JAPA_draft_v2.docx`).
+**Zoning, transit access, and metropolitan geography in Denver.**
+Replication code and outputs for a manuscript prepared for the *Journal of the American Planning Association* (drafts: `Paper4_JAPA_main_v3.docx` + `Paper4_JAPA_SI_v3.docx`).
 
-Residential segregation is not necessarily the segregation workers experience during the day, because commuting intervenes. This project links a harmonized zoning layer for 51 Denver-region jurisdictions (October 2023) to census-tract segregation indices built from LEHD LODES block data and to LODES origin–destination commuting flows, constructing for each tract its **workplace-location segregation exposure** — the flow-weighted segregation of the locations where its residents' jobs are. The central result is a decomposition: estimated naively, exclusionary zoning appears to moderate the coupling between residential and workplace-location segregation powerfully (+0.33 SD), but allowing metropolitan position to moderate the same relationship reduces the estimated zoning moderation by 60–72% across all substantively interpretable zoning measures; a position-adjusted zoning association of roughly one-third the baseline remains, stable across alternative spatial parameterizations of the segregation measure and robust to spatial-HAC inference.
+Residential segregation describes where people live, but not necessarily the segregation people experience during the workday, because commuting intervenes. This project links a harmonized zoning layer for 51 Denver-region jurisdictions (October 2023) to census-tract segregation indices built from LEHD LODES block data and to LODES origin–destination commuting flows, constructing for each tract its **workplace-location segregation exposure** — the flow-weighted segregation of the locations where its residents' jobs are. Four findings organize the paper: residential and workplace-location segregation are strongly but imperfectly related (r = .60, stable since 2011), most strongly in exclusionary, peripheral, job-poor neighborhoods; about 70% of the apparent zoning relationship moves with metropolitan position rather than zoning distinctly; 92% of the variance in realized exposure tracks the composition of the labor market accessible from each neighborhood rather than sorting within it; and transit job accessibility — but not auto accessibility — is associated with a weaker home-to-work relationship.
 
 ## Repository contents
 
 | Path | Contents |
 |---|---|
-| `60`–`73_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`76_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
 | `CO_ZONING_DESIGN.md` | Internal design history and decision log (not the entry point — start here instead) |
-| `Paper4_JAPA_draft_v2.docx` | Current manuscript draft |
+| `Paper4_JAPA_main_v3.docx` | Current manuscript draft (main text) |
+| `Paper4_JAPA_SI_v3.docx` | Current supplemental materials |
 
 ## Script order and what each produces
 
@@ -35,6 +36,9 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `71_co_si_descriptives.R` | Where each worker group lives and works | Tables S1–S2 |
 | `72_co_measure_robustness.R` | Segregation-measure sensitivity (decay β = 0.25/0.5/1.0; cutoffs 5/10/20 km) | Table S3 |
 | `73_co_spatial_inference.R` | Moran's I on residuals; Conley spatial-HAC SEs (+ `fixest` cross-check) | Table S4 |
+| `74_co_flow_maps.R` | Commute-flow maps: decile sheds and the exemplar pair | Fig 2; Fig S8 |
+| `75_co_network_access.R` | Opportunity-set decomposition; SLD network-accessibility ladder; marginal effects | Figs S9–S10; Table S5 |
+| `76_co_concept_figure.R` | Conceptual chain + menu-result figure | Fig 1 |
 
 ## Data requirements (not redistributed here)
 
@@ -57,4 +61,4 @@ All committed tables and figures were produced by this pipeline run end-to-end o
 
 ## Citation and license
 
-Code is released under the MIT License (see `LICENSE`). LODES and TIGER data are public-domain U.S. Census Bureau products; the zoning compilation remains subject to its own terms. Until the paper is published, please cite this repository and: deSouza, P. (2026). *Where segregation follows workers to work: Commuting geography, zoning, and metropolitan spatial structure in the Denver region.* Manuscript in preparation.
+Code is released under the MIT License (see `LICENSE`). LODES and TIGER data are public-domain U.S. Census Bureau products; the zoning compilation remains subject to its own terms. Until the paper is published, please cite this repository and: deSouza, P. (2026). *When segregation follows workers to work: Zoning, transit access, and metropolitan geography in Denver.* Manuscript in preparation.
