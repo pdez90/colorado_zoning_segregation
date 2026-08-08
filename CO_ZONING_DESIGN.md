@@ -154,6 +154,19 @@ Equation for D̃ + β/cutoff justification added to Methods. Race-flow estimand 
 
 **72/73 RUN AND VERIFIED (2026-08-08):** truncation sensitivity confirms stability — maxdist 5 km: naive +0.363 → preferred +0.107 (p=.040); 20 km: +0.331 → +0.104 (p=.033). Across ALL measure variants (β 0.25/0.5/1.0; cutoff 5/10/20 km) the preferred estimate spans +0.096 to +0.125 with ~58–76% attenuation. 73's Moran/Conley matched the cloud verification exactly. SI Tables S3/S4 in v2 are now fully pipeline-sourced. **Remaining before submission:** references; rerun 70 once for Fig 3's new title; the national-extension timing decision.
 
+
+## Network-accessibility extension (script 75, designed 2026-08-08; reviewer-requested)
+
+Reviewer's framing, adopted: the richer conceptual sequence is *residential segregation → metropolitan location + transportation network → accessible labor market → realized commuting destinations → workplace-location segregation*. One carefully designed analysis, not a transportation-variable expansion. **All of it is mechanism-consistent decomposition — never mediation** (infrastructure, zoning, sorting, and employment location co-evolved).
+
+**Part A (runs now):** opportunity-set vs realized-destination decomposition. accD = impedance-weighted D̃ of each tract's *reachable* labor market (Euclidean-gravity, labeled as such); sorting gap = wexp − accD. Distinguishes the two planning stories the exemplar-pair figure raises: opportunity structure (the reachable labor market is itself segregated) vs sorting within opportunities (integrated work is reachable but actual jobs are elsewhere). The flat effective-destination counts (90.4/101.7/89.1) already rule out destination *quantity*.
+
+**Part B (needs SLD from paper_pipeline 53A — the one remaining data download):** the accessibility ladder A (zoning only, +0.333) → B (geographic position, +0.103) → C (**network** accessibility instead: log D5AR auto-45-min jobs, log D5BR transit-45-min jobs, with res_seg interactions) → D (position + network together: does connectivity explain variation *among* neighborhoods at comparable positions?). Plus the headline test the exemplar figure invites: accessibility × res_seg on wexp, separately by mode — negative = accessibility loosens the home-to-work coupling. Falls back to the Euclidean gravity placeholder with an explicit warning if SLD is absent. Cross-link: this is Paper 3's home turf (transit moderation, national); if the Denver result is strong, it strengthens the case for the national Paper 3 rather than expanding Paper 4.
+
+## Main-text display budget (2026-08-08)
+
+Per Priyanka: **max 4 tables/figures in the main text.** Now: Figure 1 (zoning layer), Figure 2 (commute-flow "whose commutes end in segregated workplaces" — promoted from SI), Figure 3 (specification ladder), Table 1 (tercile descriptives). Moved to SI: three-spheres maps (S5), unadjusted coupling + native gradients (S6), exemplar pair (S7); S1–S4 unchanged; Tables S1–S4 unchanged. All in-text references renumbered and verified.
+
 ## Known gaps before submission
 
 0. **Scripts 61–70 have all been run end-to-end and the manuscript's statistics were re-verified against their output (2026-08-07).** A bug in 68's survival pivot (rung C carries extra interaction terms → duplicate keys) was fixed; the same bug was caught in 70 before first run.
@@ -174,4 +187,4 @@ Two assumption-free uses of the margins: (1) **destination-mix exposure** — fl
 
 ## Run order & rough costs
 
-61 zoning×tract (sf intersection, ~10 min) → 62 OD+wexp (fast; co downloads ~1 min/yr if 51 hasn't cached them) → 63 build (fast) → 64 models (fast) → 65 figures → 66 group flows (needs 62's OD caches; adds co WAC+RAC tract downloads, ~5 MB/yr, cached) → 67 group models/figures (needs 66 + 63) → **68 accessibility ladder** (the confound test) → **69 robustness** (levels ladder, ADU validity, effect translation) → **70 publication figures/maps** → **71 SI live/work descriptives**. Needs R packages beyond the pipeline's: `lehdr`, `fixest`, `patchwork`, `ggrepel` (+ `tigris` only if the TIGER folder moves). Nothing national is recomputed; nothing here blocks or is blocked by the national 51 run currently in progress.
+61 zoning×tract (sf intersection, ~10 min) → 62 OD+wexp (fast; co downloads ~1 min/yr if 51 hasn't cached them) → 63 build (fast) → 64 models (fast) → 65 figures → 66 group flows (needs 62's OD caches; adds co WAC+RAC tract downloads, ~5 MB/yr, cached) → 67 group models/figures (needs 66 + 63) → **68 accessibility ladder** (the confound test) → **69 robustness** (levels ladder, ADU validity, effect translation) → **70 publication figures/maps** → **71 SI live/work descriptives** → **74 flow maps** → **75 network accessibility** (Part B needs 53A's SLD). Needs R packages beyond the pipeline's: `lehdr`, `fixest`, `patchwork`, `ggrepel` (+ `tigris` only if the TIGER folder moves). Nothing national is recomputed; nothing here blocks or is blocked by the national 51 run currently in progress.
