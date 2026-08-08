@@ -68,28 +68,73 @@ xlim <- quantile(cxy[, 1], c(.01, .93)) + c(-7000, 7000)
 ylim <- quantile(cxy[, 2], c(.02, .98)) + c(-7000, 7000)
 BLUES <- c("#c6dbef", "#9ecae1", "#6baed6", "#3182bd", "#08519c")
 
+## ---- basemap anchors ---------------------------------------------------------
+counties_sf <- geom |>
+  mutate(county = substr(tract_id, 1, 5)) |>
+  group_by(county) |> summarise(.groups = "drop")
+jlab <- fr |>
+  inner_join(tibble(tract_id = geom$tract_id,
+                    cx = st_coordinates(suppressWarnings(st_centroid(geom)))[, 1],
+                    cy = st_coordinates(suppressWarnings(st_centroid(geom)))[, 2]),
+             by = "tract_id") |>
+  mutate(name = c(DENVER = "Denver", AURORA = "Aurora", Lakewood = "Lakewood",
+                  Arvada = "Arvada", THORNTON = "Thornton",
+                  WESTMINSTER = "Westminster", CENTENNIAL = "Centennial",
+                  LITTLETON = "Littleton", Parker = "Parker",
+                  Broomfield = "Broomfield",
+                  ENGLEWOOD = "Englewood")[jurisd_main]) |>
+  filter(!is.na(name)) |>
+  group_by(name) |>
+  summarise(n = n(), lx = mean(cx), ly = mean(cy), .groups = "drop") |>
+  filter(n >= 8)
+cbd <- st_sfc(st_point(c(-105.0000, 39.7531)), crs = 4326) |>
+  st_transform(CRS_METERS) |> st_coordinates()
+roads <- tryCatch(
+  tigris::primary_secondary_roads("CO", year = 2023) |>
+    st_transform(CRS_METERS) |> filter(RTTYP %in% c("I", "U")),
+  error = function(e) { message("roads skipped: ", conditionMessage(e)); NULL })
+
+base_layers <- function() {
+  out <- list(
+    geom_sf(data = geom, fill = "white", color = "#eceae4", linewidth = .18),
+    geom_sf(data = counties_sf, fill = NA, color = "#b9b8b0", linewidth = .55))
+  if (!is.null(roads))
+    out <- c(out, list(geom_sf(data = roads, color = "#d8d0c2",
+                               linewidth = .45)))
+  c(out, list(
+    geom_point(data = ctr, aes(X, Y), shape = 24, size = 2.4, fill = "white",
+               color = "#52514e", stroke = .8),
+    annotate("point", x = cbd[1], y = cbd[2], shape = 8, size = 3.2,
+             color = "#0b0b0b"),
+    annotate("text", x = cbd[1] + 2500, y = cbd[2] + 2500,
+             label = "downtown Denver", fontface = "bold", size = 2.6,
+             hjust = 0),
+    geom_text(data = jlab, aes(lx, ly, label = name), size = 2.7,
+              color = "#52514e")))
+}
+
 theme_flow <- theme_void(base_size = 10) +
   theme(plot.title = element_text(size = 11, hjust = 0),
         plot.subtitle = element_text(size = 8, color = "#52514e"),
         legend.position = "bottom")
 
 shed_panel <- function(origins, title) {
-  f <- od |> filter(h_tract %in% origins, S000 >= 5, !is.na(d_wac),
-                    h_tract != w_tract) |>      # geom_curve cannot draw
-    mutate(q = ntile(d_wac, 5), w = S000 / max(S000)) |>   # zero-length arcs
+  f_all <- od |> filter(h_tract %in% origins, !is.na(d_wac))
+  fw <- with(f_all, sum(d_wac * S000) / sum(S000))  # statistic on ALL flows,
+  # matching the paper's wexp construct (same-tract commutes included);
+  # arcs below drop same-tract flows only because geom_curve cannot draw them
+  f <- f_all |> filter(S000 >= 5, h_tract != w_tract) |>
+    mutate(q = ntile(d_wac, 5), w = S000 / max(S000)) |>
     arrange(S000)
-  fw <- with(f, sum(d_wac * S000) / sum(S000))
   ggplot() +
-    geom_sf(data = geom, fill = "#f4f3ef", color = "white", linewidth = .12) +
+    base_layers() +
     geom_sf(data = geom |> filter(tract_id %in% origins),
-            fill = "#0b0b0b", alpha = .10, color = "#0b0b0b",
-            linewidth = .25) +
+            fill = "#efc9b8", alpha = .40, color = "#c8825f",
+            linewidth = .3) +
     geom_curve(data = f, aes(x = xh, y = yh, xend = xw, yend = yw,
                              color = factor(q), linewidth = w,
                              alpha = pmin(.75, .12 + .5 * sqrt(w))),
                curvature = 0.18) +
-    geom_point(data = ctr, aes(X, Y), shape = 24, size = 2.4,
-               fill = "white", color = "#52514e", stroke = .8) +
     scale_color_manual(values = BLUES,
                        labels = c("least segregated", "2nd", "3rd", "4th",
                                   "most segregated"),
@@ -99,7 +144,7 @@ shed_panel <- function(origins, title) {
     coord_sf(xlim = xlim, ylim = ylim, expand = FALSE) +
     labs(title = title,
          subtitle = sprintf(
-           "origins shaded; flows >= 5 workers | flow-weighted destination D = %.3f",
+           "origins shaded; arcs: flows >= 5 workers between distinct tracts (statistic includes all flows) | flow-weighted destination D = %.3f",
            fw)) +
     theme_flow
 }
@@ -142,14 +187,12 @@ fan <- function(t, col) {
              color = col, curvature = 0.18)
 }
 pF2 <- ggplot() +
-  geom_sf(data = geom, fill = "#f4f3ef", color = "white", linewidth = .12) +
+  base_layers() +
   fan(tA, "#2a78d6") + fan(tB, "#eb6834") +
   geom_sf(data = geom |> filter(tract_id == tA), fill = "#2a78d6",
           color = "#0b0b0b", alpha = .85, linewidth = .5) +
   geom_sf(data = geom |> filter(tract_id == tB), fill = "#eb6834",
           color = "#0b0b0b", alpha = .85, linewidth = .5) +
-  geom_point(data = ctr, aes(X, Y), shape = 24, size = 2.6, fill = "white",
-             color = "#52514e", stroke = .9) +
   scale_linewidth(range = c(.15, 1.5), guide = "none") +
   scale_alpha_identity() +
   coord_sf(xlim = xlim, ylim = ylim, expand = FALSE) +
