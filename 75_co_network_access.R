@@ -242,7 +242,10 @@ if (all(c("z_log_d5ar", "z_log_d5br") %in% names(xs))) {
     vseq <- seq(quantile(vv, .05), quantile(vv, .95), length.out = 41)
     me[[nm]] <- me_grid(fit, X, v, vseq) |>
       mutate(mode = MODE_LAB[[nm]], n_obs = fit$nobs)
-    rugs[[nm]] <- tibble(access_z = vv, mode = MODE_LAB[[nm]])
+    # rug only over the plotted grid: a handful of extreme low-access
+    # outliers otherwise stretch the shared axis and empty the panels
+    rugs[[nm]] <- tibble(access_z = vv[vv >= min(vseq) & vv <= max(vseq)],
+                         mode = MODE_LAB[[nm]])
   }
   me <- bind_rows(me)
   write.csv(me, file.path(DIR_CO_MOD, "p4_access_marginal_effects.csv"),
@@ -254,7 +257,7 @@ if (all(c("z_log_d5ar", "z_log_d5br") %in% names(xs))) {
     geom_line(color = "#08519c", linewidth = .8) +
     geom_rug(data = bind_rows(rugs), aes(access_z), inherit.aes = FALSE,
              sides = "b", alpha = .15, length = unit(0.02, "npc")) +
-    facet_wrap(~mode) +
+    facet_wrap(~mode, scales = "free_x") +
     labs(title = "How network access reshapes the coupling",
          subtitle = paste(
            "Slope of residential segregation on workplace-location exposure",
