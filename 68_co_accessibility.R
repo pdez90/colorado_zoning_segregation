@@ -23,18 +23,29 @@
 #                            specification the zoning-segregation literature
 #                            typically reports)
 #   B_plus_regional_position + dist_cbd, dist_empctr AND their interactions
-#                            with res_seg. A tract cannot choose its distance
-#                            from downtown, so position is a CONFOUND and this
-#                            is the PREFERRED specification.
+#                            with res_seg. This is the PREFERRED specification
+#                            for decomposing the association. NOTE ON LANGUAGE:
+#                            position is NOT thereby a proven confounder --
+#                            metropolitan development, annexation, infrastructure,
+#                            employment decentralization and zoning co-evolved.
+#                            The ladder decomposes a cross-sectional association
+#                            into components tracked by regional geography vs
+#                            jurisdictional regulation; it does not identify a
+#                            causal zoning effect.
 #   C_plus_local_jobsurface  + jobs_grav and its interaction. The local job
-#                            surface is partly PRODUCED by zoning (that is what
-#                            pct_job_zone allows), so this rung is an
-#                            OVER-CONTROL and is reported as a LOWER BOUND,
-#                            never as the preferred estimate.
+#                            surface is plausibly partly downstream of zoning
+#                            (that is what pct_job_zone allows), so this rung
+#                            is an OVER-CONTROL SENSITIVITY that may remove
+#                            part of the pathway through which zoning operates
+#                            -- never the preferred estimate, and not a formal
+#                            bound (conditioning on a mediator does not bound
+#                            a total association).
 #
-# Verified result (Aug 2026): roughly two-thirds of the naive zoning moderation
-# is metropolitan position; ~30% survives rung B and stays significant for the
-# exclusionary and use-mix measures; almost nothing survives rung C.
+# Verified result (Aug 2026): adjustment for metropolitan position reduces the
+# estimated zoning moderation by roughly two-thirds; ~30% of the baseline
+# estimate remains at rung B (the position-adjusted zoning association),
+# individually significant only for the exclusionary measure; little remains
+# at rung C.
 # NOTE: jobs_grav correlates about -0.93 with dist_cbd_km in Denver -- in a
 # broadly monocentric region "job access" and "centrality" are the same thing.
 # Report that correlation; do not present them as independent controls.
@@ -175,7 +186,7 @@ write.csv(all_res, file.path(DIR_CO_MOD, "p4_accessibility_ladder.csv"),
           row.names = FALSE)
 message("Fitted ", n_distinct(all_res$model_id), " ladder models.")
 
-## ---- 4. how much of the moderation survives each rung? -----------------------
+## ---- 4. share of the baseline estimate remaining at each rung ----------------
 surv <- all_res |>
   filter(grepl("__(A_total|B_plus_regional_position|C_plus_local_jobsurface)$",
                model_id)) |>
@@ -187,9 +198,9 @@ surv <- all_res |>
   filter(term == paste0(X, ":z_", zoning)) |>
   select(zoning, spec, estimate, p.value) |>
   pivot_wider(names_from = spec, values_from = c(estimate, p.value)) |>
-  mutate(pct_surviving_position =
+  mutate(pct_of_baseline_remaining_position =
            100 * estimate_B_plus_regional_position / estimate_A_total,
-         pct_surviving_all =
+         pct_of_baseline_remaining_all =
            100 * estimate_C_plus_local_jobsurface / estimate_A_total)
 write.csv(surv, file.path(DIR_CO_MOD, "p4_moderation_survival.csv"),
           row.names = FALSE)

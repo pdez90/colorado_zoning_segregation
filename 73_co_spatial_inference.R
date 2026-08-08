@@ -109,8 +109,43 @@ for (ck in c(10, 20, 50)) {
   se <- conley_se(ck)[tt]
   rows[[length(rows) + 1]] <- tibble(
     stat = sprintf("interaction_conley_%dkm", ck), value = b,
-    z = b / se, p = 2 * pnorm(-abs(b / se)))
+    std.error = se, z = b / se, p = 2 * pnorm(-abs(b / se)))
 }
+# NOTE: Conley SEs need not increase monotonically with bandwidth -- spatial
+# covariance can contain positive and negative components, so a wide kernel
+# can average them down. The 10-20 km entries are the informative ones.
+
+## ---- (c) cross-check the manual estimator against fixest::vcov_conley --------
+# The manual estimator uses a Bartlett kernel on PROJECTED km distances with
+# no finite-sample correction; fixest uses spherical (lat/lon) distances and
+# its own cutoff semantics, so agreement should be close but not exact.
+# This block is a soft check: it messages the comparison and never stops the
+# pipeline (older fixest versions lack vcov_conley).
+chk <- tryCatch({
+  ll <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds")) |>
+    transmute(tract_id = as.character(GEOID), X_km, Y_km) |>
+    filter(tract_id %in% d$tract_id)
+  pts <- st_as_sf(ll, coords = c("X_km", "Y_km"), crs = NA)
+  st_crs(pts) <- CRS_METERS   # coords are km; scale to meters for transform
+  pts <- st_set_geometry(pts, st_geometry(pts) * 1000) |>
+    st_set_crs(CRS_METERS) |> st_transform(4326)
+  co <- st_coordinates(pts)
+  dl <- d |> left_join(tibble(tract_id = ll$tract_id,
+                              lon = co[, 1], lat = co[, 2]), by = "tract_id")
+  fit_c <- feols(as.formula(fml), data = dl,
+                 vcov = conley(20, distance = "spherical"))
+  se_fx <- summary(fit_c)$coeftable[tt, 2]
+  se_mn <- conley_se(20)[tt]
+  message(sprintf(
+    "Conley cross-check @20km: manual SE = %.4f | fixest SE = %.4f | ratio %.3f",
+    se_mn, se_fx, se_mn / se_fx))
+  tibble(stat = "conley20_fixest_crosscheck_se", value = se_fx,
+         std.error = se_mn, z = NA, p = NA)
+}, error = function(e) {
+  message("fixest vcov_conley cross-check skipped: ", conditionMessage(e))
+  NULL
+})
+if (!is.null(chk)) rows[[length(rows) + 1]] <- chk
 out <- bind_rows(rows)
 write.csv(out, file.path(DIR_CO_MOD, "p4_spatial_inference.csv"),
           row.names = FALSE)

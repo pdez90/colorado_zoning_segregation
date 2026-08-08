@@ -1,3 +1,5 @@
+> **Repository visitors:** start with `README.md`. This document is the internal design history and working notes — it records decisions, dead ends, and development context, and is not written as the public entry point.
+
 # Paper 4: Where segregation follows workers to work — zoning, metropolitan position, and workplace segregation in the Denver region
 
 *Target: Journal of the American Planning Association (Standard Article, 6,000 words). Formerly framed as a Denver case study for Paper 3; promoted to a standalone paper 2026-08-07.*
@@ -85,7 +87,7 @@ Addressing the accessibility confound **changed the headline**. Job accessibilit
 
 **Numbers below are from the R pipeline (authoritative), not the exploratory run.**
 
-| moderator | naive | + metro position (**preferred**) | + local job surface (over-control) | % surviving position |
+| moderator | naive | + metro position (**preferred**) | + local job surface (over-control) | % of baseline remaining |
 |---|---|---|---|---|
 | exclusionary (`reslow_of_res`) | +0.333 (p<.001) | **+0.103 (p=.035)** | +0.021 ns | 31% |
 | ADU | +0.340 (p<.001) | +0.106 (p=.032) | +0.038 (p=.074) | 31% |
@@ -93,11 +95,11 @@ Addressing the accessibility confound **changed the headline**. Job accessibilit
 | job-permitting | −0.325 (p<.001) | −0.130 **ns** (p=.149) | −0.079 (p=.062) | 40% |
 | exclusionary (`pct_res_low`, all zoned land) | +0.187 ns | +0.098 (p=.042) | +0.050 | 52% |
 
-**Only the exclusionary measure is individually significant in the preferred spec.** Use mix is negative in every position specification and significant with CBD-distance alone (−0.069, p=.021) but marginal with both distance measures (p=.060) — describe its direction, do not claim an effect. `fixest`'s small-sample correction is why these p-values run slightly above the exploratory Python run; the manuscript uses the R values throughout.
+**Only the exclusionary measure remains individually significant in the position-adjusted specification.** Use mix is negative in every position specification and significant with CBD-distance alone (−0.069, p=.021) but marginal with both distance measures (p=.060) — describe its direction, do not claim an effect. `fixest`'s small-sample correction is why these p-values run slightly above the exploratory Python run; the manuscript uses the R values throughout.
 
-Rung C conditions on the local job surface, which zoning itself produces → **over-control, report as lower bound only**. Rung B is preferred: a tract cannot choose its distance from downtown. Position-control choice barely matters for the exclusionary estimate (CBD-only +0.099 p=.086; employment-centre-only +0.147 p=.006; both +0.103 p=.035). It matters for use mix (CBD-only p=.021 vs both p=.060).
+Rung C conditions on the local job surface, which zoning itself partly produces → **an over-control sensitivity that may remove part of the pathway through which zoning operates; never the preferred estimate, and not a formal bound**. Rung B is the preferred specification for decomposing the association — with the explicit caveat (recorded in 68 and the manuscript) that position is not thereby a proven confounder: position, infrastructure, employment geography, and zoning co-evolved, and the ladder decomposes a cross-sectional association rather than identifying a causal zoning effect. Position-control choice barely matters for the exclusionary estimate (CBD-only +0.099 p=.086; employment-centre-only +0.147 p=.006; both +0.103 p=.035). It matters for use mix (CBD-only p=.021 vs both p=.060).
 
-**Agreed framing (Priyanka, 2026-08-07): cautionary + residual effect.** Naive zoning–segregation associations overstate zoning's role by ~3×; a real ~30% zoning-specific component survives. This is the paper's contribution and it is honest.
+**Agreed framing (Priyanka, 2026-08-07, language tightened 2026-08-08): decomposition.** Naive zoning–segregation associations are roughly 3× the position-adjusted estimates; ~30% of the baseline moderation estimate remains after adjustment for metropolitan position (the position-adjusted zoning association — never call it a "zoning-specific component"). This is the paper's contribution and it is honest.
 
 ### Other resolved issues
 
@@ -131,6 +133,26 @@ Priyanka asked for the 2018-paper corrections to be applied here "in the same wa
 ## SI live/work descriptives (script 71, added 2026-08-08)
 
 Tables S1/S2 (in the manuscript SI + `output/models/p4_si_tabS1/S2*.csv`): where workers in each earnings bracket and industry supergroup lived and worked, Denver MSA 2023, from the same-MSA-restricted OD frame. (LODES has no occupation data — industry supergroups are the closest construct; noted in the SI text.) Headline: residence distributions are nearly identical across earnings groups (Denver county 22.0–24.8%), but workplace distributions diverge — high earners work in major employment centers at 2× the low-earnings rate (26.6% vs 13.3%); low-wage work is dispersed. The class gradient in workplace-segregation exposure is a workplace-geography fact, not a residential-sorting fact. Run 71 after 68.
+
+
+## Major revision applied (2026-08-08, from Priyanka's full review)
+
+**Status: v2 draft (`Paper4_JAPA_draft_v2.docx`) supersedes v1.** The review's verdict: novelty high, JAPA-relevant, but major-revision territory on identification language and spatial methods. All ten priority items applied:
+
+1. **Decomposition, not confounding.** The ladder is now framed as decomposing a cross-sectional association into components tracked by regional geography vs jurisdictional regulation. All "confound," "70% of the effect disappears," "effect survives," "upper bound," "bracket the truth" language replaced ("reduces the estimated moderation by ~70%," "position-adjusted estimate ≈ one-third of baseline," "can be substantially overstated ... in Denver roughly three times larger"). Explicit statement that position/infrastructure/employment geography/zoning co-evolved and no causal subtraction is licensed.
+2. **Measure sensitivity (script 72; decay part VERIFIED in cloud):** preferred exclusionary interaction is stable across decay — β=0.25: +0.096; β=0.5: +0.103; β=1.0: +0.125 — with 70–76% attenuation each time; aspatial +0.028 ns (discards the spatial structure). Maxdist 5/20 km requires local block-level recompute (72 Part B, minutes for CO; SI Table S3 has placeholder rows until run).
+3. **Spatial inference (script 73; VERIFIED in cloud):** Moran's I on preferred-spec residuals is LARGE (kNN8 0.294, z=16.1; inv-dist≤10km 0.261, z=28.2). Conley Bartlett SEs: 10 km p=.042, 20 km p=.048, 50 km p=.006 vs jurisdiction-clustered p=.035. Inference stands but is marginal — manuscript says so and leans on the attenuation pattern (SI Table S4).
+4. **Construct renamed** "workplace-location segregation exposure," defined against establishment-level segregation in the abstract and intro.
+5. **2023 choice justified** (zoning observed once; retrospective application would assume stability) + **temporal descriptives added**: coupling r = .57–.67 across 2011–2023 with no trend (62's diagnostic); currently-exclusionary tercile already elevated in 2011 (Fig S4 = 65's trends figure, now embedded in SI).
+6. **Metropolitan position reframed as a planning product** ("position is the sediment of past planning ... a finding about which scale of planning matters"), not a nuisance.
+7. **Jobs mechanism disciplined:** eff_n_dest non-monotonicity (90.4/101.7/89.1) now flagged at Table 1 and used in Discussion — destination LOCATION, not number; commuting geography promoted to conceptual protagonist in title/intro.
+8. **ADU section shortened** to Denver vs Douglas-uninc./Centennial contrast; full jurisdiction table pointed to SI.
+9. Flagged sentences deleted/replaced ("Nothing about the naive specification is careless," "the result we did not expect...").
+10. **Fig 3 is the centerpiece** ("the paper's central result" in caption); its title in 70 updated to "Estimated zoning moderation shrinks by 60–72% once metropolitan position is included."
+
+Equation for D̃ + β/cutoff justification added to Methods. Race-flow estimand stated in the intro (destination-portfolio estimand, not group-specific destinations; earnings flows as the check). Title now leads with commuting geography. v2 ≈ 5,200 words incl. abstract/captions/tables.
+
+**72/73 RUN AND VERIFIED (2026-08-08):** truncation sensitivity confirms stability — maxdist 5 km: naive +0.363 → preferred +0.107 (p=.040); 20 km: +0.331 → +0.104 (p=.033). Across ALL measure variants (β 0.25/0.5/1.0; cutoff 5/10/20 km) the preferred estimate spans +0.096 to +0.125 with ~58–76% attenuation. 73's Moran/Conley matched the cloud verification exactly. SI Tables S3/S4 in v2 are now fully pipeline-sourced. **Remaining before submission:** references; rerun 70 once for Fig 3's new title; the national-extension timing decision.
 
 ## Known gaps before submission
 
