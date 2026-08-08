@@ -2,3 +2,4 @@ clean/
 *.rds
 .DS_Store
 rosm.cache/
+output/*.csv.gz
