@@ -43,7 +43,9 @@
 #
 # Output: output/models/p4_network_access_ladder.csv
 #         output/models/p4_opportunity_vs_realized.csv
+#         output/models/p4_access_marginal_effects.csv
 #         output/figures/p4_fig_opportunity_sorting.png
+#         output/figures/p4_fig_transit_marginal.png   (Figure S9)
 # ==============================================================================
 
 source("60_co_setup.R")
@@ -180,7 +182,7 @@ for (nm in names(NET)) {
   # coupling? (negative interaction = accessibility loosens it)
   res[[length(res) + 1]] <- safe(sprintf(
     "z_wexp_whiteblack_wac_half ~ %s * %s + %s | county_fips", X, v, COVS),
-    sprintf("ACCESSxSEG_%s", nm), c(sprintf("%s:%s", X, v), v))
+    sprintf("ACCESSxSEG_%s", nm), c(X, sprintf("%s:%s", X, v), v))
 }
 all_res <- bind_rows(res)
 write.csv(all_res, file.path(DIR_CO_MOD, "p4_network_access_ladder.csv"),
@@ -207,4 +209,67 @@ pF <- ggplot(xs |> filter(!is.na(accD)),
   theme(panel.grid.minor = element_blank(), legend.position = "bottom")
 ggsave(file.path(DIR_CO_FIG, "p4_fig_opportunity_sorting.png"), pF,
        width = 7.6, height = 6.4, dpi = 350, bg = "white")
+
+## ---- Figure S9: marginal effect of residential segregation across access -----
+# The ACCESSxSEG interaction as a picture: the slope of res_seg -> wexp
+# evaluated across the observed distribution of network access, with
+# delta-method 95% CIs from the cluster-robust (jurisdiction) vcov. This is
+# the display version of the mode asymmetry: the transit line should bend
+# toward zero as access rises while the auto line stays flat. Same language
+# discipline as above: a moderation pattern in a cross-sectional
+# decomposition, not a causal effect of transit service.
+if (all(c("z_log_d5ar", "z_log_d5br") %in% names(xs))) {
+  me_grid <- function(fit, xterm, vterm, vseq) {
+    b <- coef(fit); V <- vcov(fit)   # vcov inherits ~jurisd_main clustering
+    it <- intersect(c(paste0(xterm, ":", vterm), paste0(vterm, ":", xterm)),
+                    names(b))
+    stopifnot(length(it) == 1)
+    slope <- b[[xterm]] + b[[it]] * vseq
+    se <- sqrt(V[xterm, xterm] + vseq^2 * V[it, it] + 2 * vseq * V[xterm, it])
+    tibble(access_z = vseq, slope = slope, se = se,
+           lo = slope - 1.96 * se, hi = slope + 1.96 * se)
+  }
+  MODE_LAB <- c(auto_45min    = "auto (45-min network jobs)",
+                transit_45min = "transit (45-min network jobs)")
+  me <- list(); rugs <- list()
+  for (nm in names(NET)) {
+    v <- NET[[nm]]
+    fit <- tryCatch(feols(as.formula(sprintf(
+      "z_wexp_whiteblack_wac_half ~ %s * %s + %s | county_fips", X, v, COVS)),
+      data = xs, cluster = ~jurisd_main), error = function(e) NULL)
+    if (is.null(fit)) next
+    vv <- xs[[v]][is.finite(xs[[v]])]
+    vseq <- seq(quantile(vv, .05), quantile(vv, .95), length.out = 41)
+    me[[nm]] <- me_grid(fit, X, v, vseq) |>
+      mutate(mode = MODE_LAB[[nm]], n_obs = fit$nobs)
+    rugs[[nm]] <- tibble(access_z = vv, mode = MODE_LAB[[nm]])
+  }
+  me <- bind_rows(me)
+  write.csv(me, file.path(DIR_CO_MOD, "p4_access_marginal_effects.csv"),
+            row.names = FALSE)
+  pM <- ggplot(me, aes(access_z, slope)) +
+    geom_hline(yintercept = 0, linetype = 2, linewidth = .4,
+               color = "grey50") +
+    geom_ribbon(aes(ymin = lo, ymax = hi), fill = "#6baed6", alpha = .25) +
+    geom_line(color = "#08519c", linewidth = .8) +
+    geom_rug(data = bind_rows(rugs), aes(access_z), inherit.aes = FALSE,
+             sides = "b", alpha = .15, length = unit(0.02, "npc")) +
+    facet_wrap(~mode) +
+    labs(title = "How network access reshapes the coupling",
+         subtitle = paste(
+           "Slope of residential segregation on workplace-location exposure",
+           "(both in SD), across the access distribution;",
+           "\n95% delta-method CIs, jurisdiction-clustered. Transit sample",
+           "restricted to tracts with recorded transit access."),
+         x = "network job accessibility (SD of log 45-min jobs)",
+         y = "marginal effect of residential segregation (SD)") +
+    theme_minimal(base_size = 10) +
+    theme(panel.grid.minor = element_blank(),
+          strip.text = element_text(face = "bold"))
+  ggsave(file.path(DIR_CO_FIG, "p4_fig_transit_marginal.png"), pM,
+         width = 8.6, height = 4.4, dpi = 350, bg = "white")
+  message("Figure S9 (transit marginal effects) written.")
+} else {
+  message("SLD columns absent -- skipping Figure S9 (marginal effects).")
+}
 message("75 complete.")
