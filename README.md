@@ -9,7 +9,7 @@ Residential segregation describes where people live, but not necessarily the seg
 
 | Path | Contents |
 |---|---|
-| `60`–`82_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`83_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
@@ -45,6 +45,7 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `80_co_decentralization_network.R` | Employment decentralization 2011–2023; labor-market catchments | SI table + figures |
 | `81_co_zoning_flows.R` | Zoning-to-zoning flow matrix; tract-pair gravity model (PPML) | SI table + figure |
 | `82_co_excess_commuting.R` | Excess commuting: optimal worker–job assignment vs actual flows (needs `transport`) | SI table + figure |
+| `83_co_matched_access.R` | Earnings-matched accessibility (Shen competition-adjusted, per earnings band) | SI table |
 
 ## Data requirements (not redistributed here)
 
