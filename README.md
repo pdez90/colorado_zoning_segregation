@@ -9,7 +9,7 @@ Residential segregation describes where people live, but not necessarily the seg
 
 | Path | Contents |
 |---|---|
-| `60`–`80_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`82_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
@@ -43,6 +43,8 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `78_co_mismatch_portfolio.R` | RAC–WAC jobs–workers mismatch; destination-portfolio composition | SI tables |
 | `79_co_jurisdiction_dependence.R` | Jurisdictional boundary accounting; housing exclusion × low-wage dependence; balance-vs-matching typology | SI tables + figures |
 | `80_co_decentralization_network.R` | Employment decentralization 2011–2023; labor-market catchments | SI table + figures |
+| `81_co_zoning_flows.R` | Zoning-to-zoning flow matrix; tract-pair gravity model (PPML) | SI table + figure |
+| `82_co_excess_commuting.R` | Excess commuting: optimal worker–job assignment vs actual flows (needs `transport`) | SI table + figure |
 
 ## Data requirements (not redistributed here)
 
@@ -57,7 +59,7 @@ Generated intermediates (`clean/`, `*.rds`) are `.gitignore`d: they are large an
 
 ## Software
 
-R ≥ 4.3 with: `tidyverse`, `sf`, `data.table`, `seg`, `lehdr`, `fixest`, `patchwork`, `ggrepel` (optionally `tigris`). The spatial-inference script implements Moran's I and Conley SEs manually (no `spdep` dependency) and soft-checks the Conley estimator against `fixest::vcov_conley` when available.
+R ≥ 4.3 with: `tidyverse`, `sf`, `data.table`, `seg`, `lehdr`, `fixest`, `patchwork`, `ggrepel`, `transport` (optionally `tigris`). The spatial-inference script implements Moran's I and Conley SEs manually (no `spdep` dependency) and soft-checks the Conley estimator against `fixest::vcov_conley` when available.
 
 ## Reproducibility notes
 
