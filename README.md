@@ -9,7 +9,7 @@ Residential segregation describes where people live, but not necessarily the seg
 
 | Path | Contents |
 |---|---|
-| `60`–`76_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`77_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
@@ -39,6 +39,7 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `74_co_flow_maps.R` | Commute-flow maps: decile sheds and the exemplar pair | Fig 2; Fig S8 |
 | `75_co_network_access.R` | Opportunity-set decomposition; SLD network-accessibility ladder; marginal effects | Figs S9–S10; Table S5 |
 | `76_co_concept_figure.R` | Conceptual chain + menu-result figure | Fig 1 |
+| `77_co_selfcontainment.R` | Jobs–workers dependence and commuting self-containment (tercile + jurisdiction) | Table 1 rows; groundwork for a jurisdictional companion paper |
 
 ## Data requirements (not redistributed here)
 
