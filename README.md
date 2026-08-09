@@ -9,7 +9,7 @@ Residential segregation describes where people live, but not necessarily the seg
 
 | Path | Contents |
 |---|---|
-| `60`–`77_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`80_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
@@ -39,7 +39,10 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `74_co_flow_maps.R` | Commute-flow maps: decile sheds and the exemplar pair | Fig 2; Fig S8 |
 | `75_co_network_access.R` | Opportunity-set decomposition; SLD network-accessibility ladder; marginal effects | Figs S9–S10; Table S5 |
 | `76_co_concept_figure.R` | Conceptual chain + menu-result figure | Fig 1 |
-| `77_co_selfcontainment.R` | Jobs–workers dependence and commuting self-containment (tercile + jurisdiction) | Table 1 rows; groundwork for a jurisdictional companion paper |
+| `77_co_selfcontainment.R` | Jobs–workers dependence and commuting self-containment (tercile + jurisdiction) | Table 1 rows |
+| `78_co_mismatch_portfolio.R` | RAC–WAC jobs–workers mismatch; destination-portfolio composition | SI tables |
+| `79_co_jurisdiction_dependence.R` | Jurisdictional boundary accounting; housing exclusion × low-wage dependence; balance-vs-matching typology | SI tables + figures |
+| `80_co_decentralization_network.R` | Employment decentralization 2011–2023; labor-market catchments | SI table + figures |
 
 ## Data requirements (not redistributed here)
 
