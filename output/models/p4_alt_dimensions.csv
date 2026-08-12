@@ -1,0 +1,7 @@
+"estimate","std.error","statistic","p.value","term","model_id","n_obs","pct_of_naive"
+0.333250446390525,0.066344842184354,5.02300458360446,3.16261934869728e-05,"z_d_whiteblack_rac_half:z_pct_reslow_of_res","ALT_whiteblack_naive",646,NA
+0.103085668657191,0.046243964310693,2.22917023213243,0.0346570330617904,"z_d_whiteblack_rac_half:z_pct_reslow_of_res","ALT_whiteblack_position",646,30.9333925201675
+0.305732038500085,0.0714668364541574,4.2779567932351,0.000225756173746331,"z_d_hisp_nonhisp_rac_half:z_pct_reslow_of_res","ALT_hisp_nonhisp_naive",646,NA
+0.138420815032373,0.0515907540192442,2.68305469969948,0.0125157193986419,"z_d_hisp_nonhisp_rac_half:z_pct_reslow_of_res","ALT_hisp_nonhisp_position",646,45.2752075678633
+0.345267488408427,0.0515501057519834,6.69770669471697,4.17303124288052e-07,"z_d_college_lesshs_rac_half:z_pct_reslow_of_res","ALT_college_lesshs_naive",646,NA
+0.131922138020698,0.0522968789832462,2.52256235143517,0.0181070740889087,"z_d_college_lesshs_rac_half:z_pct_reslow_of_res","ALT_college_lesshs_position",646,38.2086765912473
