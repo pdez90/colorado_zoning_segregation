@@ -144,9 +144,10 @@ pC <- ggplot(jur, aes(mean_pct_reslow, jobs_per_worker)) +
            label = "Cervero's archetype:\njob-rich and housing-restrictive") +
   labs(title = "Where does exclusionary zoning sit relative to employment?",
        subtitle = paste("Denver-region jurisdictions with at least 2,000",
-                        "resident workers. Cervero's mechanism requires the",
-                        "upper-right\nquadrant; in this region job-richness and",
-                        "residential restrictiveness are negatively related."),
+                        "resident workers. Cervero's archetype is the",
+                        "upper-right quadrant:\nfive jurisdictions holding 13%",
+                        "of regional jobs but housing 8% of its workers, and",
+                        "importing 93% of their workforce."),
        x = "% of residential land zoned low-density (jurisdiction mean)",
        y = "local jobs per resident worker (log scale)") +
   theme_minimal(base_size = 10) +
