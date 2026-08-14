@@ -9,7 +9,7 @@ Residential segregation describes where people live, but not necessarily the seg
 
 | Path | Contents |
 |---|---|
-| `60`–`83_co_*.R` | The analysis pipeline (see run order below) |
+| `60`–`85_co_*.R` | The analysis pipeline (see run order below) |
 | `output/models/` | Model coefficients and paper tables (CSV) |
 | `output/figures/` | Main and SI figures (PNG) |
 | `diagnostics/` | QC tables written by each script |
@@ -46,6 +46,8 @@ Scripts are checkpointed: completed steps skip themselves on re-run.
 | `81_co_zoning_flows.R` | Zoning-to-zoning flow matrix; tract-pair gravity model (PPML) | SI table + figure |
 | `82_co_excess_commuting.R` | Excess commuting: optimal worker–job assignment vs actual flows (needs `transport`) | SI table + figure |
 | `83_co_matched_access.R` | Earnings-matched accessibility (Shen competition-adjusted, per earnings band) | SI table |
+| `84_co_alt_dimensions.R` | Position-adjusted rung for Hispanic–non-Hispanic and educational segregation | SI table |
+| `85_co_jhbalance_literature.R` | Jobs–housing balance at four scales + nonlinearity; ladder on commute-distance outcomes | SI tables |
 
 ## Data requirements (not redistributed here)
 
