@@ -26,8 +26,8 @@
 # INCOME: ACS 5-year B19301_001 (per-capita income in survey-year dollars),
 # one release per panel year. Needs a Census API key --
 #   tidycensus::census_api_key("YOUR KEY", install = TRUE)
-# See the tract-vintage note at the income section: 2011-2020 ACS releases are
-# on 2010-vintage tracts and are crosswalked to the 2020 tracts LODES8 uses.
+# See the tract-vintage note at the income section: releases on 2010-vintage
+# tracts are bridged to the 2020 tracts LODES 8 uses.
 # ==============================================================================
 
 source("30_p2_setup.R")
@@ -96,15 +96,15 @@ if (file.exists(cov_file)) {
 ## =============================================================================
 ## 2. ACS per-capita income
 ## =============================================================================
-# TRACT VINTAGE. LODES8 is on 2020 census tracts for every year. ACS 5-year
-# releases through 2020 are published on 2010 tracts; 2021+ are on 2020
-# tracts. Pre-2021 years are therefore mapped onto 2020 tracts with the
-# Census 2010->2020 tract relationship file, taking the land-area-weighted
-# mean of the 2010 tracts overlapping each 2020 tract. For a tract whose
-# boundary did not change -- the large majority -- the mapping is one-to-one
-# and the value passes through unchanged. Splits and merges are approximated.
-# This bridge is an approximation for the minority of tracts that were split
-# or merged in 2020; 90_validate_rebuild.R reports its effect on the estimates.
+# TRACT VINTAGE. LODES 8 is on 2020 census tracts for every year. ACS 5-year
+# releases before the 2020 release are on 2010 tracts. Those releases are
+# mapped onto 2020 tracts with the Census 2010->2020 tract relationship file
+# by DOMINANT PARENT: each 2020 tract takes the value of the single 2010 tract
+# that contributes the most of its land area. Per-capita income is an intensive
+# quantity, so a tract whose boundary did not change -- the large majority --
+# passes through exactly, and a split tract inherits its parent's value. The
+# vintage of each release is decided from the data (share of ids that are 2020
+# tract ids), not assumed from the release year.
 inc_file <- file.path(DIR_CLEAN, "p2_tract_income_panel.rds")
 
 if (file.exists(inc_file)) {
@@ -134,19 +134,8 @@ if (file.exists(inc_file)) {
   # the 2020-vintage tract ids LODES8 uses, for the vintage test below
   ids_2020 <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds"))$tract_id
 
-  # DOMINANT-PARENT assignment: each 2020 tract takes the value of the single
-  # 2010 tract contributing the most of its land, and stays missing when that
-  # parent is missing. Chosen on evidence -- 39_income_crosswalk_test.R
-  # compares missingness against the published panel across the eight bridged
-  # years (2011-2018; panel 2019 reads the 2020 release and needs no bridge):
-  #
-  #   dominant parent              total gap 1.3   (1.0 / 1.0 / 0.8 ...)
-  #   area-weighted mean           total gap 4.9   (0.4 every year)
-  #   area-weighted, all parents   total gap 5.7   (1.8 / 1.8 / 1.7 ...)
-  #
-  # against a reference of 1.1 / 1.0 / 1.0 ... It is also the same rule the
-  # SLD turned out to use (see 53_sld.R), which is what a pipeline with one
-  # crosswalk helper would do.
+  # dominant parent: the 2010 tract contributing the most land to each 2020
+  # tract; the 2020 tract stays missing when that parent is missing
   dominant_parent <- xw |>
     group_by(tract20) |>
     slice_max(w, n = 1, with_ties = FALSE) |>
@@ -159,28 +148,21 @@ if (file.exists(inc_file)) {
       filter(!is.na(income_percapita))
   }
 
-  # RELEASE OFFSET. Panel year Y reads the ACS 5-year release ending Y+1, not
-  # Y. This is not a guess: 36_income_variant_test.R rebuilt the published SI
-  # tercile means (56.286 / 57.023 / 66.362) from eight candidate
-  # constructions, and B19301 from the *2024* release reproduced all three to
-  # 0.000 for panel year 2023, while every 2023-release construction came in
-  # $2.0k-$2.9k low and the 2022 release lower still. The original pipeline
-  # was built in August 2026, by which point the 2024 release (December 2025)
-  # was the newest available. If a release is not published yet, fall back to
-  # the panel year itself.
+  # RELEASE. Panel year Y uses the ACS 5-year release ending in Y + 1, capped at
+  # the latest release that exists (ACS_LATEST_RELEASE, default 2024). The cap
+  # is explicit so that the vintage never depends on when the script is run or
+  # on a transient download failure: any other error stops the script.
   ACS_OFFSET <- 1L
+  ACS_LATEST <- as.integer(Sys.getenv("ACS_LATEST_RELEASE", "2024"))
 
-  # one ACS release, cached by the RELEASE year; NULL if it is not published
+  # one ACS release, cached by the RELEASE year
   get_release <- function(acs_yr) {
     ck <- file.path(DIR_RAW, sprintf("acs_b19301_co_%s.rds", acs_yr))
     if (file.exists(ck)) return(readRDS(ck))
     message("ACS B19301, ", acs_yr, " release ...")
-    x <- tryCatch(
-      suppressMessages(
-        tidycensus::get_acs(geography = "tract", variables = "B19301_001",
-                            state = "08", year = acs_yr, survey = "acs5")),
-      error = function(e) NULL)
-    if (is.null(x)) return(NULL)
+    x <- suppressMessages(
+      tidycensus::get_acs(geography = "tract", variables = "B19301_001",
+                          state = "08", year = acs_yr, survey = "acs5"))
     x <- x |> transmute(tract_id = as.character(GEOID),
                         income_percapita = estimate)
     saveRDS(x, ck)
@@ -188,19 +170,11 @@ if (file.exists(inc_file)) {
   }
 
   income <- map(P2_YEARS, function(yr) {
-    acs_yr <- yr + ACS_OFFSET
+    acs_yr <- min(yr + ACS_OFFSET, ACS_LATEST)
     d <- get_release(acs_yr)
-    if (is.null(d)) {                       # release not out yet
-      message("  ", acs_yr, " release unavailable -- using the ", yr, " one")
-      acs_yr <- yr
-      d <- get_release(acs_yr)
-    }
-    if (is.null(d)) stop("No ACS release available for panel year ", yr)
 
-    # Decide the tract vintage from the data, not from the year. The switch to
-    # 2020 tracts happened with the 2020 ACS 5-year release, NOT 2021 as the
-    # documentation order suggests -- checked against tract_centroids_km.rds:
-    # the 2019 release matches 85% of 2020 tract ids, the 2020 release 100%.
+    # Decide the tract vintage from the data, not from the year: the 2019
+    # release matches 85% of 2020 tract ids, the 2020 release 100%.
     share20 <- mean(d$tract_id %in% ids_2020)
     if (share20 < 0.95) {
       message("  panel ", yr, " <- ", acs_yr, " release: ",

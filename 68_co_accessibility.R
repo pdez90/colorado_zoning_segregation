@@ -41,7 +41,7 @@
 #                            bound (conditioning on a mediator does not bound
 #                            a total association).
 #
-# Verified result (Aug 2026): adjustment for metropolitan position reduces the
+# Result: adjustment for metropolitan position reduces the
 # estimated zoning moderation by roughly two-thirds; ~30% of the baseline
 # estimate remains at rung B (the position-adjusted zoning association),
 # individually significant only for the exclusionary measure; little remains

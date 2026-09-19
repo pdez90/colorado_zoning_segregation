@@ -17,7 +17,7 @@
 #           in our units); rather than import them, we test for curvature
 #           empirically with a cubic in the ratio and a joint Wald test on the
 #           quadratic and cubic terms, alongside a binned display of the shape.
-#    A horse race against metropolitan position asks the question a reviewer
+#    A horse race against metropolitan position asks the question a reader
 #    from this literature will ask directly: why not simply use jobs-housing
 #    balance as the predictor?
 #

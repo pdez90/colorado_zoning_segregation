@@ -64,7 +64,7 @@ if (!file.exists(tr_file) || !file.exists(al_file)) {
 
 ## ---- the TIGER folder 61_co_zoning_tract.R reads ------------------------------
 # 61 prefers a TIGER 2024 tract shapefile on disk and falls back to tigris'
-# 2023 vintage. The published zoning measures were built on 2024, so write the
+# 2023 vintage. The zoning measures are built on the 2024 vintage, so write the
 # 2024 layer where 60_co_setup.R's CO_TIGER_DIR points.
 tig_dir <- path.expand("~/Downloads/LODES/TIGER2024_TRACT_UNZIPPED/tl_2024_08_tract")
 tig_shp <- file.path(tig_dir, "tl_2024_08_tract.shp")

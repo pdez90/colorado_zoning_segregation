@@ -7,14 +7,12 @@
 #           residential D (in-scope Denver frame, 2023); curved flow lines
 #           from home to workplace tract, colored by the DESTINATION's
 #           workplace-location segregation quintile, width/alpha ~ flow.
-#           Verified headline annotation: flow-weighted destination D =
-#           0.018 (least-segregated origins) vs 0.034 (most) -- nearly 2x.
+#           Headline statistics are written to p4_commute_shed_stats.csv.
 #
 #   Fig F2  The paper's thesis as a picture: two tracts with near-identical
 #           residential D whose destination fans differ completely.
-#           Verified exemplar pair (n_commuters >= 500, res D within .004,
-#           max wexp gap): 08005006864 (Arapahoe; res D .166, wexp .021)
-#           vs 08059012058 (JeffCo foothills; res D .168, wexp .063 -- 3x).
+#           Exemplar pair rule: n_commuters >= 500, res D within .004,
+#           maximum wexp gap.
 #           The pair is re-derived from the data below, so it updates
 #           automatically if the panel changes.
 #

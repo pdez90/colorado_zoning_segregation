@@ -17,15 +17,14 @@
 #    market is itself segregated: accD high, gap ~ 0) vs a SORTING-WITHIN-
 #    OPPORTUNITIES story (integrated work is reachable but actual jobs are
 #    disproportionately elsewhere: gap > 0). The near-equal effective
-#    destination counts across terciles (90.4 / 101.7 / 89.1) already say
-#    destination QUANTITY is not the issue; this asks about composition.
+#    destination counts across terciles already say destination QUANTITY is not the issue; this asks about composition.
 #    CAVEAT (state it): the impedance here is Euclidean-gravity, a
 #    geographic, not network, opportunity set.
 #
-#  PART B (network measures; requires the SLD file from paper_pipeline 53A)
-#    The reviewer's accessibility ladder, extending 68's:
-#      A  zoning only                     (68: +0.333)
-#      B  geographic position             (68: +0.103)
+#  PART B (network measures; requires clean/p3_tract_sld.rds from
+#  paper_pipeline/53_sld.R). The accessibility ladder, extending 68's:
+#      A  zoning only                     (68, A_total)
+#      B  geographic position             (68, B_plus_regional_position)
 #      C  NETWORK accessibility instead:  wexp ~ res_seg x log(D5AR) [auto
 #         45-min network jobs] and x log(D5BR) [transit 45-min jobs]
 #      D  position + network accessibility together: does connectivity
@@ -45,7 +44,7 @@
 #         output/models/p4_opportunity_vs_realized.csv
 #         output/models/p4_access_marginal_effects.csv
 #         output/figures/p4_fig_opportunity_sorting.png
-#         output/figures/p4_fig_transit_marginal.png   (Figure S9)
+#         output/figures/p4_fig_transit_marginal.png   (Figure S10)
 # ==============================================================================
 
 source("60_co_setup.R")
@@ -160,8 +159,8 @@ if (file.exists(sld_file) || "sld_D5AR" %in% names(xs)) {
   NET <- c(euclid_gravity_placeholder = "z_log_jobs_grav")
   message(paste(
     "NOTE: p3_tract_sld.rds not found -- running with the Euclidean gravity",
-    "placeholder. For the NETWORK measures the reviewer asked for, run",
-    "paper_pipeline/53_p3_transport_covariates.R (SLD download) first;",
+    "placeholder. For the NETWORK measures run",
+    "paper_pipeline/53_sld.R (SLD download) first;",
     "D5AR/D5BR are 45-minute network job-accessibility counts."))
 }
 POS <- sprintf(paste("z_dist_cbd_km + z_dist_empctr_km +",
@@ -210,14 +209,14 @@ pF <- ggplot(xs |> filter(!is.na(accD)),
 ggsave(file.path(DIR_CO_FIG, "p4_fig_opportunity_sorting.png"), pF,
        width = 7.6, height = 6.4, dpi = 350, bg = "white")
 
-## ---- Figure S9: marginal effect of residential segregation across access -----
+## ---- Figure S10: marginal effect of residential segregation across access -----
 # The ACCESSxSEG interaction as a picture: the slope of res_seg -> wexp
-# evaluated across the observed distribution of network access, with
-# delta-method 95% CIs from the cluster-robust (jurisdiction) vcov. This is
-# the display version of the mode asymmetry: the transit line should bend
-# toward zero as access rises while the auto line stays flat. Same language
-# discipline as above: a moderation pattern in a cross-sectional
-# decomposition, not a causal effect of transit service.
+# evaluated across the 5th-95th percentiles of network access, with
+# delta-method 95% CIs from the cluster-robust (jurisdiction) vcov. The figure
+# shows the specification AS FITTED; 75b_co_access_influence.R reports how
+# sensitive these interactions are to single tracts and to the functional form
+# of access. A moderation pattern in a cross-sectional decomposition, not a
+# causal effect of transport service.
 if (all(c("z_log_d5ar", "z_log_d5br") %in% names(xs))) {
   me_grid <- function(fit, xterm, vterm, vseq) {
     b <- coef(fit); V <- vcov(fit)   # vcov inherits ~jurisd_main clustering
@@ -271,8 +270,8 @@ if (all(c("z_log_d5ar", "z_log_d5br") %in% names(xs))) {
           strip.text = element_text(face = "bold"))
   ggsave(file.path(DIR_CO_FIG, "p4_fig_transit_marginal.png"), pM,
          width = 8.6, height = 4.4, dpi = 350, bg = "white")
-  message("Figure S9 (transit marginal effects) written.")
+  message("Figure S10 (marginal effects by access) written.")
 } else {
-  message("SLD columns absent -- skipping Figure S9 (marginal effects).")
+  message("SLD columns absent -- skipping Figure S10 (marginal effects).")
 }
 message("75 complete.")

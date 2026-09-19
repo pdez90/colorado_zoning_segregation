@@ -83,7 +83,8 @@ run_reseg() {
   rm -f "$LODES/output/paper2"/p2_seg_*.rds \
         "$LODES/output/paper2/p2_tract_segregation_panel.rds"
   # 62 caches per-year exposures keyed off the old panel; drop them too
-  rm -f "$CO/clean"/co_wexp_*.rds "$CO/clean/co_wres_work_panel.rds"
+  rm -f "$CO/clean"/co_wexp_*.rds "$CO/clean/co_wres_work_panel.rds" \
+        "$CO/clean"/co_seg_maxdist_*.rds "$CO/clean/co_group_flows_panel.rds"
   $CAF "$RS" -e "setwd('$PIPE'); source('32_segregation_panel.R')" 2>&1 \
     | tee "$LOGS/reseg.log"
   ( cd "$CO" && $CAF "$RS" -e "
@@ -177,6 +178,13 @@ run_fresh() {
   run_sld && run_models && run_rest && run_influence
 }
 
+# Everything that depends on the segregation index or the SLD table, from
+# scratch: SLD, segregation panel, exposures, panel, models, figures, checks.
+# LODES downloads, geography and ACS income are reused. ~30-40 min.
+run_full() {
+  run_sld && run_reseg && run_rest && run_influence
+}
+
 case "$stage" in
   upstream)   run_upstream ;;
   patch)      run_patch ;;
@@ -191,9 +199,10 @@ case "$stage" in
   validate)   run_validate ;;
   influence)  run_influence ;;
   fresh)      run_fresh ;;
+  full)       run_full ;;
   refit)      run_models && run_rest && run_influence ;;
   all)        run_upstream && run_patch && run_casestudy && run_validate ;;
-  *) echo "usage: bash run_all.sh [fresh|refit|influence|upstream|patch|casestudy|sld|income|models|reseg|rest|odcols|repair|validate|all]"
+  *) echo "usage: bash run_all.sh [full|fresh|refit|influence|upstream|patch|casestudy|sld|income|models|reseg|rest|odcols|repair|validate|all]"
      exit 1 ;;
 esac
 

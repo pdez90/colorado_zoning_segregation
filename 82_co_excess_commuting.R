@@ -68,17 +68,20 @@ D <- as.matrix(dist(fr[, c("X_km", "Y_km")]))   # symmetric, 0 diagonal
 idx <- setNames(seq_len(nrow(fr)), fr$tract_id)
 
 ## ---- solver ------------------------------------------------------------------
-# supply: resident workers per frame tract; demand: jobs per frame tract,
-# scaled to the supply total. Actual: OD flows between frame tracts, same
-# earnings band. Returns overall + per-origin actual/minimum mean commutes.
-solve_group <- function(rac_col, wac_col, od_col, label) {
-  s <- rac |> transmute(tract_id, m = .data[[rac_col]]) |>
-    right_join(fr["tract_id"], by = "tract_id") |>
-    mutate(m = replace_na(m, 0)) |> pull(m)
-  d <- wac |> transmute(tract_id, m = .data[[wac_col]]) |>
-    right_join(fr["tract_id"], by = "tract_id") |>
-    mutate(m = replace_na(m, 0)) |> pull(m)
-  d <- d * sum(s) / sum(d)                       # balance (stated)
+# Supply and demand are the ORIGIN and DESTINATION MARGINS of the observed flow
+# matrix between frame tracts, for the same earnings band (White 1988). Actual
+# and minimum commuting are therefore computed for exactly the same workers and
+# jobs, totals balance by construction, and no rescaling is needed.
+solve_group <- function(od_col, label) {
+  a <- od |>
+    filter(h_tract %in% fr$tract_id, w_tract %in% fr$tract_id,
+           .data[[od_col]] > 0) |>
+    mutate(flow = .data[[od_col]],
+           dkm = D[cbind(idx[h_tract], idx[w_tract])])
+  s <- numeric(nrow(fr)); d <- numeric(nrow(fr))
+  so <- tapply(a$flow, a$h_tract, sum); s[idx[names(so)]] <- so
+  de <- tapply(a$flow, a$w_tract, sum); d[idx[names(de)]] <- de
+  stopifnot(isTRUE(all.equal(sum(s), sum(d))))
   plan <- transport::transport(s, d, costm = D, method = "networkflow")
   # plan: from (origin idx), to (dest idx), mass
   t_min_total <- sum(plan$mass * D[cbind(plan$from, plan$to)])
@@ -86,14 +89,10 @@ solve_group <- function(rac_col, wac_col, od_col, label) {
               tapply(plan$mass, plan$from, sum)
   o_min <- tibble(tract_id = fr$tract_id[as.integer(names(min_by_o))],
                   min_km = as.numeric(min_by_o))
-  a <- od |>
-    filter(h_tract %in% fr$tract_id, w_tract %in% fr$tract_id,
-           .data[[od_col]] > 0) |>
-    mutate(dkm = D[cbind(idx[h_tract], idx[w_tract])])
-  t_act <- weighted.mean(a$dkm, a[[od_col]])
+  t_act <- weighted.mean(a$dkm, a$flow)
   o_act <- a |> group_by(tract_id = h_tract) |>
-    summarise(act_km = weighted.mean(dkm, .data[[od_col]]),
-              n = sum(.data[[od_col]]), .groups = "drop")
+    summarise(act_km = weighted.mean(dkm, flow),
+              n = sum(flow), .groups = "drop")
   t_min <- t_min_total / sum(s)
   list(summary = tibble(group = label,
                         workers = sum(s),
@@ -104,9 +103,9 @@ solve_group <- function(rac_col, wac_col, od_col, label) {
          mutate(group = label))
 }
 
-res_all  <- solve_group("C000", "C000", "S000", "all")
-res_low  <- solve_group("CE01", "CE01", "SE01", "low_earnings")
-res_high <- solve_group("CE03", "CE03", "SE03", "high_earnings")
+res_all  <- solve_group("S000", "all")
+res_low  <- solve_group("SE01", "low_earnings")
+res_high <- solve_group("SE03", "high_earnings")
 summ <- bind_rows(res_all$summary, res_low$summary, res_high$summary)
 write.csv(summ, file.path(DIR_CO_MOD, "p4_excess_commuting.csv"),
           row.names = FALSE)

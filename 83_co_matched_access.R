@@ -61,14 +61,17 @@ shen <- function(J, W) {
 reg$acc_low  <- shen(reg$j_low,  reg$w_low)
 reg$acc_high <- shen(reg$j_high, reg$w_high)
 reg$acc_all  <- shen(reg$j_all,  reg$w_all)
+# overall gravity job access on the SAME Denver-MSA frame and impedance as the
+# matched measures, so the conditional models compare like with like
+reg$log_jobs_grav_msa <- log(as.numeric(FD %*% reg$j_all))
 
 ## ---- descriptives by tercile --------------------------------------------------
 zscore <- function(x) { x[!is.finite(x)] <- NA_real_; as.numeric(scale(x)) }
 xs <- dat |>
   filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa,
          n_commuters >= P3_MIN_COMMUTERS) |>
-  left_join(acc |> select(tract_id, log_jobs_grav), by = "tract_id") |>
-  left_join(reg |> select(tract_id, acc_low, acc_high, w_low),
+  left_join(reg |> select(tract_id, acc_low, acc_high, w_low, w_high,
+                           log_jobs_grav_msa),
             by = "tract_id") |>
   mutate(tercile = ntile(pct_reslow_of_res, 3),
          match_ratio = acc_low / acc_high)
@@ -77,9 +80,11 @@ by_terc <- xs |>
   summarise(n = n(),
             matched_access_low  = weighted.mean(acc_low, pmax(w_low, 1),
                                                 na.rm = TRUE),
-            matched_access_high = mean(acc_high, na.rm = TRUE),
-            low_over_high = weighted.mean(match_ratio, pmax(w_low, 1),
-                                          na.rm = TRUE), .groups = "drop")
+            matched_access_high = weighted.mean(acc_high, pmax(w_high, 1),
+                                                na.rm = TRUE),
+            # ratio of the two worker-weighted tercile means
+            low_over_high = matched_access_low / matched_access_high,
+            .groups = "drop")
 write.csv(by_terc, file.path(DIR_CO_MOD, "p4_matched_access_tercile.csv"),
           row.names = FALSE)
 print(as.data.frame(by_terc), digits = 3)
@@ -88,7 +93,7 @@ print(as.data.frame(by_terc), digits = 3)
 ma <- xs |>
   mutate(across(c(acc_low, acc_high, match_ratio, pct_reslow_of_res,
                   pct_black_rac, pct_lowincome_rac, log_worker_density_rac,
-                  income_percapita_k, income_percapita_k_sq, log_jobs_grav),
+                  income_percapita_k, income_percapita_k_sq, log_jobs_grav_msa),
                 zscore, .names = "z_{.col}"))
 COVS <- paste(c("z_pct_black_rac", "z_pct_lowincome_rac",
                 "z_log_worker_density_rac", "z_income_percapita_k",
@@ -106,10 +111,10 @@ for (y in c("acc_low", "acc_high", "match_ratio")) {
     data = ma, cluster = ~jurisd_main),
     sprintf("MA_%s_naive", y), "z_pct_reslow_of_res")
   res[[length(res) + 1]] <- tidy1(feols(as.formula(sprintf(
-    "z_%s ~ z_pct_reslow_of_res + z_log_jobs_grav + %s | county_fips",
+    "z_%s ~ z_pct_reslow_of_res + z_log_jobs_grav_msa + %s | county_fips",
     y, COVS)), data = ma, cluster = ~jurisd_main),
     sprintf("MA_%s_cond_totalaccess", y),
-    c("z_pct_reslow_of_res", "z_log_jobs_grav"))
+    c("z_pct_reslow_of_res", "z_log_jobs_grav_msa"))
 }
 out <- bind_rows(res)
 write.csv(out, file.path(DIR_CO_MOD, "p4_matched_access_models.csv"),

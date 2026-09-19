@@ -28,7 +28,7 @@ theme_co <- theme_minimal(base_size = 11) +
 xs <- dat |>
   filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa,
          n_commuters >= P3_MIN_COMMUTERS) |>
-  mutate(reslow_tercile = ntile(pct_res_low, 3))
+  mutate(reslow_tercile = ntile(pct_reslow_of_res, 3))
 
 ## ---- Fig 1: three-panel map --------------------------------------------------
 gmap <- geom |> inner_join(

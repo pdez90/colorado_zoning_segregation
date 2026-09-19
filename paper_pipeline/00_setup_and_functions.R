@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
   library(dplyr); library(tidyr); library(purrr); library(tibble)
   library(sf); library(data.table)
   # The figure scripts (65, 70, 74, 75, 76) call ggplot(), theme_void() and
-  # friends unqualified, so the original 00 must have attached ggplot2 here.
+  # friends unqualified, so ggplot2 is attached here.
   # Leaving it out made all five fail with "could not find function ggplot".
   library(ggplot2); library(scales)
   # optional; attach only if present so a missing one is not fatal
@@ -43,24 +43,22 @@ BETAS       <- list(quarter = 0.25, half = 0.5, one = 1.0)
 # beta = NA (or maxdist_km = 0) gives the ASPATIAL index: each block is its own
 # local environment, which reduces to the classical index of dissimilarity.
 #
-# Returns NA when the tract has no workers, only one group present (I_j = 0),
-# or only one populated block -- the honest answer rather than 0 or 1.
+# Returns NA when the tract has no workers in the two groups, only one group
+# present (I_j = 0), or fewer than two blocks containing either group.
 compute_spatial_D <- function(xy, counts, beta, maxdist_km = MAXDIST_KM) {
   N <- as.matrix(counts)
   storage.mode(N) <- "double"
   N[!is.finite(N)] <- 0
 
-  # A tract with a single populated block has no internal geography: the local
-  # environment IS the tract, so every formula below collapses to 0. That
-  # would read as "perfectly integrated" when it means "not measurable here".
-  # Verified in 37_seg_na_rule_test.R -- "one group absent OR single block"
-  # reproduces the published panel's missingness in 12 of 13 years, against 4
-  # of 13 without the single-block clause.
-  if (nrow(N) < 2) return(NA_real_)
-
   tau <- rowSums(N)
   T_j <- sum(tau)
   if (!is.finite(T_j) || T_j <= 0) return(NA_real_)
+
+  # A tract with fewer than two blocks holding members of these two groups has
+  # no internal geography for this measure: the local environment IS the tract
+  # and the formula collapses to 0, which would read as "perfectly integrated"
+  # when it means "not measurable here". Return NA instead.
+  if (sum(tau > 0) < 2) return(NA_real_)
 
   pi_m <- colSums(N) / T_j
   I_j  <- sum(pi_m * (1 - pi_m))

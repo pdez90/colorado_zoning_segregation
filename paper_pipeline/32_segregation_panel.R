@@ -41,12 +41,10 @@ seg_one_tract <- function(xy, N_list, powers, maxdist_km = MAXDIST_KM) {
   out <- matrix(NA_real_, nrow = length(N_list), ncol = length(powers),
                 dimnames = list(names(N_list), names(powers)))
 
-  # single populated block -> no internal geography -> NA, matching
-  # compute_spatial_D. This clause is the whole reason the fast path has to be
-  # checked against the definition on DEGENERATE tracts and not just random
-  # ones: single-block tracts are about 0.1% of the panel, so a 25-tract
-  # random sample will essentially never contain one, and the two paths can
-  # disagree on exactly the tracts that matter while the check reports 0.
+  # fewer than two block rows -> NA for every measure (the per-measure rule,
+  # fewer than two blocks holding either group, is applied inside the loop and
+  # mirrors compute_spatial_D). The verification below deliberately includes
+  # degenerate tracts, because a random sample almost never contains one.
   if (n < 2) return(out)
 
   spatial_needed <- any(!is.na(unlist(powers)))
@@ -67,6 +65,7 @@ seg_one_tract <- function(xy, N_list, powers, maxdist_km = MAXDIST_KM) {
     tau <- rowSums(N)
     T_j <- sum(tau)
     if (!is.finite(T_j) || T_j <= 0) next
+    if (sum(tau > 0) < 2) next                     # no internal geography -> NA
     pi_m <- colSums(N) / T_j
     I_j  <- sum(pi_m * (1 - pi_m))
     if (!is.finite(I_j) || I_j <= 0) next          # one group only -> NA
@@ -128,8 +127,11 @@ verify_against_definition <- function(blocks, n_tracts = 25, seed = 20260830) {
     summarise(nb = n(),
               g1 = sum(.data[[MEAS$whiteblack[1]]], na.rm = TRUE),
               g2 = sum(.data[[MEAS$whiteblack[2]]], na.rm = TRUE),
+              npos = sum((.data[[MEAS$whiteblack[1]]] +
+                          .data[[MEAS$whiteblack[2]]]) > 0, na.rm = TRUE),
               .groups = "drop")
-  degenerate <- prof |> filter(nb < 3 | g1 == 0 | g2 == 0) |> pull(tract_id)
+  degenerate <- prof |> filter(nb < 3 | npos < 3 | g1 == 0 | g2 == 0) |>
+    pull(tract_id)
   ids <- unique(c(degenerate,
                   sample(prof$tract_id, min(n_tracts, nrow(prof)))))
   message("  verifying on ", length(ids), " tracts (",

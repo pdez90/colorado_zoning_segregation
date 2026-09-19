@@ -1,6 +1,6 @@
 # ==============================================================================
 # 72_co_measure_robustness.R      [PAPER 4, step 12]
-# Reviewer-proofing the GENERATED SPATIAL MEASURES: is the headline
+# Sensitivity to the GENERATED SPATIAL MEASURES: is the headline
 # interaction an artifact of the kernel/cutoff choices?
 #
 #  PART A  Decay-parameter sensitivity (CHEAP -- no recomputation).
@@ -8,9 +8,8 @@
 #          beta = 0.25 ("quarter"), 0.5 ("half"), 1.0 ("one") and the
 #          aspatial index. Rebuild wexp under each, refit the naive and
 #          preferred (position-adjusted) specifications.
-#          Verified expectation: preferred estimate ~ +0.10 to +0.12 across
-#          all three spatial decays (~70-76% attenuation each time); only
-#          the aspatial index -- which discards the spatial structure the
+#          Expectation: the preferred estimate is similar across the three
+#          spatial decays; only the aspatial index -- which discards the spatial structure the
 #          construct is about -- is materially weaker.
 #
 #  PART B  Max-distance cutoff sensitivity (LOCAL RECOMPUTATION, ~minutes).

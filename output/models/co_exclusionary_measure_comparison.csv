@@ -23,6 +23,9 @@
 "ZB_mod_whiteblack_pct_reslow_of_res","reslow_of_res",TRUE,"z_d_whiteblack_rac_half:z_pct_reslow_of_res",0.333207567186429,0.0663305897014393,3.15901067444759e-05,646
 "ZB_nodens_pct_reslow_of_res","reslow_of_res",TRUE,"z_d_whiteblack_rac_half:z_pct_reslow_of_res",0.344590521066259,0.0746695672037254,9.29024002408112e-05,646
 "ZB_pooled3_pct_reslow_of_res","reslow_of_res",TRUE,"z_d_whiteblack_rac_half:z_pct_reslow_of_res",0.289066371165589,0.0546258105142133,7.18034559476428e-06,712
+"ZD_persistence_reslow_of_res","reslow_of_res",TRUE,"z_res_seg_2011:z_pct_reslow_of_res",0.162969833789018,0.0323047480263556,2.98623428291839e-05,644
+"ZD_persistence_reslow_of_res_rank","reslow_of_res",TRUE,"z_res_seg_2011:z_pct_reslow_of_res",-0.0228400429498007,0.027672343105931,0.416668236681595,644
+"ZD_persistence_reslow_of_res_wins99","reslow_of_res",TRUE,"z_res_seg_2011:z_pct_reslow_of_res",0.152763930986532,0.0422495625862334,0.00126263537903999,644
 "ZA_college_lesshs_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0834471385421436,0.0460536843826651,0.0815596643071987,646
 "ZA_hisp_nonhisp_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0622566197030956,0.0449936461665319,0.17822300097255,646
 "ZA_joint_college_lesshs","res_low",FALSE,"z_pct_res_low",-0.183896893550807,0.0816626201677024,0.0329991318436382,642
@@ -42,7 +45,7 @@
 "ZB_pooled3_pct_res_low","res_low",FALSE,"z_pct_res_low",0.0289812845387153,0.0506080002080955,0.570641389941679,713
 "ZD_persistence_reslow","res_low",FALSE,"z_pct_res_low",0.0168913599292534,0.0304137776363752,0.583378824783577,644
 "ZD_res_seg_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0013665308714481,0.0439453050645419,0.975430321914705,644
-"ZD_wexp_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0858453774496361,0.0384638172543072,0.0344579998100778,644
+"ZD_wexp_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0856805494427819,0.0384343653529466,0.0346496524410797,644
 "ZM_interact_eff_n_dest","res_low",FALSE,"z_pct_res_low",0.207141747784643,0.0432619060370249,5.87985984952973e-05,646
 "ZM_interact_jobs_housing_ratio","res_low",FALSE,"z_pct_res_low",-0.108844772892227,0.01880706990005,4.26716225269646e-06,646
 "ZM_interact_mean_dist_km","res_low",FALSE,"z_pct_res_low",0.136464139384146,0.0485530886096368,0.00927276074095799,646
@@ -64,3 +67,8 @@
 "ZB_mod_whiteblack_pct_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.118758705636389,0.0305989642082184,0.000636931460496206,646
 "ZB_nodens_pct_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.192823975239838,0.0346058892450093,7.47828076150952e-06,646
 "ZB_pooled3_pct_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.115857239171018,0.0297376717943145,0.000435857385501602,712
+"ZD_persistence_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.0617137066716606,0.0278242261925774,0.0354998489730548,644
+"ZD_persistence_reslow_of_res_rank","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.0703498043516667,0.0374742733028685,0.0717428982082943,644
+"ZD_persistence_reslow_of_res_wins99","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.0610028137340707,0.0298462405211547,0.0512162255446769,644
+"ZD_res_seg_pct_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",0.0216453195792149,0.0297721008973034,0.473701243349329,644
+"ZD_wexp_pct_reslow_of_res","reslow_of_res",FALSE,"z_pct_reslow_of_res",-0.0546900651312817,0.0331349311117179,0.110865455854146,644

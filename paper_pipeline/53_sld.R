@@ -65,7 +65,9 @@ variant_file <- file.path(DIR_CLEAN, "p3_tract_sld_variants.rds")
 PRIMARY      <- "block_pop|zero"
 NODATA       <- -9999          # anything at or below this is EPA's no-data code
 
-if (file.exists(out_file) && file.exists(variant_file)) {
+same_primary <- file.exists(out_file) &&
+  identical(attr(readRDS(out_file), "construction"), PRIMARY)
+if (same_primary && file.exists(variant_file)) {
   message("  p3_tract_sld.rds and its variants exist -- delete to rebuild.")
 } else {
 
@@ -172,9 +174,11 @@ block_bridge <- function(nodata, weight) {
               # unpopulated tract: fall back to land area
               .a = wmean(d5ar, aland), .b = wmean(d5br, aland),
               .k = wmean(walk, aland), .groups = "drop")
-  out |> mutate(sld_D5AR = coalesce(sld_D5AR, .a),
-                sld_D5BR = coalesce(sld_D5BR, .b),
-                sld_NatWalkInd = coalesce(sld_NatWalkInd, .k)) |>
+  # land-area fallback ONLY for tracts with no residents; a populated tract
+  # whose served block groups are all missing stays missing
+  out |> mutate(sld_D5AR = ifelse(sld_pop > 0, sld_D5AR, .a),
+                sld_D5BR = ifelse(sld_pop > 0, sld_D5BR, .b),
+                sld_NatWalkInd = ifelse(sld_pop > 0, sld_NatWalkInd, .k)) |>
     select(-.a, -.b, -.k)
 }
 
@@ -229,7 +233,9 @@ if (!all(cent$tract_id %in% primary$tract_id))
   stop(sum(!cent$tract_id %in% primary$tract_id),
        " 2020 tracts received no SLD value under the primary construction.")
 if (anyNA(primary$sld_D5AR)) stop("Primary construction has NA auto access.")
+if (anyNA(primary$sld_D5BR)) stop("Primary construction has NA transit access.")
 
+attr(primary, "construction") <- PRIMARY
 saveRDS(primary,  out_file)
 saveRDS(variants |> select(construction, bridge, nodata, tract_id,
                            sld_D5AR, sld_D5BR), variant_file)

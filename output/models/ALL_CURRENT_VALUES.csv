@@ -5,39 +5,39 @@
 "co_descriptives_2023.csv","1","n",219,219,219,219
 "co_descriptives_2023.csv","2","n",219,219,219,219
 "co_descriptives_2023.csv","3","n",218,218,218,218
-"co_descriptives_2023.csv","1","pct_res_low",10.322,10.32,10.322,10.322
-"co_descriptives_2023.csv","2","pct_res_low",55.571,55.57,55.571,55.571
-"co_descriptives_2023.csv","3","pct_res_low",85.9,85.9,85.9,85.9
-"co_descriptives_2023.csv","1","pct_adu_res",64.526,64.53,64.526,64.526
-"co_descriptives_2023.csv","2","pct_adu_res",64.254,64.25,64.254,64.254
-"co_descriptives_2023.csv","3","pct_adu_res",74.424,74.42,74.424,74.424
-"co_descriptives_2023.csv","1","zoning_entropy",0.474,0.47,0.474,0.474
-"co_descriptives_2023.csv","2","zoning_entropy",0.55,0.55,0.55,0.55
-"co_descriptives_2023.csv","3","zoning_entropy",0.243,0.24,0.243,0.243
-"co_descriptives_2023.csv","1","pct_job_zone",50.794,50.79,50.794,50.794
-"co_descriptives_2023.csv","2","pct_job_zone",19.522,19.52,19.522,19.522
-"co_descriptives_2023.csv","3","pct_job_zone",5.91,5.91,5.91,5.91
-"co_descriptives_2023.csv","1","d_whiteblack_rac_half",0.025,0.03,0.025,0.025
-"co_descriptives_2023.csv","2","d_whiteblack_rac_half",0.027,0.03,0.027,0.027
-"co_descriptives_2023.csv","3","d_whiteblack_rac_half",0.046,0.05,0.046,0.046
-"co_descriptives_2023.csv","1","wexp_whiteblack_wac_half",0.022,0.02,0.022,0.022
-"co_descriptives_2023.csv","2","wexp_whiteblack_wac_half",0.023,0.02,0.023,0.023
-"co_descriptives_2023.csv","3","wexp_whiteblack_wac_half",0.026,0.03,0.026,0.026
-"co_descriptives_2023.csv","1","mean_dist_km",14.046,14.05,14.046,14.046
-"co_descriptives_2023.csv","2","mean_dist_km",15.226,15.23,15.226,15.226
-"co_descriptives_2023.csv","3","mean_dist_km",18.532,18.53,18.532,18.532
-"co_descriptives_2023.csv","1","eff_n_dest",86.876,86.88,86.876,86.876
-"co_descriptives_2023.csv","2","eff_n_dest",100.485,100.48,100.485,100.485
-"co_descriptives_2023.csv","3","eff_n_dest",93.771,93.77,93.771,93.771
-"co_descriptives_2023.csv","1","jobs_housing_ratio",4.434,4.43,4.434,4.434
-"co_descriptives_2023.csv","2","jobs_housing_ratio",1.101,1.1,1.101,1.101
-"co_descriptives_2023.csv","3","jobs_housing_ratio",0.466,0.47,0.466,0.466
-"co_descriptives_2023.csv","1","pct_black_rac",8.482,8.48,8.482,8.482
-"co_descriptives_2023.csv","2","pct_black_rac",5.97,5.97,5.97,5.97
-"co_descriptives_2023.csv","3","pct_black_rac",3.967,3.97,3.967,3.967
-"co_descriptives_2023.csv","1","income_percapita_k",56.286,56.29,56.286,56.286
-"co_descriptives_2023.csv","2","income_percapita_k",57.023,57.02,57.023,57.023
-"co_descriptives_2023.csv","3","income_percapita_k",66.362,66.36,66.362,66.362
+"co_descriptives_2023.csv","1","pct_res_low",12.504,12.5,12.504,12.504
+"co_descriptives_2023.csv","2","pct_res_low",58.989,58.99,58.989,58.989
+"co_descriptives_2023.csv","3","pct_res_low",80.275,80.28,80.275,80.275
+"co_descriptives_2023.csv","1","pct_adu_res",65.424,65.42,65.424,65.424
+"co_descriptives_2023.csv","2","pct_adu_res",65.924,65.92,65.924,65.924
+"co_descriptives_2023.csv","3","pct_adu_res",71.852,71.85,71.852,71.852
+"co_descriptives_2023.csv","1","zoning_entropy",0.482,0.48,0.482,0.482
+"co_descriptives_2023.csv","2","zoning_entropy",0.527,0.53,0.527,0.527
+"co_descriptives_2023.csv","3","zoning_entropy",0.257,0.26,0.257,0.257
+"co_descriptives_2023.csv","1","pct_job_zone",49.845,49.84,49.845,49.845
+"co_descriptives_2023.csv","2","pct_job_zone",18.655,18.66,18.655,18.655
+"co_descriptives_2023.csv","3","pct_job_zone",7.734,7.73,7.734,7.734
+"co_descriptives_2023.csv","1","d_whiteblack_rac_half",0.02,0.02,0.02,0.02
+"co_descriptives_2023.csv","2","d_whiteblack_rac_half",0.028,0.03,0.028,0.028
+"co_descriptives_2023.csv","3","d_whiteblack_rac_half",0.05,0.05,0.05,0.05
+"co_descriptives_2023.csv","1","wexp_whiteblack_wac_half",0.021,0.02,0.021,0.021
+"co_descriptives_2023.csv","2","wexp_whiteblack_wac_half",0.022,0.02,0.022,0.022
+"co_descriptives_2023.csv","3","wexp_whiteblack_wac_half",0.027,0.03,0.027,0.027
+"co_descriptives_2023.csv","1","mean_dist_km",13.511,13.51,13.511,13.511
+"co_descriptives_2023.csv","2","mean_dist_km",15.071,15.07,15.071,15.071
+"co_descriptives_2023.csv","3","mean_dist_km",19.226,19.23,19.226,19.226
+"co_descriptives_2023.csv","1","eff_n_dest",90.371,90.37,90.371,90.371
+"co_descriptives_2023.csv","2","eff_n_dest",101.719,101.72,101.719,101.719
+"co_descriptives_2023.csv","3","eff_n_dest",89.02,89.02,89.02,89.02
+"co_descriptives_2023.csv","1","jobs_housing_ratio",3.041,3.04,3.041,3.041
+"co_descriptives_2023.csv","2","jobs_housing_ratio",1.142,1.14,1.142,1.142
+"co_descriptives_2023.csv","3","jobs_housing_ratio",1.806,1.81,1.806,1.806
+"co_descriptives_2023.csv","1","pct_black_rac",8.641,8.64,8.641,8.641
+"co_descriptives_2023.csv","2","pct_black_rac",6.099,6.1,6.099,6.099
+"co_descriptives_2023.csv","3","pct_black_rac",3.677,3.68,3.677,3.677
+"co_descriptives_2023.csv","1","income_percapita_k",56.109,56.11,56.109,56.109
+"co_descriptives_2023.csv","2","income_percapita_k",56.631,56.63,56.631,56.631
+"co_descriptives_2023.csv","3","income_percapita_k",67.091,67.09,67.091,67.091
 "co_exclusionary_measure_comparison.csv","ZB_aspatial_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_aspatial:z_pct_res_low","estimate",0.0956069858393276,0.1,0.096,0.0956
 "co_exclusionary_measure_comparison.csv","ZB_cov50_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","estimate",0.185823529407223,0.19,0.186,0.1858
 "co_exclusionary_measure_comparison.csv","ZB_horse_race_reslow_vs_transit | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","estimate",0.100452287748036,0.1,0.1,0.1005
@@ -62,6 +62,9 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","estimate",0.333207567186429,0.33,0.333,0.3332
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","estimate",0.344590521066259,0.34,0.345,0.3446
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","estimate",0.289066371165589,0.29,0.289,0.2891
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","estimate",0.162969833789018,0.16,0.163,0.163
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","estimate",-0.0228400429498007,-0.02,-0.023,-0.0228
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","estimate",0.152763930986532,0.15,0.153,0.1528
 "co_exclusionary_measure_comparison.csv","ZA_college_lesshs_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",-0.0834471385421436,-0.08,-0.083,-0.0834
 "co_exclusionary_measure_comparison.csv","ZA_hisp_nonhisp_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",-0.0622566197030956,-0.06,-0.062,-0.0623
 "co_exclusionary_measure_comparison.csv","ZA_joint_college_lesshs | res_low | FALSE | z_pct_res_low","estimate",-0.183896893550807,-0.18,-0.184,-0.1839
@@ -81,7 +84,7 @@
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",0.0289812845387153,0.03,0.029,0.029
 "co_exclusionary_measure_comparison.csv","ZD_persistence_reslow | res_low | FALSE | z_pct_res_low","estimate",0.0168913599292534,0.02,0.017,0.0169
 "co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",-0.0013665308714481,0,-0.001,-0.0014
-"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",-0.0858453774496361,-0.09,-0.086,-0.0858
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","estimate",-0.0856805494427819,-0.09,-0.086,-0.0857
 "co_exclusionary_measure_comparison.csv","ZM_interact_eff_n_dest | res_low | FALSE | z_pct_res_low","estimate",0.207141747784643,0.21,0.207,0.2071
 "co_exclusionary_measure_comparison.csv","ZM_interact_jobs_housing_ratio | res_low | FALSE | z_pct_res_low","estimate",-0.108844772892227,-0.11,-0.109,-0.1088
 "co_exclusionary_measure_comparison.csv","ZM_interact_mean_dist_km | res_low | FALSE | z_pct_res_low","estimate",0.136464139384146,0.14,0.136,0.1365
@@ -103,6 +106,11 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.118758705636389,0.12,0.119,0.1188
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.192823975239838,0.19,0.193,0.1928
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.115857239171018,0.12,0.116,0.1159
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.0617137066716606,0.06,0.062,0.0617
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.0703498043516667,0.07,0.07,0.0703
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.0610028137340707,0.06,0.061,0.061
+"co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",0.0216453195792149,0.02,0.022,0.0216
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","estimate",-0.0546900651312817,-0.05,-0.055,-0.0547
 "co_exclusionary_measure_comparison.csv","ZB_aspatial_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_aspatial:z_pct_res_low","std.error",0.0509524746069664,0.05,0.051,0.051
 "co_exclusionary_measure_comparison.csv","ZB_cov50_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","std.error",0.118446838787646,0.12,0.118,0.1184
 "co_exclusionary_measure_comparison.csv","ZB_horse_race_reslow_vs_transit | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","std.error",0.0445779871614564,0.04,0.045,0.0446
@@ -127,6 +135,9 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","std.error",0.0663305897014393,0.07,0.066,0.0663
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","std.error",0.0746695672037254,0.07,0.075,0.0747
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","std.error",0.0546258105142133,0.05,0.055,0.0546
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","std.error",0.0323047480263556,0.03,0.032,0.0323
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","std.error",0.027672343105931,0.03,0.028,0.0277
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","std.error",0.0422495625862334,0.04,0.042,0.0422
 "co_exclusionary_measure_comparison.csv","ZA_college_lesshs_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0460536843826651,0.05,0.046,0.0461
 "co_exclusionary_measure_comparison.csv","ZA_hisp_nonhisp_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0449936461665319,0.04,0.045,0.045
 "co_exclusionary_measure_comparison.csv","ZA_joint_college_lesshs | res_low | FALSE | z_pct_res_low","std.error",0.0816626201677024,0.08,0.082,0.0817
@@ -146,7 +157,7 @@
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0506080002080955,0.05,0.051,0.0506
 "co_exclusionary_measure_comparison.csv","ZD_persistence_reslow | res_low | FALSE | z_pct_res_low","std.error",0.0304137776363752,0.03,0.03,0.0304
 "co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0439453050645419,0.04,0.044,0.0439
-"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0384638172543072,0.04,0.038,0.0385
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","std.error",0.0384343653529466,0.04,0.038,0.0384
 "co_exclusionary_measure_comparison.csv","ZM_interact_eff_n_dest | res_low | FALSE | z_pct_res_low","std.error",0.0432619060370249,0.04,0.043,0.0433
 "co_exclusionary_measure_comparison.csv","ZM_interact_jobs_housing_ratio | res_low | FALSE | z_pct_res_low","std.error",0.01880706990005,0.02,0.019,0.0188
 "co_exclusionary_measure_comparison.csv","ZM_interact_mean_dist_km | res_low | FALSE | z_pct_res_low","std.error",0.0485530886096368,0.05,0.049,0.0486
@@ -168,6 +179,11 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0305989642082184,0.03,0.031,0.0306
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0346058892450093,0.03,0.035,0.0346
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0297376717943145,0.03,0.03,0.0297
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0278242261925774,0.03,0.028,0.0278
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0374742733028685,0.04,0.037,0.0375
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0298462405211547,0.03,0.03,0.0298
+"co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0297721008973034,0.03,0.03,0.0298
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","std.error",0.0331349311117179,0.03,0.033,0.0331
 "co_exclusionary_measure_comparison.csv","ZB_aspatial_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_aspatial:z_pct_res_low","p.value",0.0718690593970938,0.07,0.072,0.0719
 "co_exclusionary_measure_comparison.csv","ZB_cov50_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","p.value",0.127919661687527,0.13,0.128,0.1279
 "co_exclusionary_measure_comparison.csv","ZB_horse_race_reslow_vs_transit | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","p.value",0.034069660024128,0.03,0.034,0.0341
@@ -192,6 +208,9 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","p.value",3.15901067444759e-05,0,0,0
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","p.value",9.29024002408112e-05,0,0,1e-04
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","p.value",7.18034559476428e-06,0,0,0
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","p.value",2.98623428291839e-05,0,0,0
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","p.value",0.416668236681595,0.42,0.417,0.4167
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","p.value",0.00126263537903999,0,0.001,0.0013
 "co_exclusionary_measure_comparison.csv","ZA_college_lesshs_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.0815596643071987,0.08,0.082,0.0816
 "co_exclusionary_measure_comparison.csv","ZA_hisp_nonhisp_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.17822300097255,0.18,0.178,0.1782
 "co_exclusionary_measure_comparison.csv","ZA_joint_college_lesshs | res_low | FALSE | z_pct_res_low","p.value",0.0329991318436382,0.03,0.033,0.033
@@ -211,7 +230,7 @@
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.570641389941679,0.57,0.571,0.5706
 "co_exclusionary_measure_comparison.csv","ZD_persistence_reslow | res_low | FALSE | z_pct_res_low","p.value",0.583378824783577,0.58,0.583,0.5834
 "co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.975430321914705,0.98,0.975,0.9754
-"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.0344579998100778,0.03,0.034,0.0345
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_res_low | res_low | FALSE | z_pct_res_low","p.value",0.0346496524410797,0.03,0.035,0.0346
 "co_exclusionary_measure_comparison.csv","ZM_interact_eff_n_dest | res_low | FALSE | z_pct_res_low","p.value",5.87985984952973e-05,0,0,1e-04
 "co_exclusionary_measure_comparison.csv","ZM_interact_jobs_housing_ratio | res_low | FALSE | z_pct_res_low","p.value",4.26716225269646e-06,0,0,0
 "co_exclusionary_measure_comparison.csv","ZM_interact_mean_dist_km | res_low | FALSE | z_pct_res_low","p.value",0.00927276074095799,0.01,0.009,0.0093
@@ -233,6 +252,11 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.0006369314604962,0,0.001,6e-04
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",7.47828076150952e-06,0,0,0
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.0004358573855016,0,0,4e-04
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.0354998489730548,0.04,0.035,0.0355
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.0717428982082943,0.07,0.072,0.0717
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.0512162255446769,0.05,0.051,0.0512
+"co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.473701243349329,0.47,0.474,0.4737
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","p.value",0.110865455854146,0.11,0.111,0.1109
 "co_exclusionary_measure_comparison.csv","ZB_aspatial_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_aspatial:z_pct_res_low","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZB_cov50_pct_res_low | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","n_obs",677,677,677,677
 "co_exclusionary_measure_comparison.csv","ZB_horse_race_reslow_vs_transit | res_low | TRUE | z_d_whiteblack_rac_half:z_pct_res_low","n_obs",488,488,488,488
@@ -257,6 +281,9 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | TRUE | z_d_whiteblack_rac_half:z_pct_reslow_of_res","n_obs",712,712,712,712
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | TRUE | z_res_seg_2011:z_pct_reslow_of_res","n_obs",644,644,644,644
 "co_exclusionary_measure_comparison.csv","ZA_college_lesshs_pct_res_low | res_low | FALSE | z_pct_res_low","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZA_hisp_nonhisp_pct_res_low | res_low | FALSE | z_pct_res_low","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZA_joint_college_lesshs | res_low | FALSE | z_pct_res_low","n_obs",642,642,642,642
@@ -298,6 +325,11 @@
 "co_exclusionary_measure_comparison.csv","ZB_mod_whiteblack_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZB_nodens_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",646,646,646,646
 "co_exclusionary_measure_comparison.csv","ZB_pooled3_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",712,712,712,712
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_rank | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_persistence_reslow_of_res_wins99 | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_res_seg_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",644,644,644,644
+"co_exclusionary_measure_comparison.csv","ZD_wexp_pct_reslow_of_res | reslow_of_res | FALSE | z_pct_reslow_of_res","n_obs",644,644,644,644
 "co_group_model_coefficients.csv","z_pct_reslow_of_res | GA_dist_earn_pct_reslow_of_res","estimate",-0.108793221326579,-0.11,-0.109,-0.1088
 "co_group_model_coefficients.csv","z_pct_black_rac | GA_dist_earn_pct_reslow_of_res","estimate",0.0952980703516137,0.1,0.095,0.0953
 "co_group_model_coefficients.csv","z_pct_lowincome_rac | GA_dist_earn_pct_reslow_of_res","estimate",-0.184232308741452,-0.18,-0.184,-0.1842
@@ -3447,9 +3479,9 @@
 "co_group_table_g1.csv","age_30_54 | 1","n_tracts",218,218,218,218
 "co_group_table_g1.csv","age_30_54 | 2","n_tracts",219,219,219,219
 "co_group_table_g1.csv","age_30_54 | 3","n_tracts",219,219,219,219
-"co_group_table_g1.csv","age_55p | 1","n_tracts",216,216,216,216
+"co_group_table_g1.csv","age_55p | 1","n_tracts",218,218,218,218
 "co_group_table_g1.csv","age_55p | 2","n_tracts",219,219,219,219
-"co_group_table_g1.csv","age_55p | 3","n_tracts",219,219,219,219
+"co_group_table_g1.csv","age_55p | 3","n_tracts",217,217,217,217
 "co_group_table_g1.csv","age_u30 | 1","n_tracts",218,218,218,218
 "co_group_table_g1.csv","age_u30 | 2","n_tracts",219,219,219,219
 "co_group_table_g1.csv","age_u30 | 3","n_tracts",219,219,219,219
@@ -3459,9 +3491,9 @@
 "co_group_table_g1.csv","earn_high | 1","n_tracts",218,218,218,218
 "co_group_table_g1.csv","earn_high | 2","n_tracts",219,219,219,219
 "co_group_table_g1.csv","earn_high | 3","n_tracts",219,219,219,219
-"co_group_table_g1.csv","earn_low | 1","n_tracts",216,216,216,216
+"co_group_table_g1.csv","earn_low | 1","n_tracts",217,217,217,217
 "co_group_table_g1.csv","earn_low | 2","n_tracts",219,219,219,219
-"co_group_table_g1.csv","earn_low | 3","n_tracts",219,219,219,219
+"co_group_table_g1.csv","earn_low | 3","n_tracts",218,218,218,218
 "co_group_table_g1.csv","earn_mid | 1","n_tracts",218,218,218,218
 "co_group_table_g1.csv","earn_mid | 2","n_tracts",219,219,219,219
 "co_group_table_g1.csv","earn_mid | 3","n_tracts",219,219,219,219
@@ -3486,36 +3518,36 @@
 "co_group_table_g1.csv","ind_goods | all","workers",137655,137655,137655,137655
 "co_group_table_g1.csv","ind_services | all","workers",808589,808589,808589,808589
 "co_group_table_g1.csv","ind_tradetrans | all","workers",222692,222692,222692,222692
-"co_group_table_g1.csv","age_30_54 | 1","workers",189793,189793,189793,189793
-"co_group_table_g1.csv","age_30_54 | 2","workers",232464,232464,232464,232464
-"co_group_table_g1.csv","age_30_54 | 3","workers",226753,226753,226753,226753
-"co_group_table_g1.csv","age_55p | 1","workers",61721,61721,61721,61721
-"co_group_table_g1.csv","age_55p | 2","workers",90949,90949,90949,90949
-"co_group_table_g1.csv","age_55p | 3","workers",96052,96052,96052,96052
-"co_group_table_g1.csv","age_u30 | 1","workers",96531,96531,96531,96531
-"co_group_table_g1.csv","age_u30 | 2","workers",95161,95161,95161,95161
-"co_group_table_g1.csv","age_u30 | 3","workers",79501,79501,79501,79501
-"co_group_table_g1.csv","all | 1","workers",348077,348077,348077,348077
-"co_group_table_g1.csv","all | 2","workers",418574,418574,418574,418574
-"co_group_table_g1.csv","all | 3","workers",402306,402306,402306,402306
-"co_group_table_g1.csv","earn_high | 1","workers",244877,244877,244877,244877
-"co_group_table_g1.csv","earn_high | 2","workers",294468,294468,294468,294468
-"co_group_table_g1.csv","earn_high | 3","workers",290683,290683,290683,290683
-"co_group_table_g1.csv","earn_low | 1","workers",34450,34450,34450,34450
-"co_group_table_g1.csv","earn_low | 2","workers",43652,43652,43652,43652
-"co_group_table_g1.csv","earn_low | 3","workers",42065,42065,42065,42065
-"co_group_table_g1.csv","earn_mid | 1","workers",68725,68725,68725,68725
-"co_group_table_g1.csv","earn_mid | 2","workers",80454,80454,80454,80454
-"co_group_table_g1.csv","earn_mid | 3","workers",69558,69558,69558,69558
-"co_group_table_g1.csv","ind_goods | 1","workers",38044,38044,38044,38044
-"co_group_table_g1.csv","ind_goods | 2","workers",50153,50153,50153,50153
-"co_group_table_g1.csv","ind_goods | 3","workers",49458,49458,49458,49458
-"co_group_table_g1.csv","ind_services | 1","workers",240949,240949,240949,240949
-"co_group_table_g1.csv","ind_services | 2","workers",287792,287792,287792,287792
-"co_group_table_g1.csv","ind_services | 3","workers",279848,279848,279848,279848
-"co_group_table_g1.csv","ind_tradetrans | 1","workers",69063,69063,69063,69063
-"co_group_table_g1.csv","ind_tradetrans | 2","workers",80629,80629,80629,80629
-"co_group_table_g1.csv","ind_tradetrans | 3","workers",73000,73000,73000,73000
+"co_group_table_g1.csv","age_30_54 | 1","workers",197158,197158,197158,197158
+"co_group_table_g1.csv","age_30_54 | 2","workers",230502,230502,230502,230502
+"co_group_table_g1.csv","age_30_54 | 3","workers",221350,221350,221350,221350
+"co_group_table_g1.csv","age_55p | 1","workers",64386,64386,64386,64386
+"co_group_table_g1.csv","age_55p | 2","workers",89784,89784,89784,89784
+"co_group_table_g1.csv","age_55p | 3","workers",94552,94552,94552,94552
+"co_group_table_g1.csv","age_u30 | 1","workers",100641,100641,100641,100641
+"co_group_table_g1.csv","age_u30 | 2","workers",93748,93748,93748,93748
+"co_group_table_g1.csv","age_u30 | 3","workers",76804,76804,76804,76804
+"co_group_table_g1.csv","all | 1","workers",362201,362201,362201,362201
+"co_group_table_g1.csv","all | 2","workers",414034,414034,414034,414034
+"co_group_table_g1.csv","all | 3","workers",392722,392722,392722,392722
+"co_group_table_g1.csv","earn_high | 1","workers",253798,253798,253798,253798
+"co_group_table_g1.csv","earn_high | 2","workers",291806,291806,291806,291806
+"co_group_table_g1.csv","earn_high | 3","workers",284424,284424,284424,284424
+"co_group_table_g1.csv","earn_low | 1","workers",36090,36090,36090,36090
+"co_group_table_g1.csv","earn_low | 2","workers",42730,42730,42730,42730
+"co_group_table_g1.csv","earn_low | 3","workers",41347,41347,41347,41347
+"co_group_table_g1.csv","earn_mid | 1","workers",72293,72293,72293,72293
+"co_group_table_g1.csv","earn_mid | 2","workers",79498,79498,79498,79498
+"co_group_table_g1.csv","earn_mid | 3","workers",66946,66946,66946,66946
+"co_group_table_g1.csv","ind_goods | 1","workers",39611,39611,39611,39611
+"co_group_table_g1.csv","ind_goods | 2","workers",49106,49106,49106,49106
+"co_group_table_g1.csv","ind_goods | 3","workers",48938,48938,48938,48938
+"co_group_table_g1.csv","ind_services | 1","workers",250997,250997,250997,250997
+"co_group_table_g1.csv","ind_services | 2","workers",285614,285614,285614,285614
+"co_group_table_g1.csv","ind_services | 3","workers",271978,271978,271978,271978
+"co_group_table_g1.csv","ind_tradetrans | 1","workers",71572,71572,71572,71572
+"co_group_table_g1.csv","ind_tradetrans | 2","workers",79314,79314,79314,79314
+"co_group_table_g1.csv","ind_tradetrans | 3","workers",71806,71806,71806,71806
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","workers",136023,136023,136023,136023
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","workers",340680,340680,340680,340680
 "co_group_table_g1.csv","age_30_54 | all","mean_dist_km",16.445,16.44,16.445,16.445
@@ -3528,36 +3560,36 @@
 "co_group_table_g1.csv","ind_goods | all","mean_dist_km",17.598,17.6,17.598,17.598
 "co_group_table_g1.csv","ind_services | all","mean_dist_km",15.544,15.54,15.544,15.544
 "co_group_table_g1.csv","ind_tradetrans | all","mean_dist_km",17.977,17.98,17.977,17.977
-"co_group_table_g1.csv","age_30_54 | 1","mean_dist_km",13.989,13.99,13.989,13.989
-"co_group_table_g1.csv","age_30_54 | 2","mean_dist_km",15.818,15.82,15.818,15.818
-"co_group_table_g1.csv","age_30_54 | 3","mean_dist_km",19.143,19.14,19.143,19.143
-"co_group_table_g1.csv","age_55p | 1","mean_dist_km",14.212,14.21,14.212,14.212
-"co_group_table_g1.csv","age_55p | 2","mean_dist_km",15.48,15.48,15.48,15.48
-"co_group_table_g1.csv","age_55p | 3","mean_dist_km",18.867,18.87,18.867,18.867
-"co_group_table_g1.csv","age_u30 | 1","mean_dist_km",13.436,13.44,13.436,13.436
-"co_group_table_g1.csv","age_u30 | 2","mean_dist_km",15.423,15.42,15.423,15.423
-"co_group_table_g1.csv","age_u30 | 3","mean_dist_km",18.358,18.36,18.358,18.358
-"co_group_table_g1.csv","all | 1","mean_dist_km",13.875,13.88,13.875,13.875
-"co_group_table_g1.csv","all | 2","mean_dist_km",15.655,15.65,15.655,15.655
-"co_group_table_g1.csv","all | 3","mean_dist_km",18.922,18.92,18.922,18.922
-"co_group_table_g1.csv","earn_high | 1","mean_dist_km",13.999,14,13.999,13.999
-"co_group_table_g1.csv","earn_high | 2","mean_dist_km",16.097,16.1,16.097,16.097
-"co_group_table_g1.csv","earn_high | 3","mean_dist_km",19.551,19.55,19.551,19.551
-"co_group_table_g1.csv","earn_low | 1","mean_dist_km",13.755,13.76,13.755,13.755
-"co_group_table_g1.csv","earn_low | 2","mean_dist_km",14.571,14.57,14.571,14.571
-"co_group_table_g1.csv","earn_low | 3","mean_dist_km",16.994,16.99,16.994,16.994
-"co_group_table_g1.csv","earn_mid | 1","mean_dist_km",13.495,13.49,13.495,13.495
-"co_group_table_g1.csv","earn_mid | 2","mean_dist_km",14.624,14.62,14.624,14.624
-"co_group_table_g1.csv","earn_mid | 3","mean_dist_km",17.457,17.46,17.457,17.457
-"co_group_table_g1.csv","ind_goods | 1","mean_dist_km",15.742,15.74,15.742,15.742
-"co_group_table_g1.csv","ind_goods | 2","mean_dist_km",16.58,16.58,16.58,16.58
-"co_group_table_g1.csv","ind_goods | 3","mean_dist_km",20.057,20.06,20.057,20.057
-"co_group_table_g1.csv","ind_services | 1","mean_dist_km",13.149,13.15,13.149,13.149
-"co_group_table_g1.csv","ind_services | 2","mean_dist_km",15.014,15.01,15.014,15.014
-"co_group_table_g1.csv","ind_services | 3","mean_dist_km",18.151,18.15,18.151,18.151
-"co_group_table_g1.csv","ind_tradetrans | 1","mean_dist_km",15.381,15.38,15.381,15.381
-"co_group_table_g1.csv","ind_tradetrans | 2","mean_dist_km",17.367,17.37,17.367,17.367
-"co_group_table_g1.csv","ind_tradetrans | 3","mean_dist_km",21.107,21.11,21.107,21.107
+"co_group_table_g1.csv","age_30_54 | 1","mean_dist_km",13.736,13.74,13.736,13.736
+"co_group_table_g1.csv","age_30_54 | 2","mean_dist_km",15.7,15.7,15.7,15.7
+"co_group_table_g1.csv","age_30_54 | 3","mean_dist_km",19.633,19.63,19.633,19.633
+"co_group_table_g1.csv","age_55p | 1","mean_dist_km",13.944,13.94,13.944,13.944
+"co_group_table_g1.csv","age_55p | 2","mean_dist_km",15.313,15.31,15.313,15.313
+"co_group_table_g1.csv","age_55p | 3","mean_dist_km",19.298,19.3,19.298,19.298
+"co_group_table_g1.csv","age_u30 | 1","mean_dist_km",13.246,13.25,13.246,13.246
+"co_group_table_g1.csv","age_u30 | 2","mean_dist_km",15.465,15.46,15.465,15.465
+"co_group_table_g1.csv","age_u30 | 3","mean_dist_km",18.765,18.76,18.765,18.765
+"co_group_table_g1.csv","all | 1","mean_dist_km",13.637,13.64,13.637,13.637
+"co_group_table_g1.csv","all | 2","mean_dist_km",15.563,15.56,15.563,15.563
+"co_group_table_g1.csv","all | 3","mean_dist_km",19.382,19.38,19.382,19.382
+"co_group_table_g1.csv","earn_high | 1","mean_dist_km",13.774,13.77,13.774,13.774
+"co_group_table_g1.csv","earn_high | 2","mean_dist_km",15.959,15.96,15.959,15.959
+"co_group_table_g1.csv","earn_high | 3","mean_dist_km",20.036,20.04,20.036,20.036
+"co_group_table_g1.csv","earn_low | 1","mean_dist_km",13.46,13.46,13.46,13.46
+"co_group_table_g1.csv","earn_low | 2","mean_dist_km",14.579,14.58,14.579,14.579
+"co_group_table_g1.csv","earn_low | 3","mean_dist_km",17.317,17.32,17.317,17.317
+"co_group_table_g1.csv","earn_mid | 1","mean_dist_km",13.242,13.24,13.242,13.242
+"co_group_table_g1.csv","earn_mid | 2","mean_dist_km",14.638,14.64,14.638,14.638
+"co_group_table_g1.csv","earn_mid | 3","mean_dist_km",17.884,17.88,17.884,17.884
+"co_group_table_g1.csv","ind_goods | 1","mean_dist_km",15.388,15.39,15.388,15.388
+"co_group_table_g1.csv","ind_goods | 2","mean_dist_km",16.708,16.71,16.708,16.708
+"co_group_table_g1.csv","ind_goods | 3","mean_dist_km",20.28,20.28,20.28,20.28
+"co_group_table_g1.csv","ind_services | 1","mean_dist_km",12.92,12.92,12.92,12.92
+"co_group_table_g1.csv","ind_services | 2","mean_dist_km",14.863,14.86,14.863,14.863
+"co_group_table_g1.csv","ind_services | 3","mean_dist_km",18.681,18.68,18.681,18.681
+"co_group_table_g1.csv","ind_tradetrans | 1","mean_dist_km",15.181,15.18,15.181,15.181
+"co_group_table_g1.csv","ind_tradetrans | 2","mean_dist_km",17.375,17.38,17.375,17.375
+"co_group_table_g1.csv","ind_tradetrans | 3","mean_dist_km",21.429,21.43,21.429,21.429
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","mean_dist_km",16.113,16.11,16.113,16.113
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","mean_dist_km",16.635,16.64,16.635,16.635
 "co_group_table_g1.csv","age_30_54 | all","pct_gt24km",21.413,21.41,21.413,21.413
@@ -3570,36 +3602,36 @@
 "co_group_table_g1.csv","ind_goods | all","pct_gt24km",24.495,24.5,24.495,24.495
 "co_group_table_g1.csv","ind_services | all","pct_gt24km",19.133,19.13,19.133,19.133
 "co_group_table_g1.csv","ind_tradetrans | all","pct_gt24km",25.74,25.74,25.74,25.74
-"co_group_table_g1.csv","age_30_54 | 1","pct_gt24km",15.279,15.28,15.279,15.279
-"co_group_table_g1.csv","age_30_54 | 2","pct_gt24km",19.277,19.28,19.277,19.277
-"co_group_table_g1.csv","age_30_54 | 3","pct_gt24km",28.737,28.74,28.737,28.737
-"co_group_table_g1.csv","age_55p | 1","pct_gt24km",15.745,15.74,15.745,15.745
-"co_group_table_g1.csv","age_55p | 2","pct_gt24km",18.861,18.86,18.861,18.861
-"co_group_table_g1.csv","age_55p | 3","pct_gt24km",28.195,28.2,28.195,28.195
-"co_group_table_g1.csv","age_u30 | 1","pct_gt24km",14.274,14.27,14.274,14.274
-"co_group_table_g1.csv","age_u30 | 2","pct_gt24km",18.623,18.62,18.623,18.623
-"co_group_table_g1.csv","age_u30 | 3","pct_gt24km",26.808,26.81,26.808,26.808
-"co_group_table_g1.csv","all | 1","pct_gt24km",15.084,15.08,15.084,15.084
-"co_group_table_g1.csv","all | 2","pct_gt24km",19.038,19.04,19.038,19.038
-"co_group_table_g1.csv","all | 3","pct_gt24km",28.227,28.23,28.227,28.227
-"co_group_table_g1.csv","earn_high | 1","pct_gt24km",15.288,15.29,15.288,15.288
-"co_group_table_g1.csv","earn_high | 2","pct_gt24km",19.809,19.81,19.809,19.809
-"co_group_table_g1.csv","earn_high | 3","pct_gt24km",29.72,29.72,29.72,29.72
-"co_group_table_g1.csv","earn_low | 1","pct_gt24km",15.1,15.1,15.1,15.1
-"co_group_table_g1.csv","earn_low | 2","pct_gt24km",17.64,17.64,17.64,17.64
-"co_group_table_g1.csv","earn_low | 3","pct_gt24km",24.17,24.17,24.17,24.17
-"co_group_table_g1.csv","earn_mid | 1","pct_gt24km",14.35,14.35,14.35,14.35
-"co_group_table_g1.csv","earn_mid | 2","pct_gt24km",16.976,16.98,16.976,16.976
-"co_group_table_g1.csv","earn_mid | 3","pct_gt24km",24.44,24.44,24.44,24.44
-"co_group_table_g1.csv","ind_goods | 1","pct_gt24km",19.441,19.44,19.441,19.441
-"co_group_table_g1.csv","ind_goods | 2","pct_gt24km",21.915,21.91,21.915,21.915
-"co_group_table_g1.csv","ind_goods | 3","pct_gt24km",31,31,31,31
-"co_group_table_g1.csv","ind_services | 1","pct_gt24km",13.238,13.24,13.238,13.238
-"co_group_table_g1.csv","ind_services | 2","pct_gt24km",17.148,17.15,17.148,17.148
-"co_group_table_g1.csv","ind_services | 3","pct_gt24km",26.25,26.25,26.25,26.25
-"co_group_table_g1.csv","ind_tradetrans | 1","pct_gt24km",19.126,19.13,19.126,19.126
-"co_group_table_g1.csv","ind_tradetrans | 2","pct_gt24km",23.994,23.99,23.994,23.994
-"co_group_table_g1.csv","ind_tradetrans | 3","pct_gt24km",33.925,33.92,33.925,33.925
+"co_group_table_g1.csv","age_30_54 | 1","pct_gt24km",14.342,14.34,14.342,14.342
+"co_group_table_g1.csv","age_30_54 | 2","pct_gt24km",18.782,18.78,18.782,18.782
+"co_group_table_g1.csv","age_30_54 | 3","pct_gt24km",30.452,30.45,30.452,30.452
+"co_group_table_g1.csv","age_55p | 1","pct_gt24km",14.769,14.77,14.769,14.769
+"co_group_table_g1.csv","age_55p | 2","pct_gt24km",18.278,18.28,18.278,18.278
+"co_group_table_g1.csv","age_55p | 3","pct_gt24km",29.649,29.65,29.649,29.649
+"co_group_table_g1.csv","age_u30 | 1","pct_gt24km",13.544,13.54,13.544,13.544
+"co_group_table_g1.csv","age_u30 | 2","pct_gt24km",18.585,18.59,18.585,18.585
+"co_group_table_g1.csv","age_u30 | 3","pct_gt24km",28.332,28.33,28.332,28.332
+"co_group_table_g1.csv","all | 1","pct_gt24km",14.196,14.2,14.196,14.196
+"co_group_table_g1.csv","all | 2","pct_gt24km",18.628,18.63,18.628,18.628
+"co_group_table_g1.csv","all | 3","pct_gt24km",29.844,29.84,29.844,29.844
+"co_group_table_g1.csv","earn_high | 1","pct_gt24km",14.395,14.39,14.395,14.395
+"co_group_table_g1.csv","earn_high | 2","pct_gt24km",19.267,19.27,19.267,19.267
+"co_group_table_g1.csv","earn_high | 3","pct_gt24km",31.433,31.43,31.433,31.433
+"co_group_table_g1.csv","earn_low | 1","pct_gt24km",14.137,14.14,14.137,14.137
+"co_group_table_g1.csv","earn_low | 2","pct_gt24km",17.491,17.49,17.491,17.491
+"co_group_table_g1.csv","earn_low | 3","pct_gt24km",25.378,25.38,25.378,25.378
+"co_group_table_g1.csv","earn_mid | 1","pct_gt24km",13.527,13.53,13.527,13.527
+"co_group_table_g1.csv","earn_mid | 2","pct_gt24km",16.896,16.9,16.896,16.896
+"co_group_table_g1.csv","earn_mid | 3","pct_gt24km",25.855,25.86,25.855,25.855
+"co_group_table_g1.csv","ind_goods | 1","pct_gt24km",17.899,17.9,17.899,17.899
+"co_group_table_g1.csv","ind_goods | 2","pct_gt24km",22.024,22.02,22.024,22.024
+"co_group_table_g1.csv","ind_goods | 3","pct_gt24km",32.314,32.31,32.314,32.314
+"co_group_table_g1.csv","ind_services | 1","pct_gt24km",12.495,12.49,12.495,12.495
+"co_group_table_g1.csv","ind_services | 2","pct_gt24km",16.547,16.55,16.547,16.547
+"co_group_table_g1.csv","ind_services | 3","pct_gt24km",27.976,27.98,27.976,27.976
+"co_group_table_g1.csv","ind_tradetrans | 1","pct_gt24km",18.115,18.11,18.115,18.115
+"co_group_table_g1.csv","ind_tradetrans | 2","pct_gt24km",24.021,24.02,24.021,24.021
+"co_group_table_g1.csv","ind_tradetrans | 3","pct_gt24km",35.238,35.24,35.238,35.238
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","pct_gt24km",20.44,20.44,20.44,20.44
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","pct_gt24km",22.339,22.34,22.339,22.339
 "co_group_table_g1.csv","age_30_54 | all","eff_n_dest",83.174,83.17,83.174,83.174
@@ -3612,36 +3644,36 @@
 "co_group_table_g1.csv","ind_goods | all","eff_n_dest",40.61,40.61,40.61,40.61
 "co_group_table_g1.csv","ind_services | all","eff_n_dest",76.184,76.18,76.184,76.184
 "co_group_table_g1.csv","ind_tradetrans | all","eff_n_dest",56.171,56.17,56.171,56.171
-"co_group_table_g1.csv","age_30_54 | 1","eff_n_dest",77.166,77.17,77.166,77.166
-"co_group_table_g1.csv","age_30_54 | 2","eff_n_dest",87.729,87.73,87.729,87.729
-"co_group_table_g1.csv","age_30_54 | 3","eff_n_dest",83.532,83.53,83.532,83.532
-"co_group_table_g1.csv","age_55p | 1","eff_n_dest",63.777,63.78,63.777,63.777
-"co_group_table_g1.csv","age_55p | 2","eff_n_dest",72.94,72.94,72.94,72.94
-"co_group_table_g1.csv","age_55p | 3","eff_n_dest",68.405,68.4,68.405,68.405
-"co_group_table_g1.csv","age_u30 | 1","eff_n_dest",71.636,71.64,71.636,71.636
-"co_group_table_g1.csv","age_u30 | 2","eff_n_dest",86.044,86.04,86.044,86.044
-"co_group_table_g1.csv","age_u30 | 3","eff_n_dest",81.501,81.5,81.501,81.501
-"co_group_table_g1.csv","all | 1","eff_n_dest",86.171,86.17,86.171,86.171
-"co_group_table_g1.csv","all | 2","eff_n_dest",99.558,99.56,99.558,99.558
-"co_group_table_g1.csv","all | 3","eff_n_dest",94.406,94.41,94.406,94.406
-"co_group_table_g1.csv","earn_high | 1","eff_n_dest",72.443,72.44,72.443,72.443
-"co_group_table_g1.csv","earn_high | 2","eff_n_dest",86.273,86.27,86.273,86.273
-"co_group_table_g1.csv","earn_high | 3","eff_n_dest",84.126,84.13,84.126,84.126
-"co_group_table_g1.csv","earn_low | 1","eff_n_dest",58.007,58.01,58.007,58.007
-"co_group_table_g1.csv","earn_low | 2","eff_n_dest",60.528,60.53,60.528,60.528
-"co_group_table_g1.csv","earn_low | 3","eff_n_dest",53.102,53.1,53.102,53.102
-"co_group_table_g1.csv","earn_mid | 1","eff_n_dest",70.597,70.6,70.597,70.597
-"co_group_table_g1.csv","earn_mid | 2","eff_n_dest",76.532,76.53,76.532,76.532
-"co_group_table_g1.csv","earn_mid | 3","eff_n_dest",68.413,68.41,68.413,68.413
-"co_group_table_g1.csv","ind_goods | 1","eff_n_dest",39.108,39.11,39.108,39.108
-"co_group_table_g1.csv","ind_goods | 2","eff_n_dest",42.363,42.36,42.363,42.363
-"co_group_table_g1.csv","ind_goods | 3","eff_n_dest",39.989,39.99,39.989,39.989
-"co_group_table_g1.csv","ind_services | 1","eff_n_dest",73.215,73.22,73.215,73.215
-"co_group_table_g1.csv","ind_services | 2","eff_n_dest",80.278,80.28,80.278,80.278
-"co_group_table_g1.csv","ind_services | 3","eff_n_dest",74.531,74.53,74.531,74.531
-"co_group_table_g1.csv","ind_tradetrans | 1","eff_n_dest",46.284,46.28,46.284,46.284
-"co_group_table_g1.csv","ind_tradetrans | 2","eff_n_dest",60.545,60.55,60.545,60.545
-"co_group_table_g1.csv","ind_tradetrans | 3","eff_n_dest",60.692,60.69,60.692,60.692
+"co_group_table_g1.csv","age_30_54 | 1","eff_n_dest",79.614,79.61,79.614,79.614
+"co_group_table_g1.csv","age_30_54 | 2","eff_n_dest",89.42,89.42,89.42,89.42
+"co_group_table_g1.csv","age_30_54 | 3","eff_n_dest",79.84,79.84,79.84,79.84
+"co_group_table_g1.csv","age_55p | 1","eff_n_dest",66.315,66.32,66.315,66.315
+"co_group_table_g1.csv","age_55p | 2","eff_n_dest",73.245,73.25,73.245,73.245
+"co_group_table_g1.csv","age_55p | 3","eff_n_dest",66.575,66.58,66.575,66.575
+"co_group_table_g1.csv","age_u30 | 1","eff_n_dest",73.722,73.72,73.722,73.722
+"co_group_table_g1.csv","age_u30 | 2","eff_n_dest",87.817,87.82,87.817,87.817
+"co_group_table_g1.csv","age_u30 | 3","eff_n_dest",77.215,77.22,77.215,77.215
+"co_group_table_g1.csv","all | 1","eff_n_dest",89.064,89.06,89.064,89.064
+"co_group_table_g1.csv","all | 2","eff_n_dest",101.531,101.53,101.531,101.531
+"co_group_table_g1.csv","all | 3","eff_n_dest",90.014,90.01,90.014,90.014
+"co_group_table_g1.csv","earn_high | 1","eff_n_dest",74.979,74.98,74.979,74.979
+"co_group_table_g1.csv","earn_high | 2","eff_n_dest",87.844,87.84,87.844,87.844
+"co_group_table_g1.csv","earn_high | 3","eff_n_dest",80.638,80.64,80.638,80.638
+"co_group_table_g1.csv","earn_low | 1","eff_n_dest",59.238,59.24,59.238,59.238
+"co_group_table_g1.csv","earn_low | 2","eff_n_dest",61.98,61.98,61.98,61.98
+"co_group_table_g1.csv","earn_low | 3","eff_n_dest",50.498,50.5,50.498,50.498
+"co_group_table_g1.csv","earn_mid | 1","eff_n_dest",72.703,72.7,72.703,72.703
+"co_group_table_g1.csv","earn_mid | 2","eff_n_dest",77.204,77.2,77.204,77.204
+"co_group_table_g1.csv","earn_mid | 3","eff_n_dest",65.34,65.34,65.34,65.34
+"co_group_table_g1.csv","ind_goods | 1","eff_n_dest",40.601,40.6,40.601,40.601
+"co_group_table_g1.csv","ind_goods | 2","eff_n_dest",43.275,43.27,43.275,43.275
+"co_group_table_g1.csv","ind_goods | 3","eff_n_dest",37.944,37.94,37.944,37.944
+"co_group_table_g1.csv","ind_services | 1","eff_n_dest",75.147,75.15,75.147,75.147
+"co_group_table_g1.csv","ind_services | 2","eff_n_dest",80.809,80.81,80.809,80.809
+"co_group_table_g1.csv","ind_services | 3","eff_n_dest",72.284,72.28,72.284,72.284
+"co_group_table_g1.csv","ind_tradetrans | 1","eff_n_dest",47.729,47.73,47.729,47.729
+"co_group_table_g1.csv","ind_tradetrans | 2","eff_n_dest",61.602,61.6,61.602,61.602
+"co_group_table_g1.csv","ind_tradetrans | 3","eff_n_dest",58.586,58.59,58.586,58.586
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","eff_n_dest",96.379,96.38,96.379,96.379
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","eff_n_dest",92.067,92.07,92.067,92.067
 "co_group_table_g1.csv","age_30_54 | all","wexp_whiteblack",0.023,0.02,0.023,0.023
@@ -3656,33 +3688,33 @@
 "co_group_table_g1.csv","ind_tradetrans | all","wexp_whiteblack",0.027,0.03,0.027,0.027
 "co_group_table_g1.csv","age_30_54 | 1","wexp_whiteblack",0.021,0.02,0.021,0.021
 "co_group_table_g1.csv","age_30_54 | 2","wexp_whiteblack",0.022,0.02,0.022,0.022
-"co_group_table_g1.csv","age_30_54 | 3","wexp_whiteblack",0.025,0.03,0.025,0.025
+"co_group_table_g1.csv","age_30_54 | 3","wexp_whiteblack",0.026,0.03,0.026,0.026
 "co_group_table_g1.csv","age_55p | 1","wexp_whiteblack",0.022,0.02,0.022,0.022
-"co_group_table_g1.csv","age_55p | 2","wexp_whiteblack",0.024,0.02,0.024,0.024
+"co_group_table_g1.csv","age_55p | 2","wexp_whiteblack",0.023,0.02,0.023,0.023
 "co_group_table_g1.csv","age_55p | 3","wexp_whiteblack",0.028,0.03,0.028,0.028
 "co_group_table_g1.csv","age_u30 | 1","wexp_whiteblack",0.021,0.02,0.021,0.021
 "co_group_table_g1.csv","age_u30 | 2","wexp_whiteblack",0.023,0.02,0.023,0.023
 "co_group_table_g1.csv","age_u30 | 3","wexp_whiteblack",0.027,0.03,0.027,0.027
 "co_group_table_g1.csv","all | 1","wexp_whiteblack",0.021,0.02,0.021,0.021
 "co_group_table_g1.csv","all | 2","wexp_whiteblack",0.023,0.02,0.023,0.023
-"co_group_table_g1.csv","all | 3","wexp_whiteblack",0.026,0.03,0.026,0.026
+"co_group_table_g1.csv","all | 3","wexp_whiteblack",0.027,0.03,0.027,0.027
 "co_group_table_g1.csv","earn_high | 1","wexp_whiteblack",0.02,0.02,0.02,0.02
 "co_group_table_g1.csv","earn_high | 2","wexp_whiteblack",0.022,0.02,0.022,0.022
-"co_group_table_g1.csv","earn_high | 3","wexp_whiteblack",0.024,0.02,0.024,0.024
+"co_group_table_g1.csv","earn_high | 3","wexp_whiteblack",0.025,0.03,0.025,0.025
 "co_group_table_g1.csv","earn_low | 1","wexp_whiteblack",0.023,0.02,0.023,0.023
 "co_group_table_g1.csv","earn_low | 2","wexp_whiteblack",0.025,0.03,0.025,0.025
-"co_group_table_g1.csv","earn_low | 3","wexp_whiteblack",0.031,0.03,0.031,0.031
+"co_group_table_g1.csv","earn_low | 3","wexp_whiteblack",0.032,0.03,0.032,0.032
 "co_group_table_g1.csv","earn_mid | 1","wexp_whiteblack",0.023,0.02,0.023,0.023
-"co_group_table_g1.csv","earn_mid | 2","wexp_whiteblack",0.025,0.03,0.025,0.025
-"co_group_table_g1.csv","earn_mid | 3","wexp_whiteblack",0.03,0.03,0.03,0.03
+"co_group_table_g1.csv","earn_mid | 2","wexp_whiteblack",0.024,0.02,0.024,0.024
+"co_group_table_g1.csv","earn_mid | 3","wexp_whiteblack",0.031,0.03,0.031,0.031
 "co_group_table_g1.csv","ind_goods | 1","wexp_whiteblack",0.026,0.03,0.026,0.026
 "co_group_table_g1.csv","ind_goods | 2","wexp_whiteblack",0.027,0.03,0.027,0.027
-"co_group_table_g1.csv","ind_goods | 3","wexp_whiteblack",0.031,0.03,0.031,0.031
+"co_group_table_g1.csv","ind_goods | 3","wexp_whiteblack",0.032,0.03,0.032,0.032
 "co_group_table_g1.csv","ind_services | 1","wexp_whiteblack",0.019,0.02,0.019,0.019
 "co_group_table_g1.csv","ind_services | 2","wexp_whiteblack",0.021,0.02,0.021,0.021
-"co_group_table_g1.csv","ind_services | 3","wexp_whiteblack",0.024,0.02,0.024,0.024
+"co_group_table_g1.csv","ind_services | 3","wexp_whiteblack",0.025,0.03,0.025,0.025
 "co_group_table_g1.csv","ind_tradetrans | 1","wexp_whiteblack",0.026,0.03,0.026,0.026
-"co_group_table_g1.csv","ind_tradetrans | 2","wexp_whiteblack",0.027,0.03,0.027,0.027
+"co_group_table_g1.csv","ind_tradetrans | 2","wexp_whiteblack",0.026,0.03,0.026,0.026
 "co_group_table_g1.csv","ind_tradetrans | 3","wexp_whiteblack",0.029,0.03,0.029,0.029
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","wexp_whiteblack",0.024,0.02,0.024,0.024
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","wexp_whiteblack",0.024,0.02,0.024,0.024
@@ -3696,36 +3728,36 @@
 "co_group_table_g1.csv","ind_goods | all","dest_earn_entropy",0.652,0.65,0.652,0.652
 "co_group_table_g1.csv","ind_services | all","dest_earn_entropy",0.668,0.67,0.668,0.668
 "co_group_table_g1.csv","ind_tradetrans | all","dest_earn_entropy",0.746,0.75,0.746,0.746
-"co_group_table_g1.csv","age_30_54 | 1","dest_earn_entropy",0.665,0.66,0.665,0.665
-"co_group_table_g1.csv","age_30_54 | 2","dest_earn_entropy",0.669,0.67,0.669,0.669
-"co_group_table_g1.csv","age_30_54 | 3","dest_earn_entropy",0.664,0.66,0.664,0.664
-"co_group_table_g1.csv","age_55p | 1","dest_earn_entropy",0.687,0.69,0.687,0.687
-"co_group_table_g1.csv","age_55p | 2","dest_earn_entropy",0.69,0.69,0.69,0.69
-"co_group_table_g1.csv","age_55p | 3","dest_earn_entropy",0.681,0.68,0.681,0.681
+"co_group_table_g1.csv","age_30_54 | 1","dest_earn_entropy",0.666,0.67,0.666,0.666
+"co_group_table_g1.csv","age_30_54 | 2","dest_earn_entropy",0.67,0.67,0.67,0.67
+"co_group_table_g1.csv","age_30_54 | 3","dest_earn_entropy",0.662,0.66,0.662,0.662
+"co_group_table_g1.csv","age_55p | 1","dest_earn_entropy",0.689,0.69,0.689,0.689
+"co_group_table_g1.csv","age_55p | 2","dest_earn_entropy",0.691,0.69,0.691,0.691
+"co_group_table_g1.csv","age_55p | 3","dest_earn_entropy",0.679,0.68,0.679,0.679
 "co_group_table_g1.csv","age_u30 | 1","dest_earn_entropy",0.691,0.69,0.691,0.691
-"co_group_table_g1.csv","age_u30 | 2","dest_earn_entropy",0.719,0.72,0.719,0.719
-"co_group_table_g1.csv","age_u30 | 3","dest_earn_entropy",0.727,0.73,0.727,0.727
-"co_group_table_g1.csv","all | 1","dest_earn_entropy",0.676,0.68,0.676,0.676
+"co_group_table_g1.csv","age_u30 | 2","dest_earn_entropy",0.717,0.72,0.717,0.717
+"co_group_table_g1.csv","age_u30 | 3","dest_earn_entropy",0.73,0.73,0.73,0.73
+"co_group_table_g1.csv","all | 1","dest_earn_entropy",0.677,0.68,0.677,0.677
 "co_group_table_g1.csv","all | 2","dest_earn_entropy",0.685,0.69,0.685,0.685
-"co_group_table_g1.csv","all | 3","dest_earn_entropy",0.68,0.68,0.68,0.68
-"co_group_table_g1.csv","earn_high | 1","dest_earn_entropy",0.644,0.64,0.644,0.644
-"co_group_table_g1.csv","earn_high | 2","dest_earn_entropy",0.651,0.65,0.651,0.651
-"co_group_table_g1.csv","earn_high | 3","dest_earn_entropy",0.647,0.65,0.647,0.647
+"co_group_table_g1.csv","all | 3","dest_earn_entropy",0.679,0.68,0.679,0.679
+"co_group_table_g1.csv","earn_high | 1","dest_earn_entropy",0.645,0.64,0.645,0.645
+"co_group_table_g1.csv","earn_high | 2","dest_earn_entropy",0.652,0.65,0.652,0.652
+"co_group_table_g1.csv","earn_high | 3","dest_earn_entropy",0.646,0.65,0.646,0.646
 "co_group_table_g1.csv","earn_low | 1","dest_earn_entropy",0.764,0.76,0.764,0.764
 "co_group_table_g1.csv","earn_low | 2","dest_earn_entropy",0.777,0.78,0.777,0.777
-"co_group_table_g1.csv","earn_low | 3","dest_earn_entropy",0.781,0.78,0.781,0.781
-"co_group_table_g1.csv","earn_mid | 1","dest_earn_entropy",0.746,0.75,0.746,0.746
-"co_group_table_g1.csv","earn_mid | 2","dest_earn_entropy",0.757,0.76,0.757,0.757
+"co_group_table_g1.csv","earn_low | 3","dest_earn_entropy",0.782,0.78,0.782,0.782
+"co_group_table_g1.csv","earn_mid | 1","dest_earn_entropy",0.745,0.74,0.745,0.745
+"co_group_table_g1.csv","earn_mid | 2","dest_earn_entropy",0.758,0.76,0.758,0.758
 "co_group_table_g1.csv","earn_mid | 3","dest_earn_entropy",0.758,0.76,0.758,0.758
 "co_group_table_g1.csv","ind_goods | 1","dest_earn_entropy",0.662,0.66,0.662,0.662
-"co_group_table_g1.csv","ind_goods | 2","dest_earn_entropy",0.655,0.66,0.655,0.655
-"co_group_table_g1.csv","ind_goods | 3","dest_earn_entropy",0.641,0.64,0.641,0.641
-"co_group_table_g1.csv","ind_services | 1","dest_earn_entropy",0.659,0.66,0.659,0.659
-"co_group_table_g1.csv","ind_services | 2","dest_earn_entropy",0.672,0.67,0.672,0.672
-"co_group_table_g1.csv","ind_services | 3","dest_earn_entropy",0.671,0.67,0.671,0.671
-"co_group_table_g1.csv","ind_tradetrans | 1","dest_earn_entropy",0.745,0.74,0.745,0.745
+"co_group_table_g1.csv","ind_goods | 2","dest_earn_entropy",0.656,0.66,0.656,0.656
+"co_group_table_g1.csv","ind_goods | 3","dest_earn_entropy",0.639,0.64,0.639,0.639
+"co_group_table_g1.csv","ind_services | 1","dest_earn_entropy",0.66,0.66,0.66,0.66
+"co_group_table_g1.csv","ind_services | 2","dest_earn_entropy",0.673,0.67,0.673,0.673
+"co_group_table_g1.csv","ind_services | 3","dest_earn_entropy",0.669,0.67,0.669,0.669
+"co_group_table_g1.csv","ind_tradetrans | 1","dest_earn_entropy",0.746,0.75,0.746,0.746
 "co_group_table_g1.csv","ind_tradetrans | 2","dest_earn_entropy",0.748,0.75,0.748,0.748
-"co_group_table_g1.csv","ind_tradetrans | 3","dest_earn_entropy",0.744,0.74,0.744,0.744
+"co_group_table_g1.csv","ind_tradetrans | 3","dest_earn_entropy",0.743,0.74,0.743,0.743
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","dest_earn_entropy",0.686,0.69,0.686,0.686
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","dest_earn_entropy",0.678,0.68,0.678,0.678
 "co_group_table_g1.csv","age_30_54 | all","dest_edu_entropy",0.95,0.95,0.95,0.95
@@ -3743,7 +3775,7 @@
 "co_group_table_g1.csv","age_30_54 | 3","dest_edu_entropy",0.947,0.95,0.947,0.947
 "co_group_table_g1.csv","age_55p | 1","dest_edu_entropy",0.955,0.96,0.955,0.955
 "co_group_table_g1.csv","age_55p | 2","dest_edu_entropy",0.952,0.95,0.952,0.952
-"co_group_table_g1.csv","age_55p | 3","dest_edu_entropy",0.949,0.95,0.949,0.949
+"co_group_table_g1.csv","age_55p | 3","dest_edu_entropy",0.948,0.95,0.948,0.948
 "co_group_table_g1.csv","age_u30 | 1","dest_edu_entropy",0.955,0.96,0.955,0.955
 "co_group_table_g1.csv","age_u30 | 2","dest_edu_entropy",0.956,0.96,0.956,0.956
 "co_group_table_g1.csv","age_u30 | 3","dest_edu_entropy",0.955,0.96,0.955,0.955
@@ -3755,7 +3787,7 @@
 "co_group_table_g1.csv","earn_high | 3","dest_edu_entropy",0.946,0.95,0.946,0.946
 "co_group_table_g1.csv","earn_low | 1","dest_edu_entropy",0.961,0.96,0.961,0.961
 "co_group_table_g1.csv","earn_low | 2","dest_edu_entropy",0.958,0.96,0.958,0.958
-"co_group_table_g1.csv","earn_low | 3","dest_edu_entropy",0.955,0.96,0.955,0.955
+"co_group_table_g1.csv","earn_low | 3","dest_edu_entropy",0.956,0.96,0.956,0.956
 "co_group_table_g1.csv","earn_mid | 1","dest_edu_entropy",0.962,0.96,0.962,0.962
 "co_group_table_g1.csv","earn_mid | 2","dest_edu_entropy",0.959,0.96,0.959,0.959
 "co_group_table_g1.csv","earn_mid | 3","dest_edu_entropy",0.956,0.96,0.956,0.956
@@ -3767,7 +3799,7 @@
 "co_group_table_g1.csv","ind_services | 3","dest_edu_entropy",0.943,0.94,0.943,0.943
 "co_group_table_g1.csv","ind_tradetrans | 1","dest_edu_entropy",0.968,0.97,0.968,0.968
 "co_group_table_g1.csv","ind_tradetrans | 2","dest_edu_entropy",0.966,0.97,0.966,0.966
-"co_group_table_g1.csv","ind_tradetrans | 3","dest_edu_entropy",0.965,0.96,0.965,0.965
+"co_group_table_g1.csv","ind_tradetrans | 3","dest_edu_entropy",0.964,0.96,0.964,0.964
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","dest_edu_entropy",0.953,0.95,0.953,0.953
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","dest_edu_entropy",0.95,0.95,0.95,0.95
 "co_group_table_g1.csv","age_30_54 | all","dest_ind_entropy",0.645,0.64,0.645,0.645
@@ -3782,34 +3814,34 @@
 "co_group_table_g1.csv","ind_tradetrans | all","dest_ind_entropy",0.656,0.66,0.656,0.656
 "co_group_table_g1.csv","age_30_54 | 1","dest_ind_entropy",0.645,0.64,0.645,0.645
 "co_group_table_g1.csv","age_30_54 | 2","dest_ind_entropy",0.646,0.65,0.646,0.646
-"co_group_table_g1.csv","age_30_54 | 3","dest_ind_entropy",0.645,0.64,0.645,0.645
-"co_group_table_g1.csv","age_55p | 1","dest_ind_entropy",0.641,0.64,0.641,0.641
+"co_group_table_g1.csv","age_30_54 | 3","dest_ind_entropy",0.646,0.65,0.646,0.646
+"co_group_table_g1.csv","age_55p | 1","dest_ind_entropy",0.639,0.64,0.639,0.639
 "co_group_table_g1.csv","age_55p | 2","dest_ind_entropy",0.641,0.64,0.641,0.641
-"co_group_table_g1.csv","age_55p | 3","dest_ind_entropy",0.645,0.64,0.645,0.645
-"co_group_table_g1.csv","age_u30 | 1","dest_ind_entropy",0.651,0.65,0.651,0.651
-"co_group_table_g1.csv","age_u30 | 2","dest_ind_entropy",0.651,0.65,0.651,0.651
+"co_group_table_g1.csv","age_55p | 3","dest_ind_entropy",0.646,0.65,0.646,0.646
+"co_group_table_g1.csv","age_u30 | 1","dest_ind_entropy",0.65,0.65,0.65,0.65
+"co_group_table_g1.csv","age_u30 | 2","dest_ind_entropy",0.652,0.65,0.652,0.652
 "co_group_table_g1.csv","age_u30 | 3","dest_ind_entropy",0.658,0.66,0.658,0.658
-"co_group_table_g1.csv","all | 1","dest_ind_entropy",0.646,0.65,0.646,0.646
+"co_group_table_g1.csv","all | 1","dest_ind_entropy",0.645,0.64,0.645,0.645
 "co_group_table_g1.csv","all | 2","dest_ind_entropy",0.646,0.65,0.646,0.646
-"co_group_table_g1.csv","all | 3","dest_ind_entropy",0.647,0.65,0.647,0.647
+"co_group_table_g1.csv","all | 3","dest_ind_entropy",0.648,0.65,0.648,0.648
 "co_group_table_g1.csv","earn_high | 1","dest_ind_entropy",0.647,0.65,0.647,0.647
 "co_group_table_g1.csv","earn_high | 2","dest_ind_entropy",0.648,0.65,0.648,0.648
-"co_group_table_g1.csv","earn_high | 3","dest_ind_entropy",0.648,0.65,0.648,0.648
-"co_group_table_g1.csv","earn_low | 1","dest_ind_entropy",0.647,0.65,0.647,0.647
-"co_group_table_g1.csv","earn_low | 2","dest_ind_entropy",0.647,0.65,0.647,0.647
-"co_group_table_g1.csv","earn_low | 3","dest_ind_entropy",0.653,0.65,0.653,0.653
-"co_group_table_g1.csv","earn_mid | 1","dest_ind_entropy",0.641,0.64,0.641,0.641
+"co_group_table_g1.csv","earn_high | 3","dest_ind_entropy",0.649,0.65,0.649,0.649
+"co_group_table_g1.csv","earn_low | 1","dest_ind_entropy",0.645,0.64,0.645,0.645
+"co_group_table_g1.csv","earn_low | 2","dest_ind_entropy",0.648,0.65,0.648,0.648
+"co_group_table_g1.csv","earn_low | 3","dest_ind_entropy",0.654,0.65,0.654,0.654
+"co_group_table_g1.csv","earn_mid | 1","dest_ind_entropy",0.64,0.64,0.64,0.64
 "co_group_table_g1.csv","earn_mid | 2","dest_ind_entropy",0.639,0.64,0.639,0.639
-"co_group_table_g1.csv","earn_mid | 3","dest_ind_entropy",0.642,0.64,0.642,0.642
-"co_group_table_g1.csv","ind_goods | 1","dest_ind_entropy",0.702,0.7,0.702,0.702
+"co_group_table_g1.csv","earn_mid | 3","dest_ind_entropy",0.643,0.64,0.643,0.643
+"co_group_table_g1.csv","ind_goods | 1","dest_ind_entropy",0.701,0.7,0.701,0.701
 "co_group_table_g1.csv","ind_goods | 2","dest_ind_entropy",0.693,0.69,0.693,0.693
 "co_group_table_g1.csv","ind_goods | 3","dest_ind_entropy",0.679,0.68,0.679,0.679
-"co_group_table_g1.csv","ind_services | 1","dest_ind_entropy",0.638,0.64,0.638,0.638
-"co_group_table_g1.csv","ind_services | 2","dest_ind_entropy",0.635,0.64,0.635,0.635
-"co_group_table_g1.csv","ind_services | 3","dest_ind_entropy",0.637,0.64,0.637,0.637
+"co_group_table_g1.csv","ind_services | 1","dest_ind_entropy",0.637,0.64,0.637,0.637
+"co_group_table_g1.csv","ind_services | 2","dest_ind_entropy",0.634,0.63,0.634,0.634
+"co_group_table_g1.csv","ind_services | 3","dest_ind_entropy",0.638,0.64,0.638,0.638
 "co_group_table_g1.csv","ind_tradetrans | 1","dest_ind_entropy",0.644,0.64,0.644,0.644
-"co_group_table_g1.csv","ind_tradetrans | 2","dest_ind_entropy",0.658,0.66,0.658,0.658
-"co_group_table_g1.csv","ind_tradetrans | 3","dest_ind_entropy",0.665,0.66,0.665,0.665
+"co_group_table_g1.csv","ind_tradetrans | 2","dest_ind_entropy",0.66,0.66,0.66,0.66
+"co_group_table_g1.csv","ind_tradetrans | 3","dest_ind_entropy",0.663,0.66,0.663,0.663
 "co_group_table_g1.csv","edu_less_hs_shared_dest | all","dest_ind_entropy",0.646,0.65,0.646,0.646
 "co_group_table_g1.csv","edu_ba_plus_shared_dest | all","dest_ind_entropy",0.647,0.65,0.647,0.647
 "co_model_coefficients.csv","z_pct_res_low | ZA_whiteblack_pct_res_low","estimate",-0.0449142115790565,-0.04,-0.045,-0.0449
@@ -4432,6 +4464,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","estimate",-0.0379552198714144,-0.04,-0.038,-0.038
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","estimate",0.0402054161007656,0.04,0.04,0.0402
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","estimate",-0.125490650414921,-0.13,-0.125,-0.1255
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","estimate",0.0216453195792149,0.02,0.022,0.0216
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","estimate",0.0101719701741192,0.01,0.01,0.0102
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","estimate",-0.0698423604889221,-0.07,-0.07,-0.0698
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","estimate",-0.00495087577203436,0,-0.005,-0.005
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","estimate",0.324285893483358,0.32,0.324,0.3243
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","estimate",-0.0013665308714481,0,-0.001,-0.0014
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","estimate",0.00706759043917001,0.01,0.007,0.0071
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","estimate",-0.0712046490683337,-0.07,-0.071,-0.0712
@@ -4452,26 +4489,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","estimate",-0.0757099349757152,-0.08,-0.076,-0.0757
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","estimate",0.00151078095332444,0,0.002,0.0015
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","estimate",0.322251380707738,0.32,0.322,0.3223
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","estimate",-0.0858453774496361,-0.09,-0.086,-0.0858
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","estimate",-0.0691721777347286,-0.07,-0.069,-0.0692
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","estimate",-0.145910063903552,-0.15,-0.146,-0.1459
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","estimate",0.0315317033010919,0.03,0.032,0.0315
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","estimate",0.236130245359456,0.24,0.236,0.2361
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","estimate",0.00956566450207386,0.01,0.01,0.0096
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","estimate",-0.0552311147138201,-0.06,-0.055,-0.0552
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","estimate",-0.142030079723695,-0.14,-0.142,-0.142
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","estimate",0.0272894211684025,0.03,0.027,0.0273
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","estimate",0.24347813507396,0.24,0.243,0.2435
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","estimate",0.0382989240886002,0.04,0.038,0.0383
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","estimate",-0.0575846466799386,-0.06,-0.058,-0.0576
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","estimate",-0.141730335370091,-0.14,-0.142,-0.1417
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","estimate",0.0335016130108786,0.03,0.034,0.0335
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","estimate",0.239717677025043,0.24,0.24,0.2397
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","estimate",0.070187720982047,0.07,0.07,0.0702
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","estimate",-0.0688949165422443,-0.07,-0.069,-0.0689
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","estimate",-0.14360167052286,-0.14,-0.144,-0.1436
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","estimate",0.0305218446267171,0.03,0.031,0.0305
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","estimate",0.243283822780922,0.24,0.243,0.2433
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","estimate",-0.0546900651312817,-0.05,-0.055,-0.0547
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","estimate",-0.0678534458280245,-0.07,-0.068,-0.0679
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","estimate",-0.142824660535598,-0.14,-0.143,-0.1428
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","estimate",0.0282346032309463,0.03,0.028,0.0282
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","estimate",0.23321811477538,0.23,0.233,0.2332
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","estimate",-0.0856805494427819,-0.09,-0.086,-0.0857
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","estimate",-0.0692152166137904,-0.07,-0.069,-0.0692
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","estimate",-0.145901653138253,-0.15,-0.146,-0.1459
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","estimate",0.0315294721633975,0.03,0.032,0.0315
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","estimate",0.236209987672094,0.24,0.236,0.2362
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","estimate",0.00976151759548536,0.01,0.01,0.0098
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","estimate",-0.055300525976557,-0.06,-0.055,-0.0553
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","estimate",-0.142057403953973,-0.14,-0.142,-0.1421
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","estimate",0.0273238807466976,0.03,0.027,0.0273
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","estimate",0.243562267129445,0.24,0.244,0.2436
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","estimate",0.0381488412334862,0.04,0.038,0.0381
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","estimate",-0.0576553739606854,-0.06,-0.058,-0.0577
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","estimate",-0.141725755092558,-0.14,-0.142,-0.1417
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","estimate",0.0334801752383847,0.03,0.033,0.0335
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","estimate",0.239795119719361,0.24,0.24,0.2398
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","estimate",0.0701746565853231,0.07,0.07,0.0702
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","estimate",-0.0689533797609176,-0.07,-0.069,-0.069
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","estimate",-0.143604575933454,-0.14,-0.144,-0.1436
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","estimate",0.0305297669791972,0.03,0.031,0.0305
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","estimate",0.24335203256943,0.24,0.243,0.2434
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","estimate",0.408432727581934,0.41,0.408,0.4084
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","estimate",0.0168913599292534,0.02,0.017,0.0169
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","estimate",-0.0376649191989537,-0.04,-0.038,-0.0377
@@ -4479,6 +4521,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","estimate",0.0550481098088808,0.06,0.055,0.055
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","estimate",-0.38137680290898,-0.38,-0.381,-0.3814
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","estimate",0.0364117315827864,0.04,0.036,0.0364
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","estimate",0.30809350641775,0.31,0.308,0.3081
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","estimate",0.0617137066716606,0.06,0.062,0.0617
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","estimate",-0.0390374614860861,-0.04,-0.039,-0.039
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","estimate",0.0222472840740978,0.02,0.022,0.0222
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","estimate",0.0483268078914247,0.05,0.048,0.0483
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","estimate",-0.386496924133473,-0.39,-0.386,-0.3865
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","estimate",0.162969833789018,0.16,0.163,0.163
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","estimate",0.331642429215383,0.33,0.332,0.3316
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","estimate",0.0610028137340707,0.06,0.061,0.061
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","estimate",-0.0420705058800685,-0.04,-0.042,-0.0421
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","estimate",0.00934854188762495,0.01,0.009,0.0093
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","estimate",0.0504008314121062,0.05,0.05,0.0504
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","estimate",-0.380380776589311,-0.38,-0.38,-0.3804
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","estimate",0.152763930986532,0.15,0.153,0.1528
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","estimate",0.308235987940227,0.31,0.308,0.3082
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","estimate",0.0703498043516667,0.07,0.07,0.0703
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","estimate",-0.0783162482087491,-0.08,-0.078,-0.0783
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","estimate",0.0239185504001061,0.02,0.024,0.0239
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","estimate",0.11686418995249,0.12,0.117,0.1169
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","estimate",-0.335945180948598,-0.34,-0.336,-0.3359
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","estimate",-0.0228400429498007,-0.02,-0.023,-0.0228
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","estimate",0.364836384737044,0.36,0.365,0.3648
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","estimate",0.0341156686991124,0.03,0.034,0.0341
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","estimate",-0.0436894739962103,-0.04,-0.044,-0.0437
@@ -5166,6 +5229,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","std.error",0.0221768183901744,0.02,0.022,0.0222
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","std.error",0.0257031458727254,0.03,0.026,0.0257
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","std.error",0.102997054900951,0.1,0.103,0.103
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","std.error",0.0297721008973034,0.03,0.03,0.0298
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","std.error",0.0233115897227384,0.02,0.023,0.0233
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","std.error",0.0851939568344546,0.09,0.085,0.0852
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","std.error",0.0782944513398971,0.08,0.078,0.0783
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","std.error",0.118055621777717,0.12,0.118,0.1181
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","std.error",0.0439453050645419,0.04,0.044,0.0439
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","std.error",0.0249249896299172,0.02,0.025,0.0249
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","std.error",0.0845397794813615,0.08,0.085,0.0845
@@ -5186,26 +5254,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","std.error",0.083542395378579,0.08,0.084,0.0835
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","std.error",0.0791163888960489,0.08,0.079,0.0791
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","std.error",0.118441420999218,0.12,0.118,0.1184
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","std.error",0.0384638172543072,0.04,0.038,0.0385
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0574844879686242,0.06,0.057,0.0575
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0389530614299533,0.04,0.039,0.039
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","std.error",0.0473437674690488,0.05,0.047,0.0473
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0573061675186477,0.06,0.057,0.0573
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","std.error",0.0219284423906805,0.02,0.022,0.0219
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.049605547624439,0.05,0.05,0.0496
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.037403465551125,0.04,0.037,0.0374
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","std.error",0.0481557003737426,0.05,0.048,0.0482
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.0582781013390807,0.06,0.058,0.0583
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","std.error",0.0481386718754411,0.05,0.048,0.0481
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0506569581139831,0.05,0.051,0.0507
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0412557722833286,0.04,0.041,0.0413
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","std.error",0.0446798499171556,0.04,0.045,0.0447
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0549629372864672,0.05,0.055,0.055
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","std.error",0.0416526473120366,0.04,0.042,0.0417
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0541928409094973,0.05,0.054,0.0542
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0363782388028516,0.04,0.036,0.0364
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","std.error",0.0460355540402708,0.05,0.046,0.046
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0555682431343795,0.06,0.056,0.0556
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","std.error",0.0331349311117179,0.03,0.033,0.0331
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","std.error",0.0548128254257588,0.05,0.055,0.0548
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","std.error",0.0376860202517588,0.04,0.038,0.0377
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","std.error",0.0473698824578518,0.05,0.047,0.0474
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","std.error",0.0596015592919746,0.06,0.06,0.0596
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","std.error",0.0384343653529466,0.04,0.038,0.0384
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0574477009077475,0.06,0.057,0.0574
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0389298893022558,0.04,0.039,0.0389
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","std.error",0.0473453018505903,0.05,0.047,0.0473
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","std.error",0.0572481410863696,0.06,0.057,0.0572
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","std.error",0.0219594083599088,0.02,0.022,0.022
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.0496217555247024,0.05,0.05,0.0496
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.0373784249718368,0.04,0.037,0.0374
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","std.error",0.0481612223084063,0.05,0.048,0.0482
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","std.error",0.0582289105476486,0.06,0.058,0.0582
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","std.error",0.0481397266913469,0.05,0.048,0.0481
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0506451882242385,0.05,0.051,0.0506
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0412252880498544,0.04,0.041,0.0412
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","std.error",0.0446891861612783,0.04,0.045,0.0447
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","std.error",0.0549046055076011,0.05,0.055,0.0549
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","std.error",0.0416178888582877,0.04,0.042,0.0416
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0541745013727721,0.05,0.054,0.0542
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0363519516098921,0.04,0.036,0.0364
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","std.error",0.0460384808392947,0.05,0.046,0.046
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","std.error",0.0554993307112621,0.06,0.055,0.0555
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","std.error",0.0551964503755192,0.06,0.055,0.0552
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","std.error",0.0304137776363752,0.03,0.03,0.0304
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","std.error",0.00979772611860143,0.01,0.01,0.0098
@@ -5213,6 +5286,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","std.error",0.0308487615187606,0.03,0.031,0.0308
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","std.error",0.0932373994549903,0.09,0.093,0.0932
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","std.error",0.0532993411191938,0.05,0.053,0.0533
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","std.error",0.0911834605792099,0.09,0.091,0.0912
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","std.error",0.0278242261925774,0.03,0.028,0.0278
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","std.error",0.00961858239553665,0.01,0.01,0.0096
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","std.error",0.0371227874390414,0.04,0.037,0.0371
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","std.error",0.0299156588044387,0.03,0.03,0.0299
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","std.error",0.0930470126295816,0.09,0.093,0.093
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","std.error",0.0323047480263556,0.03,0.032,0.0323
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","std.error",0.0920730142505444,0.09,0.092,0.0921
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","std.error",0.0298462405211547,0.03,0.03,0.0298
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","std.error",0.00993666111114509,0.01,0.01,0.0099
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","std.error",0.0426042392064682,0.04,0.043,0.0426
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","std.error",0.0353635733993203,0.04,0.035,0.0354
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","std.error",0.0897807114211576,0.09,0.09,0.0898
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","std.error",0.0422495625862334,0.04,0.042,0.0422
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","std.error",0.040823020975244,0.04,0.041,0.0408
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","std.error",0.0374742733028685,0.04,0.037,0.0375
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","std.error",0.0173012772669449,0.02,0.017,0.0173
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","std.error",0.0673539318032575,0.07,0.067,0.0674
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","std.error",0.0585971678939075,0.06,0.059,0.0586
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","std.error",0.0510994883687254,0.05,0.051,0.0511
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","std.error",0.027672343105931,0.03,0.028,0.0277
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","std.error",0.0730506185227958,0.07,0.073,0.0731
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","std.error",0.0327356724233997,0.03,0.033,0.0327
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","std.error",0.00944341731367612,0.01,0.009,0.0094
@@ -5900,6 +5994,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","statistic",-1.71148174655345,-1.71,-1.711,-1.7115
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","statistic",1.56422160539614,1.56,1.564,1.5642
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","statistic",-1.21839066695258,-1.22,-1.218,-1.2184
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","statistic",0.727033663290299,0.73,0.727,0.727
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","statistic",0.436348198261113,0.44,0.436,0.4363
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","statistic",-0.819804163159564,-0.82,-0.82,-0.8198
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","statistic",-0.0632340566580036,-0.06,-0.063,-0.0632
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","statistic",2.74689073336927,2.75,2.747,2.7469
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","statistic",-0.0310961744250289,-0.03,-0.031,-0.0311
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","statistic",0.283554398381248,0.28,0.284,0.2836
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","statistic",-0.842262062962113,-0.84,-0.842,-0.8423
@@ -5920,26 +6019,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","statistic",-0.906245680802299,-0.91,-0.906,-0.9062
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","statistic",0.0190956763118885,0.02,0.019,0.0191
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","statistic",2.72076591102251,2.72,2.721,2.7208
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","statistic",-2.23184757981927,-2.23,-2.232,-2.2318
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","statistic",-1.20331902012389,-1.2,-1.203,-1.2033
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","statistic",-3.74579194926519,-3.75,-3.746,-3.7458
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","statistic",0.666015929587899,0.67,0.666,0.666
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","statistic",4.12050317764869,4.12,4.121,4.1205
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","statistic",0.436221795039087,0.44,0.436,0.4362
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","statistic",-1.11340600716621,-1.11,-1.113,-1.1134
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","statistic",-3.79724385510645,-3.8,-3.797,-3.7972
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","statistic",0.566691398040227,0.57,0.567,0.5667
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","statistic",4.1778666339407,4.18,4.178,4.1779
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","statistic",0.79559577770859,0.8,0.796,0.7956
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","statistic",-1.13675690021433,-1.14,-1.137,-1.1368
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","statistic",-3.43540618744795,-3.44,-3.435,-3.4354
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","statistic",0.749814806294035,0.75,0.75,0.7498
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","statistic",4.36144225290641,4.36,4.361,4.3614
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","statistic",1.68507227058686,1.69,1.685,1.6851
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","statistic",-1.27129184198517,-1.27,-1.271,-1.2713
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","statistic",-3.94746076909044,-3.95,-3.947,-3.9475
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","statistic",0.663005914950373,0.66,0.663,0.663
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","statistic",4.37810895321261,4.38,4.378,4.3781
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","statistic",-1.65052599466371,-1.65,-1.651,-1.6505
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","statistic",-1.23791184455413,-1.24,-1.238,-1.2379
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","statistic",-3.78985787253385,-3.79,-3.79,-3.7899
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","statistic",0.596045456858977,0.6,0.596,0.596
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","statistic",3.91295324393943,3.91,3.913,3.913
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","statistic",-2.22926926608437,-2.23,-2.229,-2.2293
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","statistic",-1.20483875803733,-1.2,-1.205,-1.2048
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","statistic",-3.74780549735082,-3.75,-3.748,-3.7478
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","statistic",0.665947220336592,0.67,0.666,0.6659
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","statistic",4.12607262331412,4.13,4.126,4.1261
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","statistic",0.444525527987673,0.44,0.445,0.4445
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","statistic",-1.11444114364369,-1.11,-1.114,-1.1144
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","statistic",-3.80051872332791,-3.8,-3.801,-3.8005
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","statistic",0.567341928569125,0.57,0.567,0.5673
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","statistic",4.18284087472559,4.18,4.183,4.1828
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","statistic",0.792460694222086,0.79,0.792,0.7925
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","statistic",-1.13841760653368,-1.14,-1.138,-1.1384
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","statistic",-3.43783541114781,-3.44,-3.438,-3.4378
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","statistic",0.749178450409869,0.75,0.749,0.7492
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","statistic",4.36748643401442,4.37,4.367,4.3675
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","statistic",1.68616569726239,1.69,1.686,1.6862
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","statistic",-1.27280137359184,-1.27,-1.273,-1.2728
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","statistic",-3.95039522154227,-3.95,-3.95,-3.9504
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","statistic",0.663135846853128,0.66,0.663,0.6631
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","statistic",4.38477418467405,4.38,4.385,4.3848
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","statistic",7.39961944659911,7.4,7.4,7.3996
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","statistic",0.555385132725214,0.56,0.555,0.5554
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","statistic",-3.84425107856864,-3.84,-3.844,-3.8443
@@ -5947,6 +6051,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","statistic",1.78445120966699,1.78,1.784,1.7845
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","statistic",-4.09038438586103,-4.09,-4.09,-4.0904
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","statistic",0.683155379001,0.68,0.683,0.6832
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","statistic",3.37883103427636,3.38,3.379,3.3788
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","statistic",2.21798465281755,2.22,2.218,2.218
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","statistic",-4.05854624733483,-4.06,-4.059,-4.0585
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","statistic",0.599289159269886,0.6,0.599,0.5993
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","statistic",1.61543518754982,1.62,1.615,1.6154
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","statistic",-4.15378111785394,-4.15,-4.154,-4.1538
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","statistic",5.04476412123878,5.04,5.045,5.0448
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","statistic",3.6019503859506,3.6,3.602,3.602
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","statistic",2.04390277196998,2.04,2.044,2.0439
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","statistic",-4.233867433889,-4.23,-4.234,-4.2339
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","statistic",0.219427504439644,0.22,0.219,0.2194
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","statistic",1.42521885000103,1.43,1.425,1.4252
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","statistic",-4.23677614677123,-4.24,-4.237,-4.2368
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","statistic",3.61575177671327,3.62,3.616,3.6158
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","statistic",7.55054331052933,7.55,7.551,7.5505
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","statistic",1.87728268359194,1.88,1.877,1.8773
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","statistic",-4.52661656133196,-4.53,-4.527,-4.5266
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","statistic",0.355117359294967,0.36,0.355,0.3551
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","statistic",1.99436583972927,1.99,1.994,1.9944
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","statistic",-6.5743355104551,-6.57,-6.574,-6.5743
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","statistic",-0.825374376949863,-0.83,-0.825,-0.8254
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","statistic",4.99429562835522,4.99,4.994,4.9943
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","statistic",1.04215573328887,1.04,1.042,1.0422
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","statistic",-4.62644745487827,-4.63,-4.626,-4.6264
@@ -6634,6 +6759,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","p.value",0.0988982461599528,0.1,0.099,0.0989
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","p.value",0.12985679990147,0.13,0.13,0.1299
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","p.value",0.234016258688127,0.23,0.234,0.234
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","p.value",0.473701243349329,0.47,0.474,0.4737
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","p.value",0.66618616092492,0.67,0.666,0.6662
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","p.value",0.419779981556818,0.42,0.42,0.4198
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","p.value",0.95006376838171,0.95,0.95,0.9501
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","p.value",0.0107787358383296,0.01,0.011,0.0108
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","p.value",0.975430321914705,0.98,0.975,0.9754
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","p.value",0.778997583184393,0.78,0.779,0.779
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","p.value",0.407322474413629,0.41,0.407,0.4073
@@ -6654,26 +6784,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","p.value",0.373128272332814,0.37,0.373,0.3731
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","p.value",0.984910570617584,0.98,0.985,0.9849
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","p.value",0.0114602776487492,0.01,0.011,0.0115
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","p.value",0.0344579998100778,0.03,0.034,0.0345
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","p.value",0.23969554832504,0.24,0.24,0.2397
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","p.value",0.00090399910787439,0,0.001,9e-04
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","p.value",0.511267425870827,0.51,0.511,0.5113
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","p.value",0.0003412221469267,0,0,3e-04
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","p.value",0.666276683552432,0.67,0.666,0.6663
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.275722069387504,0.28,0.276,0.2757
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.00079153788094771,0,0.001,8e-04
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","p.value",0.575783785187618,0.58,0.576,0.5758
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.00029360455465501,0,0,3e-04
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","p.value",0.433470891021999,0.43,0.433,0.4335
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.266008828205354,0.27,0.266,0.266
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.00199793271217844,0,0.002,0.002
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","p.value",0.460097749515444,0.46,0.46,0.4601
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.00018124320761122,0,0,2e-04
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","p.value",0.103942350877913,0.1,0.104,0.1039
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.214880787215865,0.21,0.215,0.2149
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.0005360789627772,0,0.001,5e-04
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","p.value",0.513162364395846,0.51,0.513,0.5132
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.00017346170220672,0,0,2e-04
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","p.value",0.110865455854146,0.11,0.111,0.1109
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","p.value",0.226811110748783,0.23,0.227,0.2268
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","p.value",0.00080679503576612,0,0.001,8e-04
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","p.value",0.556298884964686,0.56,0.556,0.5563
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","p.value",0.00058641359310959,0,0.001,6e-04
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","p.value",0.0346496524410797,0.03,0.035,0.0346
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","p.value",0.239118258594347,0.24,0.239,0.2391
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","p.value",0.00089931725829875,0,0.001,9e-04
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","p.value",0.511310638229546,0.51,0.511,0.5113
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","p.value",0.00033628254507228,0,0,3e-04
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","p.value",0.660341023370106,0.66,0.66,0.6603
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.275286126716329,0.28,0.275,0.2753
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.00078486393738372,0,0.001,8e-04
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","p.value",0.575348295652272,0.58,0.575,0.5753
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","p.value",0.0002897995739542,0,0,3e-04
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","p.value",0.435263715704417,0.44,0.435,0.4353
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.265327637513853,0.27,0.265,0.2653
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.00198569705938568,0,0.002,0.002
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","p.value",0.460474575858298,0.46,0.46,0.4605
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","p.value",0.00017838195360378,0,0,2e-04
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","p.value",0.103729295480956,0.1,0.104,0.1037
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.214352791010707,0.21,0.214,0.2144
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.00053200032987699,0,0.001,5e-04
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","p.value",0.513080486566394,0.51,0.513,0.5131
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","p.value",0.00017044354117757,0,0,2e-04
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","p.value",7.3969147686321e-08,0,0,0
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","p.value",0.583378824783577,0.58,0.583,0.5834
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","p.value",0.00070086196333105,0,0.001,7e-04
@@ -6681,6 +6816,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","p.value",0.0860255346446551,0.09,0.086,0.086
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","p.value",0.00036920394550163,0,0,4e-04
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","p.value",0.500551490071136,0.5,0.501,0.5006
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","p.value",0.00230448684846502,0,0.002,0.0023
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","p.value",0.0354998489730548,0.04,0.035,0.0355
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","p.value",0.00040124957053529,0,0,4e-04
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","p.value",0.554166799008998,0.55,0.554,0.5542
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","p.value",0.118287962656972,0.12,0.118,0.1183
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","p.value",0.00031273939615049,0,0,3e-04
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","p.value",2.98623428291839e-05,0,0,0
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","p.value",0.00130801898338209,0,0.001,0.0013
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","p.value",0.0512162255446769,0.05,0.051,0.0512
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","p.value",0.00025347999830536,0,0,3e-04
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","p.value",0.828030615336359,0.83,0.828,0.828
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","p.value",0.16598899575168,0.17,0.166,0.166
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","p.value",0.00025155127470685,0,0,3e-04
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","p.value",0.00126263537903999,0,0.001,0.0013
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","p.value",5.13987013089005e-08,0,0,0
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","p.value",0.0717428982082943,0.07,0.072,0.0717
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","p.value",0.00011727036279797,0,0,1e-04
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","p.value",0.725366309661234,0.73,0.725,0.7254
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","p.value",0.0566965235823085,0.06,0.057,0.0567
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","p.value",5.6902374907945e-07,0,0,0
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","p.value",0.416668236681595,0.42,0.417,0.4167
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","p.value",3.41143941570893e-05,0,0,0
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","p.value",0.306933531591596,0.31,0.307,0.3069
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","p.value",9.01062172948832e-05,0,0,1e-04
@@ -7368,6 +7524,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","conf.low",-0.0814217839161562,-0.08,-0.081,-0.0814
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","conf.low",-0.0101727498097761,-0.01,-0.01,-0.0102
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","conf.low",-0.327364878020786,-0.33,-0.327,-0.3274
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","conf.low",-0.0367079981794997,-0.04,-0.037,-0.0367
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.low",-0.0355187456824481,-0.04,-0.036,-0.0355
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.low",-0.236822515884453,-0.24,-0.237,-0.2368
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","conf.low",-0.158408000398233,-0.16,-0.158,-0.1584
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.low",0.0928968747990329,0.09,0.093,0.0929
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","conf.low",-0.0874993287979502,-0.09,-0.087,-0.0875
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","conf.low",-0.0417853892354677,-0.04,-0.042,-0.0418
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","conf.low",-0.236902616851802,-0.24,-0.237,-0.2369
@@ -7388,26 +7549,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","conf.low",-0.23945302991773,-0.24,-0.239,-0.2395
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","conf.low",-0.153557341282931,-0.15,-0.154,-0.1536
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","conf.low",0.0901061955492707,0.09,0.09,0.0901
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","conf.low",-0.161234459268078,-0.16,-0.161,-0.1612
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","conf.low",-0.181841774153232,-0.18,-0.182,-0.1818
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","conf.low",-0.22225806430626,-0.22,-0.222,-0.2223
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","conf.low",-0.0612620809382438,-0.06,-0.061,-0.0613
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","conf.low",0.123810157022907,0.12,0.124,0.1238
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","conf.low",-0.0334140825836599,-0.03,-0.033,-0.0334
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","conf.low",-0.152457988057721,-0.15,-0.152,-0.1525
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","conf.low",-0.2153408722039,-0.22,-0.215,-0.2153
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","conf.low",-0.0670957515641331,-0.07,-0.067,-0.0671
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","conf.low",0.129253056449362,0.13,0.129,0.1293
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","conf.low",-0.0560528727872643,-0.06,-0.056,-0.0561
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","conf.low",-0.156872284583346,-0.16,-0.157,-0.1569
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","conf.low",-0.222591649045415,-0.22,-0.223,-0.2226
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","conf.low",-0.0540708928267464,-0.05,-0.054,-0.0541
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","conf.low",0.131990319943568,0.13,0.132,0.132
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","conf.low",-0.0114514677495447,-0.01,-0.011,-0.0115
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","conf.low",-0.175112884724859,-0.18,-0.175,-0.1751
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","conf.low",-0.21490301857645,-0.21,-0.215,-0.2149
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","conf.low",-0.0597078412922137,-0.06,-0.06,-0.0597
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","conf.low",0.134370066237538,0.13,0.134,0.1344
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","conf.low",-0.119634530110249,-0.12,-0.12,-0.1196
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.low",-0.175286583662512,-0.18,-0.175,-0.1753
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.low",-0.216689260229045,-0.22,-0.217,-0.2167
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","conf.low",-0.0646103663864432,-0.06,-0.065,-0.0646
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.low",0.11639905856311,0.12,0.116,0.1164
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","conf.low",-0.161011905534557,-0.16,-0.161,-0.161
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","conf.low",-0.181812710392976,-0.18,-0.182,-0.1818
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","conf.low",-0.222204236170674,-0.22,-0.222,-0.2222
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","conf.low",-0.0612673194637594,-0.06,-0.061,-0.0613
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","conf.low",0.124003631142809,0.12,0.124,0.124
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","conf.low",-0.0332789227899358,-0.03,-0.033,-0.0333
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","conf.low",-0.152559166804974,-0.15,-0.153,-0.1526
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","conf.low",-0.215319116898774,-0.22,-0.215,-0.2153
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","conf.low",-0.0670721149777788,-0.07,-0.067,-0.0671
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","conf.low",0.129433602456053,0.13,0.129,0.1294
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","conf.low",-0.0562050230815537,-0.06,-0.056,-0.0562
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","conf.low",-0.156919942880193,-0.16,-0.157,-0.1569
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","conf.low",-0.222527319670273,-0.22,-0.223,-0.2225
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","conf.low",-0.0541106296377209,-0.05,-0.054,-0.0541
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","conf.low",0.132182092924463,0.13,0.132,0.1322
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","conf.low",-0.0113964055769207,-0.01,-0.011,-0.0114
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","conf.low",-0.175135402451551,-0.18,-0.175,-0.1751
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","conf.low",-0.214854401088842,-0.21,-0.215,-0.2149
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","conf.low",-0.0597056554658204,-0.06,-0.06,-0.0597
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","conf.low",0.134573344375356,0.13,0.135,0.1346
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","conf.low",0.300247684845917,0.3,0.3,0.3002
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","conf.low",-0.042719644238042,-0.04,-0.043,-0.0427
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","conf.low",-0.0568684623914125,-0.06,-0.057,-0.0569
@@ -7415,6 +7581,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","conf.low",-0.00541546276789007,-0.01,-0.005,-0.0054
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","conf.low",-0.564122105840762,-0.56,-0.564,-0.5641
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","conf.low",-0.0680549770108334,-0.07,-0.068,-0.0681
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","conf.low",0.129373923682498,0.13,0.129,0.1294
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","conf.low",0.00717822333420894,0.01,0.007,0.0072
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","conf.low",-0.057889882981338,-0.06,-0.058,-0.0579
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","conf.low",-0.0505133793064233,-0.05,-0.051,-0.0505
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","conf.low",-0.0103078833652751,-0.01,-0.01,-0.0103
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","conf.low",-0.568869068887453,-0.57,-0.569,-0.5689
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","conf.low",0.0996525276573611,0.1,0.1,0.0997
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","conf.low",0.151179321284316,0.15,0.151,0.1512
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","conf.low",0.00250418231260752,0,0.003,0.0025
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.low",-0.0615463616579129,-0.06,-0.062,-0.0615
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.low",-0.0741557669570528,-0.07,-0.074,-0.0742
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","conf.low",-0.0189117724505615,-0.02,-0.019,-0.0189
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.low",-0.55635097097478,-0.56,-0.556,-0.5564
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","conf.low",0.0699547883175142,0.07,0.07,0.07
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","conf.low",0.228222866828749,0.23,0.228,0.2282
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","conf.low",-0.00309977132195552,0,-0.003,-0.0031
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.low",-0.112226751651961,-0.11,-0.112,-0.1122
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.low",-0.108095155934279,-0.11,-0.108,-0.1081
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","conf.low",0.00201374088043135,0,0.002,0.002
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.low",-0.4361001781513,-0.44,-0.436,-0.4361
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","conf.low",-0.0770778354374254,-0.08,-0.077,-0.0771
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","conf.low",0.221657172432364,0.22,0.222,0.2217
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","conf.low",-0.030046249250751,-0.03,-0.03,-0.03
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","conf.low",-0.0621985719310155,-0.06,-0.062,-0.0622
@@ -8102,6 +8289,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","conf.high",0.00551134417332745,0.01,0.006,0.0055
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","conf.high",0.0905835820113073,0.09,0.091,0.0906
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","conf.high",0.0763835771909432,0.08,0.076,0.0764
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","conf.high",0.0799986373379295,0.08,0.08,0.08
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.high",0.0558626860306865,0.06,0.056,0.0559
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.high",0.097137794906609,0.1,0.097,0.0971
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","conf.high",0.148506248854164,0.15,0.149,0.1485
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","conf.high",0.555674912167682,0.56,0.556,0.5557
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","conf.high",0.084766267055054,0.08,0.085,0.0848
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","conf.high",0.0559205701138077,0.06,0.056,0.0559
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","conf.high",0.0944933187151349,0.09,0.094,0.0945
@@ -8122,26 +8314,31 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","conf.high",0.0880331599662997,0.09,0.088,0.088
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","conf.high",0.15657890318958,0.16,0.157,0.1566
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","conf.high",0.554396565866206,0.55,0.554,0.5544
-"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","conf.high",-0.0104562956311941,-0.01,-0.01,-0.0105
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","conf.high",0.0434974186837748,0.04,0.043,0.0435
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","conf.high",-0.0695620635008432,-0.07,-0.07,-0.0696
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","conf.high",0.124325487540428,0.12,0.124,0.1243
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","conf.high",0.348450333696006,0.35,0.348,0.3485
-"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","conf.high",0.0525454115878076,0.05,0.053,0.0525
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","conf.high",0.0419957586300803,0.04,0.042,0.042
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","conf.high",-0.0687192872434903,-0.07,-0.069,-0.0687
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","conf.high",0.121674593900938,0.12,0.122,0.1217
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","conf.high",0.357703213698558,0.36,0.358,0.3577
-"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","conf.high",0.132650720964465,0.13,0.133,0.1327
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","conf.high",0.0417029912234684,0.04,0.042,0.0417
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","conf.high",-0.0608690216947667,-0.06,-0.061,-0.0609
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","conf.high",0.121074118848503,0.12,0.121,0.1211
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","conf.high",0.347445034106519,0.35,0.347,0.3474
-"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","conf.high",0.151826909713639,0.15,0.152,0.1518
-"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","conf.high",0.0373230516403704,0.04,0.037,0.0373
-"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","conf.high",-0.0723003224692713,-0.07,-0.072,-0.0723
-"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","conf.high",0.120751530545648,0.12,0.121,0.1208
-"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","conf.high",0.352197579324306,0.35,0.352,0.3522
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","conf.high",0.0102543998476854,0.01,0.01,0.0103
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.high",0.0395796920064626,0.04,0.04,0.0396
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.high",-0.0689600608421508,-0.07,-0.069,-0.069
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","conf.high",0.121079572848336,0.12,0.121,0.1211
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","conf.high",0.35003717098765,0.35,0.35,0.35
+"co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","conf.high",-0.0103491933510065,-0.01,-0.01,-0.0103
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","conf.high",0.0433822771653948,0.04,0.043,0.0434
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","conf.high",-0.0695990701058318,-0.07,-0.07,-0.0696
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_res_low","conf.high",0.124326263790554,0.12,0.124,0.1243
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_res_low","conf.high",0.348416344201378,0.35,0.348,0.3484
+"co_model_coefficients.csv","z_pct_adu_res | ZD_wexp_pct_adu_res","conf.high",0.0528019579809066,0.05,0.053,0.0528
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_adu_res","conf.high",0.0419581148518597,0.04,0.042,0.042
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_adu_res","conf.high",-0.0687956910091731,-0.07,-0.069,-0.0688
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_adu_res","conf.high",0.121719876471174,0.12,0.122,0.1217
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_adu_res","conf.high",0.357690931802836,0.36,0.358,0.3577
+"co_model_coefficients.csv","z_zoning_entropy | ZD_wexp_zoning_entropy","conf.high",0.132502705548526,0.13,0.133,0.1325
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_zoning_entropy","conf.high",0.0416091949588221,0.04,0.042,0.0416
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_zoning_entropy","conf.high",-0.0609241905148435,-0.06,-0.061,-0.0609
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_zoning_entropy","conf.high",0.12107098011449,0.12,0.121,0.1211
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_zoning_entropy","conf.high",0.347408146514259,0.35,0.347,0.3474
+"co_model_coefficients.csv","z_pct_job_zone | ZD_wexp_pct_job_zone","conf.high",0.151745718747567,0.15,0.152,0.1517
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_job_zone","conf.high",0.0372286429297158,0.04,0.037,0.0372
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_job_zone","conf.high",-0.0723547507780651,-0.07,-0.072,-0.0724
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_job_zone","conf.high",0.120765189424215,0.12,0.121,0.1208
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_job_zone","conf.high",0.352130720763503,0.35,0.352,0.3521
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow","conf.high",0.516617770317952,0.52,0.517,0.5166
 "co_model_coefficients.csv","z_pct_res_low | ZD_persistence_reslow","conf.high",0.0765023640965487,0.08,0.077,0.0765
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow","conf.high",-0.0184613760064948,-0.02,-0.018,-0.0185
@@ -8149,6 +8346,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","conf.high",0.115511682385652,0.12,0.116,0.1155
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","conf.high",-0.198631499977199,-0.2,-0.199,-0.1986
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","conf.high",0.140878440176406,0.14,0.141,0.1409
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","conf.high",0.486813089153001,0.49,0.487,0.4868
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","conf.high",0.116249190009112,0.12,0.116,0.1162
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","conf.high",-0.0201850399908343,-0.02,-0.02,-0.0202
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","conf.high",0.0950079474546189,0.1,0.095,0.095
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","conf.high",0.106961499148125,0.11,0.107,0.107
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","conf.high",-0.204124779379493,-0.2,-0.204,-0.2041
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","conf.high",0.226287139920675,0.23,0.226,0.2263
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","conf.high",0.51210553714645,0.51,0.512,0.5121
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","conf.high",0.119501445155534,0.12,0.12,0.1195
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.high",-0.0225946501022241,-0.02,-0.023,-0.0226
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.high",0.0928528507323026,0.09,0.093,0.0929
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","conf.high",0.119713435274774,0.12,0.12,0.1197
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","conf.high",-0.204410582203843,-0.2,-0.204,-0.2044
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","conf.high",0.235573073655549,0.24,0.236,0.2356
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","conf.high",0.388249109051705,0.39,0.388,0.3882
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","conf.high",0.143799380025289,0.14,0.144,0.1438
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.high",-0.044405744765537,-0.04,-0.044,-0.0444
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.high",0.155932256734491,0.16,0.156,0.1559
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","conf.high",0.231714639024549,0.23,0.232,0.2317
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","conf.high",-0.235790183745897,-0.24,-0.236,-0.2358
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","conf.high",0.0313977495378241,0.03,0.031,0.0314
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","conf.high",0.508015597041724,0.51,0.508,0.508
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","conf.high",0.0982775866489758,0.1,0.098,0.0983
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","conf.high",-0.0251803760614051,-0.03,-0.025,-0.0252
@@ -8836,6 +9054,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_wac | ZC_zoning_entropy","n_obs",645,645,645,645
 "co_model_coefficients.csv","z_pct_manuf_wac | ZC_zoning_entropy","n_obs",645,645,645,645
 "co_model_coefficients.csv","z_log_worker_density_wac | ZC_zoning_entropy","n_obs",645,645,645,645
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_res_seg_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_reslow_of_res","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_res_low | ZD_res_seg_pct_res_low","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_res_seg_pct_res_low","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_res_low","n_obs",644,644,644,644
@@ -8856,6 +9079,11 @@
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_res_seg_pct_job_zone","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_res_seg_pct_job_zone","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_res_seg_pct_job_zone","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_wexp_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_wexp_pct_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_wexp_pct_reslow_of_res","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_res_low | ZD_wexp_pct_res_low","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_wexp_pct_res_low","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_wexp_pct_res_low","n_obs",644,644,644,644
@@ -8883,6 +9111,27 @@
 "co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_res_seg_2011:z_pct_res_low | ZD_persistence_reslow","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_wins99","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_pct_lowincome_rac_2011 | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_income_percapita_k_2011 | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_log_worker_density_rac_2011 | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
+"co_model_coefficients.csv","z_res_seg_2011:z_pct_reslow_of_res | ZD_persistence_reslow_of_res_rank","n_obs",644,644,644,644
 "co_model_coefficients.csv","z_res_seg_2011 | ZD_persistence_adu","n_obs",640,640,640,640
 "co_model_coefficients.csv","z_pct_adu_res | ZD_persistence_adu","n_obs",640,640,640,640
 "co_model_coefficients.csv","z_pct_black_rac_2011 | ZD_persistence_adu","n_obs",640,640,640,640
@@ -8995,21 +9244,21 @@
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | C_network","estimate",0.00195419533386859,0,0.002,0.002
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | D_position_net","estimate",0.0766784487476013,0.08,0.077,0.0767
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | ACCESSxSEG","estimate",-0.012717266148646,-0.01,-0.013,-0.0127
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","estimate",-0.149722078016013,-0.15,-0.15,-0.1497
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","estimate",-0.168743172624686,-0.17,-0.169,-0.1687
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","estimate",-0.168022412585371,-0.17,-0.168,-0.168
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","estimate",-0.144282403270971,-0.14,-0.144,-0.1443
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","estimate",-0.141682822994807,-0.14,-0.142,-0.1417
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","estimate",-0.175697219369703,-0.18,-0.176,-0.1757
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","estimate",0.00813873287331882,0.01,0.008,0.0081
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","estimate",0.0343474958067517,0.03,0.034,0.0343
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","estimate",-0.0617278835568316,-0.06,-0.062,-0.0617
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","estimate",-0.0803527386375383,-0.08,-0.08,-0.0804
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","estimate",-0.00732095142454137,-0.01,-0.007,-0.0073
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","estimate",-0.133464200637252,-0.13,-0.133,-0.1335
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","estimate",-0.149692943181067,-0.15,-0.15,-0.1497
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","estimate",-0.168705058025778,-0.17,-0.169,-0.1687
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","estimate",-0.167998307039716,-0.17,-0.168,-0.168
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","estimate",-0.149899642378437,-0.15,-0.15,-0.1499
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","estimate",-0.217746893288474,-0.22,-0.218,-0.2177
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","estimate",-0.152558028579248,-0.15,-0.153,-0.1526
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","estimate",-0.144646314164897,-0.14,-0.145,-0.1446
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","estimate",-0.133581519221435,-0.13,-0.134,-0.1336
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","estimate",-0.161256493682514,-0.16,-0.161,-0.1613
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","estimate",0.0420512506353432,0.04,0.042,0.0421
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","estimate",-0.0193540254673789,-0.02,-0.019,-0.0194
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","estimate",0.0272704862797322,0.03,0.027,0.0273
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","estimate",-0.0854898428506352,-0.09,-0.085,-0.0855
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","estimate",0.0330898274515487,0.03,0.033,0.0331
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","estimate",-0.119189998170482,-0.12,-0.119,-0.1192
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","estimate",-0.149868572464512,-0.15,-0.15,-0.1499
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","estimate",-0.217675863015164,-0.22,-0.218,-0.2177
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","estimate",-0.152534565270854,-0.15,-0.153,-0.1525
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | C_network","estimate",-0.00959083355495682,-0.01,-0.01,-0.0096
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | D_position_net","estimate",0.0688896388631353,0.07,0.069,0.0689
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | ACCESSxSEG","estimate",-0.0249250644800272,-0.02,-0.025,-0.0249
@@ -9235,21 +9484,21 @@
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | C_network","std.error",0.00990052095930684,0.01,0.01,0.0099
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | D_position_net","std.error",0.0257305439878281,0.03,0.026,0.0257
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | ACCESSxSEG","std.error",0.0105791295892325,0.01,0.011,0.0106
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","std.error",0.0782029695577719,0.08,0.078,0.0782
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","std.error",0.0894517302613691,0.09,0.089,0.0895
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","std.error",0.0628484398422908,0.06,0.063,0.0628
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","std.error",0.119455943406452,0.12,0.119,0.1195
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","std.error",0.140138601779626,0.14,0.14,0.1401
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","std.error",0.0966799458989421,0.1,0.097,0.0967
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","std.error",0.0455052641443289,0.05,0.046,0.0455
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","std.error",0.0481568111901893,0.05,0.048,0.0482
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","std.error",0.0678937493832289,0.07,0.068,0.0679
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","std.error",0.095396172945951,0.1,0.095,0.0954
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","std.error",0.0883834050037595,0.09,0.088,0.0884
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","std.error",0.0825697608732707,0.08,0.083,0.0826
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","std.error",0.0782292131563339,0.08,0.078,0.0782
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","std.error",0.089498482748367,0.09,0.089,0.0895
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","std.error",0.062870232669354,0.06,0.063,0.0629
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","std.error",0.0767524789969707,0.08,0.077,0.0768
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","std.error",0.0994589612565207,0.1,0.099,0.0995
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","std.error",0.0718807008916395,0.07,0.072,0.0719
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","std.error",0.120529468718441,0.12,0.121,0.1205
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","std.error",0.133477639734321,0.13,0.133,0.1335
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","std.error",0.116940547423151,0.12,0.117,0.1169
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","std.error",0.0309999774254021,0.03,0.031,0.031
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","std.error",0.0506330553250922,0.05,0.051,0.0506
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","std.error",0.0312498519536932,0.03,0.031,0.0312
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","std.error",0.114225056440904,0.11,0.114,0.1142
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","std.error",0.0618259974676887,0.06,0.062,0.0618
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","std.error",0.121085059952623,0.12,0.121,0.1211
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","std.error",0.0767732573817739,0.08,0.077,0.0768
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","std.error",0.0995012519535001,0.1,0.1,0.0995
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","std.error",0.0719012122214465,0.07,0.072,0.0719
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | C_network","std.error",0.0116603973728274,0.01,0.012,0.0117
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | D_position_net","std.error",0.0282563176254266,0.03,0.028,0.0283
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | ACCESSxSEG","std.error",0.0111667935379605,0.01,0.011,0.0112
@@ -9475,21 +9724,21 @@
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | C_network","p.value",0.845062761144616,0.85,0.845,0.8451
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | D_position_net","p.value",0.00617710304947749,0.01,0.006,0.0062
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | ACCESSxSEG","p.value",0.240155958181613,0.24,0.24,0.2402
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","p.value",0.0680727254002707,0.07,0.068,0.0681
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","p.value",0.0719279389238858,0.07,0.072,0.0719
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","p.value",0.0135709695734143,0.01,0.014,0.0136
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","p.value",0.239386492384979,0.24,0.239,0.2394
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","p.value",0.322525736444545,0.32,0.323,0.3225
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","p.value",0.0822228946144945,0.08,0.082,0.0822
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","p.value",0.859619616374056,0.86,0.86,0.8596
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","p.value",0.482870339794666,0.48,0.483,0.4829
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","p.value",0.372682553282833,0.37,0.373,0.3727
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","p.value",0.408290571731547,0.41,0.408,0.4083
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","p.value",0.93470200774292,0.93,0.935,0.9347
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","p.value",0.119647014700172,0.12,0.12,0.1196
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","p.value",0.0682086468534819,0.07,0.068,0.0682
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","p.value",0.072126384554096,0.07,0.072,0.0721
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","p.value",0.0136112302853399,0.01,0.014,0.0136
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","p.value",0.0630886896441936,0.06,0.063,0.0631
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","p.value",0.0389822039277946,0.04,0.039,0.039
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","p.value",0.0447891514154786,0.04,0.045,0.0448
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","p.value",0.242319895034893,0.24,0.242,0.2423
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","p.value",0.327347361422035,0.33,0.327,0.3273
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","p.value",0.181170570496919,0.18,0.181,0.1812
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","p.value",0.188109365159937,0.19,0.188,0.1881
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","p.value",0.705791889117632,0.71,0.706,0.7058
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","p.value",0.391868186067298,0.39,0.392,0.3919
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","p.value",0.461784248724947,0.46,0.462,0.4618
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","p.value",0.597642707506814,0.6,0.598,0.5976
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","p.value",0.335186131141077,0.34,0.335,0.3352
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","p.value",0.0632056178478333,0.06,0.063,0.0632
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","p.value",0.0391162917300462,0.04,0.039,0.0391
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","p.value",0.044875211169512,0.04,0.045,0.0449
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | C_network","p.value",0.418264668326879,0.42,0.418,0.4183
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | D_position_net","p.value",0.0219103692425171,0.02,0.022,0.0219
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | ACCESSxSEG","p.value",0.0344415141994293,0.03,0.034,0.0344
@@ -9715,21 +9964,21 @@
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | C_network","n_obs",646,646,646,646
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | D_position_net","n_obs",646,646,646,646
 "p4_access_influence_forms.csv","block_pop|missing | FALSE | auto | log1p | ACCESSxSEG","n_obs",646,646,646,646
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","n_obs",492,492,492,492
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","n_obs",492,492,492,492
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","n_obs",492,492,492,492
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","n_obs",495,495,495,495
-"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","n_obs",495,495,495,495
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | C_network","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | D_position_net","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log | ACCESSxSEG","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | C_network","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | D_position_net","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_wins | ACCESSxSEG","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | C_network","n_obs",485,485,485,485
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | D_position_net","n_obs",485,485,485,485
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log_trim | ACCESSxSEG","n_obs",485,485,485,485
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | C_network","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | D_position_net","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | rank | ACCESSxSEG","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | C_network","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | D_position_net","n_obs",488,488,488,488
+"p4_access_influence_forms.csv","block_pop|missing | FALSE | transit | log1p | ACCESSxSEG","n_obs",488,488,488,488
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | C_network","n_obs",646,646,646,646
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | D_position_net","n_obs",646,646,646,646
 "p4_access_influence_forms.csv","block_area|zero | FALSE | auto | log | ACCESSxSEG","n_obs",646,646,646,646
@@ -9940,6 +10189,18 @@
 "p4_access_influence_loo.csv","transit | C_network | TRUE | 08059009846","loo_max",0.10105417203637,0.1,0.101,0.1011
 "p4_access_influence_loo.csv","transit | D_position_net | TRUE | 08059009846","loo_max",0.0519762866451204,0.05,0.052,0.052
 "p4_access_influence_loo.csv","transit | ACCESSxSEG | TRUE | 08059009846","loo_max",0.0946767527355395,0.09,0.095,0.0947
+"p4_access_influence_loo.csv","auto | C_network | TRUE | 08035014300","loo_max_p",0.990834303862198,0.99,0.991,0.9908
+"p4_access_influence_loo.csv","auto | D_position_net | FALSE | 08035014300","loo_max_p",0.353514442933795,0.35,0.354,0.3535
+"p4_access_influence_loo.csv","auto | ACCESSxSEG | FALSE | 08035014300","loo_max_p",0.574532647319408,0.57,0.575,0.5745
+"p4_access_influence_loo.csv","transit | C_network | TRUE | 08059009846","loo_max_p",0.270871378693875,0.27,0.271,0.2709
+"p4_access_influence_loo.csv","transit | D_position_net | TRUE | 08059009846","loo_max_p",0.296027834170846,0.3,0.296,0.296
+"p4_access_influence_loo.csv","transit | ACCESSxSEG | TRUE | 08059009846","loo_max_p",0.228011605565643,0.23,0.228,0.228
+"p4_access_influence_loo.csv","auto | C_network | TRUE | 08035014300","n_deletions_p_ge_05",645,645,645,645
+"p4_access_influence_loo.csv","auto | D_position_net | FALSE | 08035014300","n_deletions_p_ge_05",1,1,1,1
+"p4_access_influence_loo.csv","auto | ACCESSxSEG | FALSE | 08035014300","n_deletions_p_ge_05",645,645,645,645
+"p4_access_influence_loo.csv","transit | C_network | TRUE | 08059009846","n_deletions_p_ge_05",487,487,487,487
+"p4_access_influence_loo.csv","transit | D_position_net | TRUE | 08059009846","n_deletions_p_ge_05",488,488,488,488
+"p4_access_influence_loo.csv","transit | ACCESSxSEG | TRUE | 08059009846","n_deletions_p_ge_05",487,487,487,487
 "p4_access_influence_loo.csv","auto | C_network | TRUE | 08035014300","estimate_without_it",-0.0585119626534895,-0.06,-0.059,-0.0585
 "p4_access_influence_loo.csv","auto | D_position_net | FALSE | 08035014300","estimate_without_it",0.0407632857543141,0.04,0.041,0.0408
 "p4_access_influence_loo.csv","auto | ACCESSxSEG | FALSE | 08035014300","estimate_without_it",-0.075746623325111,-0.08,-0.076,-0.0757
@@ -11766,30 +12027,30 @@
 "p4_excess_commuting_tercile.csv","1","actual_km",13.4369925927188,13.44,13.437,13.437
 "p4_excess_commuting_tercile.csv","2","actual_km",15.4138596308194,15.41,15.414,15.4139
 "p4_excess_commuting_tercile.csv","3","actual_km",19.2706498291047,19.27,19.271,19.2706
-"p4_excess_commuting_tercile.csv","1","minimum_km",2.02820329803894,2.03,2.028,2.0282
-"p4_excess_commuting_tercile.csv","2","minimum_km",3.89065764800969,3.89,3.891,3.8907
-"p4_excess_commuting_tercile.csv","3","minimum_km",5.69676583338037,5.7,5.697,5.6968
-"p4_excess_commuting_tercile.csv","1","excess_km",11.4087892946799,11.41,11.409,11.4088
-"p4_excess_commuting_tercile.csv","2","excess_km",11.5232019828097,11.52,11.523,11.5232
-"p4_excess_commuting_tercile.csv","3","excess_km",13.5738839957244,13.57,13.574,13.5739
-"p4_excess_commuting_tercile.csv","1","excess_pct",84.9058240968446,84.91,84.906,84.9058
-"p4_excess_commuting_tercile.csv","2","excess_pct",74.7587058582622,74.76,74.759,74.7587
-"p4_excess_commuting_tercile.csv","3","excess_pct",70.4381228246052,70.44,70.438,70.4381
-"p4_excess_commuting.csv","all","workers",1340294,1340294,1340294,1340294
-"p4_excess_commuting.csv","low_earnings","workers",140070,140070,140070,140070
-"p4_excess_commuting.csv","high_earnings","workers",949360,949360,949360,949360
+"p4_excess_commuting_tercile.csv","1","minimum_km",1.96710235662066,1.97,1.967,1.9671
+"p4_excess_commuting_tercile.csv","2","minimum_km",3.93469569443772,3.93,3.935,3.9347
+"p4_excess_commuting_tercile.csv","3","minimum_km",6.72965550404113,6.73,6.73,6.7297
+"p4_excess_commuting_tercile.csv","1","excess_km",11.4698902360982,11.47,11.47,11.4699
+"p4_excess_commuting_tercile.csv","2","excess_km",11.4791639363817,11.48,11.479,11.4792
+"p4_excess_commuting_tercile.csv","3","excess_km",12.5409943250636,12.54,12.541,12.541
+"p4_excess_commuting_tercile.csv","1","excess_pct",85.3605459477102,85.36,85.361,85.3605
+"p4_excess_commuting_tercile.csv","2","excess_pct",74.4730016447635,74.47,74.473,74.473
+"p4_excess_commuting_tercile.csv","3","excess_pct",65.0782118728698,65.08,65.078,65.0782
+"p4_excess_commuting.csv","all","workers",1134992,1134992,1134992,1134992
+"p4_excess_commuting.csv","low_earnings","workers",115784,115784,115784,115784
+"p4_excess_commuting.csv","high_earnings","workers",808516,808516,808516,808516
 "p4_excess_commuting.csv","all","actual_km",16.0834637180765,16.08,16.083,16.0835
 "p4_excess_commuting.csv","low_earnings","actual_km",14.9671524173488,14.97,14.967,14.9672
 "p4_excess_commuting.csv","high_earnings","actual_km",16.5274506397606,16.53,16.527,16.5275
-"p4_excess_commuting.csv","all","minimum_km",3.91603106204788,3.92,3.916,3.916
-"p4_excess_commuting.csv","low_earnings","minimum_km",3.07945707242733,3.08,3.079,3.0795
-"p4_excess_commuting.csv","high_earnings","minimum_km",4.33135089965845,4.33,4.331,4.3314
-"p4_excess_commuting.csv","all","excess_km",12.1674326560286,12.17,12.167,12.1674
-"p4_excess_commuting.csv","low_earnings","excess_km",11.8876953449214,11.89,11.888,11.8877
-"p4_excess_commuting.csv","high_earnings","excess_km",12.1960997401021,12.2,12.196,12.1961
-"p4_excess_commuting.csv","all","excess_pct",75.6518177260126,75.65,75.652,75.6518
-"p4_excess_commuting.csv","low_earnings","excess_pct",79.4252307549307,79.43,79.425,79.4252
-"p4_excess_commuting.csv","high_earnings","excess_pct",73.7929884404653,73.79,73.793,73.793
+"p4_excess_commuting.csv","all","minimum_km",4.25306454034039,4.25,4.253,4.2531
+"p4_excess_commuting.csv","low_earnings","minimum_km",3.03558982493673,3.04,3.036,3.0356
+"p4_excess_commuting.csv","high_earnings","minimum_km",4.78104878569746,4.78,4.781,4.781
+"p4_excess_commuting.csv","all","excess_km",11.8303991777361,11.83,11.83,11.8304
+"p4_excess_commuting.csv","low_earnings","excess_km",11.931562592412,11.93,11.932,11.9316
+"p4_excess_commuting.csv","high_earnings","excess_km",11.7464018540631,11.75,11.746,11.7464
+"p4_excess_commuting.csv","all","excess_pct",73.5562897713364,73.56,73.556,73.5563
+"p4_excess_commuting.csv","low_earnings","excess_pct",79.7183208917008,79.72,79.718,79.7183
+"p4_excess_commuting.csv","high_earnings","excess_pct",71.0720734255557,71.07,71.072,71.0721
 "p4_gravity_models.csv","log(o_workers) | G1_baseline","estimate",1.23442619454243,1.23,1.234,1.2344
 "p4_gravity_models.csv","log(d_jobs) | G1_baseline","estimate",1.00559411271261,1.01,1.006,1.0056
 "p4_gravity_models.csv","log_dist | G1_baseline","estimate",-0.691275265172987,-0.69,-0.691,-0.6913
@@ -11895,6 +12156,10 @@
 "p4_headline_influence_loo.csv","B_plus_regional_position | 08059012036","loo_min",0.0905298392462022,0.09,0.091,0.0905
 "p4_headline_influence_loo.csv","A_total | 08005007101","loo_max",0.352515345116552,0.35,0.353,0.3525
 "p4_headline_influence_loo.csv","B_plus_regional_position | 08059012036","loo_max",0.133047414104281,0.13,0.133,0.133
+"p4_headline_influence_loo.csv","A_total | 08005007101","loo_max_p",9.58608885993058e-05,0,0,1e-04
+"p4_headline_influence_loo.csv","B_plus_regional_position | 08059012036","loo_max_p",0.0916846518573941,0.09,0.092,0.0917
+"p4_headline_influence_loo.csv","A_total | 08005007101","n_deletions_p_ge_05",0,0,0,0
+"p4_headline_influence_loo.csv","B_plus_regional_position | 08059012036","n_deletions_p_ge_05",7,7,7,7
 "p4_headline_influence_loo.csv","A_total | 08005007101","estimate_without_it",0.313004847683988,0.31,0.313,0.313
 "p4_headline_influence_loo.csv","B_plus_regional_position | 08059012036","estimate_without_it",0.133047414104281,0.13,0.133,0.133
 "p4_headline_influence_loo.csv","A_total | 08005007101","p_without_it",3.1778051545155e-06,0,0,0
@@ -12859,62 +13124,62 @@
 "p4_manuscript_statistics.csv","levels_baseline_common_sample_p","n",646,646,646,646
 "p4_manuscript_statistics.csv","cor_restrictiveness_retention_jurisdictions","n",27,27,27,27
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_naive","estimate",-0.140462086392569,-0.14,-0.14,-0.1405
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","estimate",-0.0866423008604547,-0.09,-0.087,-0.0866
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_low_cond_totalaccess","estimate",0.735197148764764,0.74,0.735,0.7352
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","estimate",-0.0850486276451493,-0.09,-0.085,-0.085
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_low_cond_totalaccess","estimate",0.751641864766326,0.75,0.752,0.7516
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_naive","estimate",-0.158330245389045,-0.16,-0.158,-0.1583
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","estimate",-0.107114888055223,-0.11,-0.107,-0.1071
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_high_cond_totalaccess","estimate",0.699619746019362,0.7,0.7,0.6996
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","estimate",-0.105384429576854,-0.11,-0.105,-0.1054
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_high_cond_totalaccess","estimate",0.718170145452306,0.72,0.718,0.7182
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_naive","estimate",0.101599053730744,0.1,0.102,0.1016
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","estimate",0.0351005567124045,0.04,0.035,0.0351
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_match_ratio_cond_totalaccess","estimate",-0.908392794985268,-0.91,-0.908,-0.9084
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","estimate",0.0328829244729926,0.03,0.033,0.0329
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_match_ratio_cond_totalaccess","estimate",-0.932082578895598,-0.93,-0.932,-0.9321
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_naive","std.error",0.0504096679234433,0.05,0.05,0.0504
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","std.error",0.0237232642472351,0.02,0.024,0.0237
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_low_cond_totalaccess","std.error",0.0935861357536464,0.09,0.094,0.0936
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","std.error",0.0227746031599067,0.02,0.023,0.0228
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_low_cond_totalaccess","std.error",0.092241990040416,0.09,0.092,0.0922
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_naive","std.error",0.0433596553470763,0.04,0.043,0.0434
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","std.error",0.0178523423745922,0.02,0.018,0.0179
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_high_cond_totalaccess","std.error",0.0864224409704928,0.09,0.086,0.0864
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","std.error",0.0166235710223651,0.02,0.017,0.0166
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_high_cond_totalaccess","std.error",0.0852953629968462,0.09,0.085,0.0853
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_naive","std.error",0.0333767957880053,0.03,0.033,0.0334
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","std.error",0.025889065428264,0.03,0.026,0.0259
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_match_ratio_cond_totalaccess","std.error",0.103881765668389,0.1,0.104,0.1039
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","std.error",0.0258341015882107,0.03,0.026,0.0258
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_match_ratio_cond_totalaccess","std.error",0.102310990914712,0.1,0.102,0.1023
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_naive","statistic",-2.78641165829316,-2.79,-2.786,-2.7864
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","statistic",-3.65220822722795,-3.65,-3.652,-3.6522
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_low_cond_totalaccess","statistic",7.85583401691119,7.86,7.856,7.8558
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","statistic",-3.73436266037217,-3.73,-3.734,-3.7344
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_low_cond_totalaccess","statistic",8.14858682512154,8.15,8.149,8.1486
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_naive","statistic",-3.6515568244645,-3.65,-3.652,-3.6516
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","statistic",-6.00004670578529,-6,-6,-6
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_high_cond_totalaccess","statistic",8.09534813137519,8.1,8.095,8.0953
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","statistic",-6.33945795611971,-6.34,-6.339,-6.3395
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_high_cond_totalaccess","statistic",8.41980290861603,8.42,8.42,8.4198
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_naive","statistic",3.04400261714924,3.04,3.044,3.044
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","statistic",1.35580624992681,1.36,1.356,1.3558
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_match_ratio_cond_totalaccess","statistic",-8.74448743858512,-8.74,-8.744,-8.7445
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","statistic",1.27284954581113,1.27,1.273,1.2728
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_match_ratio_cond_totalaccess","statistic",-9.11028786411224,-9.11,-9.11,-9.1103
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_naive","p.value",0.00981977357966959,0.01,0.01,0.0098
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","p.value",0.00115002094496847,0,0.001,0.0012
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_low_cond_totalaccess","p.value",2.48341110774243e-08,0,0,0
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","p.value",0.00093103012097091,0,0.001,9e-04
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_low_cond_totalaccess","p.value",1.25052546719276e-08,0,0,0
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_naive","p.value",0.00115194426131167,0,0.001,0.0012
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","p.value",2.46167810179817e-06,0,0,0
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_high_cond_totalaccess","p.value",1.4155086603707e-08,0,0,0
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","p.value",1.03164900359948e-06,0,0,0
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_high_cond_totalaccess","p.value",6.69028388844314e-09,0,0,0
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_naive","p.value",0.00528774590387448,0.01,0.005,0.0053
-"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","p.value",0.186820996122443,0.19,0.187,0.1868
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_match_ratio_cond_totalaccess","p.value",3.20489258231556e-09,0,0,0
+"p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","p.value",0.21433595789682,0.21,0.214,0.2143
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_match_ratio_cond_totalaccess","p.value",1.42220272992981e-09,0,0,0
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_naive","n_obs",648,648,648,648
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_low_cond_totalaccess","n_obs",648,648,648,648
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_low_cond_totalaccess","n_obs",648,648,648,648
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_low_cond_totalaccess","n_obs",648,648,648,648
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_naive","n_obs",648,648,648,648
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_acc_high_cond_totalaccess","n_obs",648,648,648,648
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_acc_high_cond_totalaccess","n_obs",648,648,648,648
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_acc_high_cond_totalaccess","n_obs",648,648,648,648
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_naive","n_obs",648,648,648,648
 "p4_matched_access_models.csv","z_pct_reslow_of_res | MA_match_ratio_cond_totalaccess","n_obs",648,648,648,648
-"p4_matched_access_models.csv","z_log_jobs_grav | MA_match_ratio_cond_totalaccess","n_obs",648,648,648,648
+"p4_matched_access_models.csv","z_log_jobs_grav_msa | MA_match_ratio_cond_totalaccess","n_obs",648,648,648,648
 "p4_matched_access_tercile.csv","1","n",219,219,219,219
 "p4_matched_access_tercile.csv","2","n",219,219,219,219
 "p4_matched_access_tercile.csv","3","n",218,218,218,218
 "p4_matched_access_tercile.csv","1","matched_access_low",1.22934524823701,1.23,1.229,1.2293
 "p4_matched_access_tercile.csv","2","matched_access_low",1.11151035311509,1.11,1.112,1.1115
 "p4_matched_access_tercile.csv","3","matched_access_low",0.899650662722082,0.9,0.9,0.8997
-"p4_matched_access_tercile.csv","1","matched_access_high",1.30851783874278,1.31,1.309,1.3085
-"p4_matched_access_tercile.csv","2","matched_access_high",1.14369075148953,1.14,1.144,1.1437
-"p4_matched_access_tercile.csv","3","matched_access_high",0.893012469964068,0.89,0.893,0.893
-"p4_matched_access_tercile.csv","1","low_over_high",0.99691614873661,1,0.997,0.9969
-"p4_matched_access_tercile.csv","2","low_over_high",1.04318966630882,1.04,1.043,1.0432
-"p4_matched_access_tercile.csv","3","low_over_high",1.0891388249903,1.09,1.089,1.0891
+"p4_matched_access_tercile.csv","1","matched_access_high",1.28720993444633,1.29,1.287,1.2872
+"p4_matched_access_tercile.csv","2","matched_access_high",1.09290002938575,1.09,1.093,1.0929
+"p4_matched_access_tercile.csv","3","matched_access_high",0.870263350460852,0.87,0.87,0.8703
+"p4_matched_access_tercile.csv","1","low_over_high",0.955046426646628,0.96,0.955,0.955
+"p4_matched_access_tercile.csv","2","low_over_high",1.01702838615513,1.02,1.017,1.017
+"p4_matched_access_tercile.csv","3","low_over_high",1.03376829811995,1.03,1.034,1.0338
 "p4_measure_sensitivity.csv","naive | decay_quarter","estimate",0.402076662616458,0.4,0.402,0.4021
 "p4_measure_sensitivity.csv","preferred | decay_quarter","estimate",0.0959135272181619,0.1,0.096,0.0959
 "p4_measure_sensitivity.csv","naive | decay_half","estimate",0.333207567186429,0.33,0.333,0.3332
@@ -13654,13 +13919,16 @@
 "p4_spatial_inference.csv","morans_I_knn8","p",1.37378106116355e-58,0,0,0
 "p4_spatial_inference.csv","morans_I_invdist10km","p",2.21381317498479e-175,0,0,0
 "p4_spatial_inference.csv","interaction_jurisdiction_cluster","p",0.0381513698705084,0.04,0.038,0.0382
-"p4_spatial_inference.csv","interaction_conley_10km","p",0.0422155100555341,0.04,0.042,0.0422
-"p4_spatial_inference.csv","interaction_conley_20km","p",0.049463234023791,0.05,0.049,0.0495
-"p4_spatial_inference.csv","interaction_conley_50km","p",0.00614024259199392,0.01,0.006,0.0061
+"p4_spatial_inference.csv","interaction_conley_10km","p",0.0525544216404116,0.05,0.053,0.0526
+"p4_spatial_inference.csv","interaction_conley_20km","p",0.0602352916988095,0.06,0.06,0.0602
+"p4_spatial_inference.csv","interaction_conley_50km","p",0.0109496442023508,0.01,0.011,0.0109
 "p4_spatial_inference.csv","interaction_conley_10km","std.error",0.050440787937357,0.05,0.05,0.0504
 "p4_spatial_inference.csv","interaction_conley_20km","std.error",0.0521562093954592,0.05,0.052,0.0522
 "p4_spatial_inference.csv","interaction_conley_50km","std.error",0.0373932577937664,0.04,0.037,0.0374
 "p4_spatial_inference.csv","conley20_fixest_crosscheck_se","std.error",0.0521562093954592,0.05,0.052,0.0522
+"p4_spatial_inference.csv","interaction_conley_10km","p_normal",0.0422155100555341,0.04,0.042,0.0422
+"p4_spatial_inference.csv","interaction_conley_20km","p_normal",0.049463234023791,0.05,0.049,0.0495
+"p4_spatial_inference.csv","interaction_conley_50km","p_normal",0.00614024259199392,0.01,0.006,0.0061
 "p4_tercile_descriptives.csv","1","n_tracts",219,219,219,219
 "p4_tercile_descriptives.csv","2","n_tracts",219,219,219,219
 "p4_tercile_descriptives.csv","3","n_tracts",218,218,218,218
@@ -14202,7 +14470,7 @@
 "62_home_panel_by_cbsa_year.csv","2021","mean_wexp",0.0300599425327597,0.03,0.03,0.0301
 "62_home_panel_by_cbsa_year.csv","2022","mean_wexp",0.0294907793340125,0.03,0.029,0.0295
 "62_home_panel_by_cbsa_year.csv","2023","mean_wexp",0.0249868482763504,0.02,0.025,0.025
-"62_home_panel_by_cbsa_year.csv","2011","mean_wexp",0.0295729007417466,0.03,0.03,0.0296
+"62_home_panel_by_cbsa_year.csv","2011","mean_wexp",0.0295745887225954,0.03,0.03,0.0296
 "62_home_panel_by_cbsa_year.csv","2012","mean_wexp",0.0288383292396249,0.03,0.029,0.0288
 "62_home_panel_by_cbsa_year.csv","2013","mean_wexp",0.0279997761435423,0.03,0.028,0.028
 "62_home_panel_by_cbsa_year.csv","2014","mean_wexp",0.0285186204182272,0.03,0.029,0.0285
@@ -14228,7 +14496,7 @@
 "62_home_panel_by_cbsa_year.csv","2021","mean_wexp",0.0812037020437885,0.08,0.081,0.0812
 "62_home_panel_by_cbsa_year.csv","2022","mean_wexp",0.0715771924186372,0.07,0.072,0.0716
 "62_home_panel_by_cbsa_year.csv","2023","mean_wexp",0.0671900794088777,0.07,0.067,0.0672
-"62_res_vs_wexp_correlation_by_year.csv","2011","r_resseg_wexp",0.572850665267271,0.57,0.573,0.5729
+"62_res_vs_wexp_correlation_by_year.csv","2011","r_resseg_wexp",0.572872580955722,0.57,0.573,0.5729
 "62_res_vs_wexp_correlation_by_year.csv","2012","r_resseg_wexp",0.598455858488461,0.6,0.598,0.5985
 "62_res_vs_wexp_correlation_by_year.csv","2013","r_resseg_wexp",0.63641674755918,0.64,0.636,0.6364
 "62_res_vs_wexp_correlation_by_year.csv","2014","r_resseg_wexp",0.627190139824197,0.63,0.627,0.6272
@@ -14420,10 +14688,10 @@
 "64_model_sign_summary.csv","ZC | neg | TRUE","n",5,5,5,5
 "64_model_sign_summary.csv","ZC | pos | FALSE","n",7,7,7,7
 "64_model_sign_summary.csv","ZC | pos | TRUE","n",6,6,6,6
-"64_model_sign_summary.csv","ZD | neg | FALSE","n",13,13,13,13
-"64_model_sign_summary.csv","ZD | neg | TRUE","n",9,9,9,9
-"64_model_sign_summary.csv","ZD | pos | FALSE","n",22,22,22,22
-"64_model_sign_summary.csv","ZD | pos | TRUE","n",10,10,10,10
+"64_model_sign_summary.csv","ZD | neg | FALSE","n",18,18,18,18
+"64_model_sign_summary.csv","ZD | neg | TRUE","n",16,16,16,16
+"64_model_sign_summary.csv","ZD | pos | FALSE","n",33,33,33,33
+"64_model_sign_summary.csv","ZD | pos | TRUE","n",18,18,18,18
 "64_model_sign_summary.csv","ZM | neg | FALSE","n",14,14,14,14
 "64_model_sign_summary.csv","ZM | neg | TRUE","n",19,19,19,19
 "64_model_sign_summary.csv","ZM | pos | FALSE","n",15,15,15,15
@@ -15029,15 +15297,15 @@
 "66_group_gradients_by_year.csv","2023 | ind_goods","eff_n_dest",35.7996391067109,35.8,35.8,35.7996
 "66_group_gradients_by_year.csv","2023 | ind_services","eff_n_dest",70.6302494165669,70.63,70.63,70.6302
 "66_group_gradients_by_year.csv","2023 | ind_tradetrans","eff_n_dest",52.9540780460127,52.95,52.954,52.9541
-"66_group_gradients_by_year.csv","2011 | age_30_54","wexp",0.0315576555082213,0.03,0.032,0.0316
-"66_group_gradients_by_year.csv","2011 | age_55p","wexp",0.0324843155279625,0.03,0.032,0.0325
+"66_group_gradients_by_year.csv","2011 | age_30_54","wexp",0.0315592081607112,0.03,0.032,0.0316
+"66_group_gradients_by_year.csv","2011 | age_55p","wexp",0.0324868731816488,0.03,0.032,0.0325
 "66_group_gradients_by_year.csv","2011 | age_u30","wexp",0.0311126214532805,0.03,0.031,0.0311
-"66_group_gradients_by_year.csv","2011 | all","wexp",0.0316393648566742,0.03,0.032,0.0316
-"66_group_gradients_by_year.csv","2011 | earn_high","wexp",0.0284969549802083,0.03,0.028,0.0285
-"66_group_gradients_by_year.csv","2011 | earn_low","wexp",0.0363450246261797,0.04,0.036,0.0363
-"66_group_gradients_by_year.csv","2011 | earn_mid","wexp",0.0335280979129581,0.03,0.034,0.0335
-"66_group_gradients_by_year.csv","2011 | ind_goods","wexp",0.0432458050063424,0.04,0.043,0.0432
-"66_group_gradients_by_year.csv","2011 | ind_services","wexp",0.028511288193244,0.03,0.029,0.0285
+"66_group_gradients_by_year.csv","2011 | all","wexp",0.0316407721488061,0.03,0.032,0.0316
+"66_group_gradients_by_year.csv","2011 | earn_high","wexp",0.028498553928615,0.03,0.028,0.0285
+"66_group_gradients_by_year.csv","2011 | earn_low","wexp",0.0363452339836144,0.04,0.036,0.0363
+"66_group_gradients_by_year.csv","2011 | earn_mid","wexp",0.0335297318294362,0.03,0.034,0.0335
+"66_group_gradients_by_year.csv","2011 | ind_goods","wexp",0.0432463033092183,0.04,0.043,0.0432
+"66_group_gradients_by_year.csv","2011 | ind_services","wexp",0.0285130886905084,0.03,0.029,0.0285
 "66_group_gradients_by_year.csv","2011 | ind_tradetrans","wexp",0.0363287299823224,0.04,0.036,0.0363
 "66_group_gradients_by_year.csv","2012 | age_30_54","wexp",0.030493705174966,0.03,0.03,0.0305
 "66_group_gradients_by_year.csv","2012 | age_55p","wexp",0.0315948849160042,0.03,0.032,0.0316
@@ -15836,7 +16104,7 @@
 "32_segregation_panel_by_year.csv","2021","mean_d_wb_rac_half",0.0729206560104159,0.07,0.073,0.0729
 "32_segregation_panel_by_year.csv","2022","mean_d_wb_rac_half",0.0722363471243079,0.07,0.072,0.0722
 "32_segregation_panel_by_year.csv","2023","mean_d_wb_rac_half",0.0727764557305362,0.07,0.073,0.0728
-"32_segregation_panel_by_year.csv","2011","mean_d_wb_wac_half",0.0883523484435614,0.09,0.088,0.0884
+"32_segregation_panel_by_year.csv","2011","mean_d_wb_wac_half",0.0884178431421852,0.09,0.088,0.0884
 "32_segregation_panel_by_year.csv","2012","mean_d_wb_wac_half",0.0876383066479175,0.09,0.088,0.0876
 "32_segregation_panel_by_year.csv","2013","mean_d_wb_wac_half",0.0853892756252349,0.09,0.085,0.0854
 "32_segregation_panel_by_year.csv","2014","mean_d_wb_wac_half",0.0841871084508289,0.08,0.084,0.0842
@@ -15862,7 +16130,7 @@
 "32_segregation_panel_by_year.csv","2021","pctna_rac",0.41,0.41,0.41,0.41
 "32_segregation_panel_by_year.csv","2022","pctna_rac",0.41,0.41,0.41,0.41
 "32_segregation_panel_by_year.csv","2023","pctna_rac",0.48,0.48,0.48,0.48
-"32_segregation_panel_by_year.csv","2011","pctna_wac",6.7,6.7,6.7,6.7
+"32_segregation_panel_by_year.csv","2011","pctna_wac",6.77,6.77,6.77,6.77
 "32_segregation_panel_by_year.csv","2012","pctna_wac",6.08,6.08,6.08,6.08
 "32_segregation_panel_by_year.csv","2013","pctna_wac",5.18,5.18,5.18,5.18
 "32_segregation_panel_by_year.csv","2014","pctna_wac",5.18,5.18,5.18,5.18
@@ -16022,7 +16290,7 @@
 "53_sld_summary.csv","rel_dominant|zero | FALSE","median_D5AR",38686,38686,38686,38686
 "53_sld_summary.csv","block_area|missing | FALSE","n_transit_positive",798,798,798,798
 "53_sld_summary.csv","block_area|zero | FALSE","n_transit_positive",798,798,798,798
-"53_sld_summary.csv","block_pop|missing | FALSE","n_transit_positive",798,798,798,798
+"53_sld_summary.csv","block_pop|missing | FALSE","n_transit_positive",782,782,782,782
 "53_sld_summary.csv","block_pop|zero | TRUE","n_transit_positive",782,782,782,782
 "53_sld_summary.csv","rel_area|missing | FALSE","n_transit_positive",873,873,873,873
 "53_sld_summary.csv","rel_area|zero | FALSE","n_transit_positive",873,873,873,873
@@ -16030,7 +16298,7 @@
 "53_sld_summary.csv","rel_dominant|zero | FALSE","n_transit_positive",801,801,801,801
 "53_sld_summary.csv","block_area|missing | FALSE","median_D5BR_positive",51740,51740,51740,51740
 "53_sld_summary.csv","block_area|zero | FALSE","median_D5BR_positive",42043,42043,42043,42043
-"53_sld_summary.csv","block_pop|missing | FALSE","median_D5BR_positive",52808,52808,52808,52808
+"53_sld_summary.csv","block_pop|missing | FALSE","median_D5BR_positive",53904,53904,53904,53904
 "53_sld_summary.csv","block_pop|zero | TRUE","median_D5BR_positive",45880,45880,45880,45880
 "53_sld_summary.csv","rel_area|missing | FALSE","median_D5BR_positive",49297,49297,49297,49297
 "53_sld_summary.csv","rel_area|zero | FALSE","median_D5BR_positive",38342,38342,38342,38342

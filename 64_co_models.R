@@ -30,7 +30,7 @@
 #            side-by-side across every variant + a joint horse race
 #            (r = 0.91 between them -- read the joint spec with that in mind;
 #            output: co_exclusionary_measure_comparison.csv);
-#            transit moderator head-to-head IF the SLD file exists (53A).
+#            transit moderator head-to-head IF the SLD file exists (53_sld.R).
 #
 # Epistemic framing (same as papers 1-3): descriptive/moderation language, NO
 # causal claims. Zoning is endogenous to who lives where -- exclusionary
@@ -118,7 +118,7 @@ message(sprintf("Model frames: Denver %d tracts | pooled %d | cov50 %d",
 ## Descriptives: 2023 means by exclusionary-zoning tercile
 ## =============================================================================
 desc <- xs |>
-  mutate(reslow_tercile = ntile(pct_res_low, 3)) |>
+  mutate(reslow_tercile = ntile(pct_reslow_of_res, 3)) |>
   group_by(reslow_tercile) |>
   summarise(n = n(),
             across(c(pct_res_low, pct_adu_res, zoning_entropy, pct_job_zone,
@@ -251,7 +251,8 @@ COVS_0 <- paste(c("z_pct_black_rac_2011", "z_pct_lowincome_rac_2011",
                   "z_income_percapita_k_2011",
                   "z_log_worker_density_rac_2011"), collapse = " + ")
 for (out in c("z_d_res_seg", "z_d_wexp"))
-  for (zv in c("pct_res_low", "pct_adu_res", "zoning_entropy", "pct_job_zone"))
+  for (zv in c("pct_reslow_of_res", "pct_res_low", "pct_adu_res",
+               "zoning_entropy", "pct_job_zone"))
     add(safe_feols(sprintf("%s ~ z_%s + %s | county_fips", out, zv, COVS_0),
                    chg_z, ~jurisd_main,
                    sprintf("ZD_%s_%s", sub("^z_d_", "", out), zv)))
@@ -260,6 +261,25 @@ for (out in c("z_d_res_seg", "z_d_wexp"))
 add(safe_feols(paste(
   "z_res_seg_2023 ~ z_res_seg_2011 * z_pct_res_low +", COVS_0,
   "| county_fips"), chg_z, ~jurisd_main, "ZD_persistence_reslow"))
+# the same with the paper's primary exclusionary measure (share of RESIDENTIAL
+# land zoned low-density); the all-zoned-land version above is kept for comparison
+add(safe_feols(paste(
+  "z_res_seg_2023 ~ z_res_seg_2011 * z_pct_reslow_of_res +", COVS_0,
+  "| county_fips"), chg_z, ~jurisd_main, "ZD_persistence_reslow_of_res"))
+# functional-form checks on the primary-measure persistence model: residential
+# segregation is strongly right-skewed, so refit with both years winsorized at
+# their 99th percentile and with both years entered as ranks
+wins99 <- function(x) pmin(x, stats::quantile(x, .99, na.rm = TRUE))
+chg_w <- chg_z |> mutate(z_res_seg_2011 = zscore(wins99(res_seg_2011)),
+                         z_res_seg_2023 = zscore(wins99(res_seg_2023)))
+chg_r <- chg_z |> mutate(z_res_seg_2011 = zscore(rank(res_seg_2011, na.last = "keep")),
+                         z_res_seg_2023 = zscore(rank(res_seg_2023, na.last = "keep")))
+add(safe_feols(paste(
+  "z_res_seg_2023 ~ z_res_seg_2011 * z_pct_reslow_of_res +", COVS_0,
+  "| county_fips"), chg_w, ~jurisd_main, "ZD_persistence_reslow_of_res_wins99"))
+add(safe_feols(paste(
+  "z_res_seg_2023 ~ z_res_seg_2011 * z_pct_reslow_of_res +", COVS_0,
+  "| county_fips"), chg_r, ~jurisd_main, "ZD_persistence_reslow_of_res_rank"))
 add(safe_feols(paste(
   "z_res_seg_2023 ~ z_res_seg_2011 * z_pct_adu_res +", COVS_0,
   "| county_fips"), chg_z, ~jurisd_main, "ZD_persistence_adu"))

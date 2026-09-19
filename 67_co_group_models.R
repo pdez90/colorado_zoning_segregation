@@ -69,7 +69,7 @@ zx <- dat |>
          pct_job_zone, d_whiteblack_rac_half,
          pct_black_rac, pct_lowincome_rac, log_worker_density_rac,
          income_percapita_k, income_percapita_k_sq) |>
-  mutate(reslow_tercile = ntile(pct_res_low, 3))
+  mutate(reslow_tercile = ntile(pct_reslow_of_res, 3))
 
 ## =============================================================================
 ## Table G1 -- who travels farther / into what, 2023

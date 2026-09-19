@@ -42,8 +42,10 @@ for (k in c(5, 10, 20))
 
 ## tract size
 la <- log(xs$aland_km2)
-add("cor_log_area_exclusionary", cor(la, xs$pct_reslow_of_res, use = "complete.obs"), nrow(xs))
-add("cor_log_area_dist_cbd",     cor(la, xs$dist_cbd_km,       use = "complete.obs"), nrow(xs))
+add("cor_log_area_exclusionary", cor(la, xs$pct_reslow_of_res, use = "complete.obs"),
+    sum(is.finite(la) & is.finite(xs$pct_reslow_of_res)))
+add("cor_log_area_dist_cbd",     cor(la, xs$dist_cbd_km,       use = "complete.obs"),
+    sum(is.finite(la) & is.finite(xs$dist_cbd_km)))
 
 ## levels ladder, baseline on the complete-case sample
 covs <- c("pct_black_rac", "pct_lowincome_rac", "log_worker_density_rac",

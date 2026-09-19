@@ -6,9 +6,8 @@
 #           segregation once you condition step by step? Sequential buildup:
 #             M0 raw -> M1 +demographics -> M2 +income -> M3 +density
 #             -> M4 +metropolitan position
-#           Verified: pct_reslow_of_res goes +0.175 (p=.029) -> +0.124 ->
-#           +0.108 -> -0.049 (ns) -> -0.053 (ns). DENSITY is what absorbs it;
-#           position adds nothing further. Report the whole path in the paper
+#           Worker density is what absorbs the raw association; position
+#           adds nothing further. Report the whole path in the paper
 #           rather than only the final column: the raw association exists and
 #           replicates the zoning-segregation literature, and the point is
 #           what happens to it, not that it was never there.

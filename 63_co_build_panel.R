@@ -37,7 +37,7 @@ aland     <- readRDS(file.path(DIR_CLEAN, "tract_aland_2020.rds"))
 
 sld_file <- file.path(DIR_CLEAN, "p3_tract_sld.rds")
 sld <- if (file.exists(sld_file)) readRDS(sld_file) else NULL
-if (is.null(sld)) message("No SLD file yet (national 53A) -- ",
+if (is.null(sld)) message("No SLD file yet (paper_pipeline/53_sld.R) -- ",
                           "zoning-vs-transit comparisons will be skipped.")
 
 seg_rac <- seg |> select(tract_id, year, starts_with("d_") & ends_with(

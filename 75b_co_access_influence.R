@@ -41,6 +41,16 @@ dat <- readRDS(file.path(DIR_CO_OUT, "co_analysis_home_panel.rds"))
 var <- readRDS(file.path(DIR_CLEAN, "p3_tract_sld_variants.rds"))
 
 zscore <- function(x) { x[!is.finite(x)] <- NA_real_; as.numeric(scale(x)) }
+# 75 fits on the SLD columns that 63 wrote into the panel; this script fits on
+# the variants file. Stop if the two have drifted apart (53 rebuilt without 63).
+if ("sld_D5AR" %in% names(dat)) {
+  chk <- dat |> filter(year == CO_ANCHOR_YEAR) |>
+    select(tract_id, a = sld_D5AR, b = sld_D5BR) |>
+    inner_join(var |> filter(construction == PRIMARY), by = "tract_id")
+  if (!isTRUE(all.equal(chk$a, chk$sld_D5AR)) || !isTRUE(all.equal(chk$b, chk$sld_D5BR)))
+    stop("Panel SLD columns differ from the primary construction in ",
+         "p3_tract_sld_variants.rds -- re-run 63 after 53.")
+}
 xs0 <- dat |>
   filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa,
          n_commuters >= P3_MIN_COMMUTERS) |>
@@ -80,9 +90,15 @@ forms <- function(x) {
        rank     = ifelse(is.na(lg), NA_real_, rank(lg, na.last = "keep")),
        log1p    = ifelse(is.finite(x), log1p(x), NA_real_))
 }
-fit1 <- function(fml, d) feols(as.formula(fml), data = d, cluster = ~jurisd_main)
+# The clustered covariance is computed at estimation and read straight from the
+# fitted object; summary() would re-evaluate the data argument lazily.
+fit1 <- function(fml, d) {
+  d <- d[!is.na(d$jurisd_main), ]
+  d$jurisd_main <- as.character(d$jurisd_main)
+  feols(as.formula(fml), data = d, vcov = ~jurisd_main, notes = FALSE)
+}
 grab <- function(fit, term) {
-  ct <- summary(fit)$coeftable
+  ct <- fit$coeftable
   tibble(estimate = ct[term, 1], std.error = ct[term, 2], p.value = ct[term, 4],
          n_obs = fit$nobs)
 }
@@ -114,14 +130,18 @@ print(as.data.frame(out1 |> filter(primary) |>
             p = round(p.value, 3), n_obs)))
 
 ## ---- PART 2: leave-one-out, primary construction, 75's log form --------------
+# Refit with each tract deleted in turn, keeping the jurisdiction-clustered
+# p-value of every refit, so the reporting rule in the header can be applied
+# to ALL deletions and not only to the one that moves the estimate furthest.
 loo <- function(fml, d, term) {
   vars <- all.vars(as.formula(fml))
   d <- d[stats::complete.cases(d[, c(vars, "jurisd_main")]), ]
   full <- grab(fit1(fml, d), term)
-  est <- vapply(seq_len(nrow(d)), function(i)
-    coef(feols(as.formula(fml), data = d[-i, ], notes = FALSE))[[term]],
-    numeric(1))
-  list(full = full, d = d, est = est)
+  ep <- vapply(seq_len(nrow(d)), function(i) {
+    g <- grab(fit1(fml, d[-i, ]), term)
+    c(g$estimate, g$p.value)
+  }, numeric(2))
+  list(full = full, d = d, est = ep[1, ], p = ep[2, ])
 }
 xsP <- xs0 |> left_join(var |> filter(construction == PRIMARY) |>
                           select(tract_id, sld_D5AR, sld_D5BR), by = "tract_id")
@@ -131,7 +151,7 @@ for (mode in c("auto", "transit")) {
   d0 <- xsP |> mutate(acc_raw = x, z_acc = zscore(forms(x)$log))
   for (sp in names(SPECS)) {
     L <- loo(SPECS[[sp]], d0, IT)
-    # the single deletion that moves the estimate furthest toward / past zero
+    # the single deletion that moves the estimate furthest (either direction)
     worst <- which.max(abs(L$est - L$full$estimate))
     refit <- grab(fit1(SPECS[[sp]], L$d[-worst, ]), IT)
     out2[[length(out2) + 1]] <- tibble(
@@ -139,6 +159,7 @@ for (mode in c("auto", "transit")) {
       estimate = L$full$estimate, p.value = L$full$p.value,
       loo_min = min(L$est), loo_max = max(L$est),
       sign_changes_under_one_deletion = any(sign(L$est) != sign(L$full$estimate)),
+      loo_max_p = max(L$p), n_deletions_p_ge_05 = sum(L$p >= .05),
       most_influential_tract = L$d$tract_id[worst],
       estimate_without_it = refit$estimate, p_without_it = refit$p.value)
     o <- order(-abs(L$est - L$full$estimate))[1:10]
@@ -174,6 +195,7 @@ for (sp in names(HEAD)) {
   out3[[sp]] <- tibble(
     spec = sp, n_obs = L$full$n_obs, estimate = L$full$estimate,
     p.value = L$full$p.value, loo_min = min(L$est), loo_max = max(L$est),
+    loo_max_p = max(L$p), n_deletions_p_ge_05 = sum(L$p >= .05),
     most_influential_tract = L$d$tract_id[worst],
     estimate_without_it = refit$estimate, p_without_it = refit$p.value,
     est_resseg_wins99 = w99$estimate, p_resseg_wins99 = w99$p.value,

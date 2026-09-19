@@ -14,11 +14,8 @@
 #       vcov_conley implements; manual keeps the dependency count at zero
 #       and the kernel explicit).
 #
-# Verified expectation: Moran's I ~ 0.26-0.29 (z >> 2) -- residual spatial
-# structure is REAL and must be reported -- while the Conley SE for the
-# headline interaction at 10-20 km is ~0.051-0.052 vs 0.046 jurisdiction-
-# clustered (p ~ .04-.05). The inference stands; the honest sentence is that
-# the pattern across the ladder, not the p-value, carries the paper.
+# Residual spatial autocorrelation is reported alongside the Conley SEs;
+# Conley p-values use the same t reference (G - 1 df) as the clustered row.
 #
 # Output: output/models/p4_spatial_inference.csv
 # ==============================================================================
@@ -98,6 +95,7 @@ conley_se <- function(cutoff) {
 }
 tt <- "z_d_whiteblack_rac_half:z_pct_reslow_of_res"
 b  <- bols[tt, 1]
+n_clu <- dplyr::n_distinct(d$jurisd_main)
 rows <- list(
   tibble(stat = "morans_I_knn8", value = m1["I"], z = m1["z"], p = m1["p"]),
   tibble(stat = "morans_I_invdist10km", value = m2["I"], z = m2["z"],
@@ -109,7 +107,11 @@ for (ck in c(10, 20, 50)) {
   se <- conley_se(ck)[tt]
   rows[[length(rows) + 1]] <- tibble(
     stat = sprintf("interaction_conley_%dkm", ck), value = b,
-    std.error = se, z = b / se, p = 2 * pnorm(-abs(b / se)))
+    std.error = se, z = b / se,
+    # same reference distribution as the clustered row above (t, G - 1 df),
+    # so the two are comparable; the asymptotic-normal p is kept alongside
+    p = 2 * pt(-abs(b / se), df = n_clu - 1),
+    p_normal = 2 * pnorm(-abs(b / se)))
 }
 # NOTE: Conley SEs need not increase monotonically with bandwidth -- spatial
 # covariance can contain positive and negative components, so a wide kernel
@@ -125,10 +127,9 @@ chk <- tryCatch({
   ll <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds")) |>
     transmute(tract_id = as.character(GEOID), X_km, Y_km) |>
     filter(tract_id %in% d$tract_id)
-  pts <- st_as_sf(ll, coords = c("X_km", "Y_km"), crs = NA)
-  st_crs(pts) <- CRS_METERS   # coords are km; scale to meters for transform
-  pts <- st_set_geometry(pts, st_geometry(pts) * 1000) |>
-    st_set_crs(CRS_METERS) |> st_transform(4326)
+  pts <- st_as_sf(ll |> mutate(x_m = X_km * 1000, y_m = Y_km * 1000),
+                  coords = c("x_m", "y_m"), crs = CRS_METERS) |>
+    st_transform(4326)
   co <- st_coordinates(pts)
   dl <- d |> left_join(tibble(tract_id = ll$tract_id,
                               lon = co[, 1], lat = co[, 2]), by = "tract_id")
