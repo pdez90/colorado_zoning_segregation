@@ -2,9 +2,13 @@
 
 Builds, from public data, every input that `60_co_setup.R` – `88_*.R` read.
 
-    bash paper_pipeline/run_all.sh all      # new machine: geography, LODES, segregation panel, covariates, SLD, then 61–64
-    bash paper_pipeline/run_all.sh fresh    # rebuild the SLD table, refit 63–87, influence checks, number dump
-    bash paper_pipeline/run_all.sh refit    # as `fresh` without rebuilding the SLD table
+    bash paper_pipeline/run_all.sh everything  # the whole analysis in dependency order: 10, 20, 32, 35, 53, 61-64, 65-87, 75b, 88, 46, 45
+    bash paper_pipeline/run_all.sh full        # rebuild SLD + segregation panel and everything downstream
+    bash paper_pipeline/run_all.sh fresh       # rebuild the SLD table, refit 63-87, influence checks, number dump
+    bash paper_pipeline/run_all.sh refit       # as `fresh` without rebuilding the SLD table
+    bash paper_pipeline/run_all.sh validate    # compare outputs with a reference clone (REF_DIR)
+
+Any failing script makes the stage exit non-zero and stops the run before the number dump.
 
 | script | produces |
 |---|---|
@@ -18,4 +22,4 @@ Builds, from public data, every input that `60_co_setup.R` – `88_*.R` read.
 | `45_manuscript_number_audit.R` | every numeric output in one file, `output/models/ALL_CURRENT_VALUES.csv` |
 | `90_`, `91_validate_*.R` | compare a run against a reference copy of the outputs |
 
-Paths assume the project lives at `~/Downloads/LODES` with the case-study scripts in `~/Downloads/LODES/Colorado`; `patch_60_paths.R` points `60_co_setup.R` at the zoning shapefile and TIGER folder on a new machine. ACS pulls need a Census API key. Every step caches; delete an output to force its rebuild.
+`run_all.sh` locates itself, so it works from a clone of the repository (where `paper_pipeline/` sits inside the case-study folder) or with `paper_pipeline/` and `Colorado/` side by side. Environment variables: `LODES_ROOT` (data and caches; default `~/Downloads/LODES`), `CO_DIR` (case-study folder; detected), `CO_ZONING_SHP` (the zoning shapefile, which is not redistributable), `CENSUS_API_KEY` (ACS pulls), `ACS_LATEST_RELEASE` (default 2024), `REF_DIR` (reference clone for `validate`). `patch_60_paths.R` is a legacy helper that rewrites the two input paths in `60_co_setup.R` in place; the environment variables make it unnecessary. Slow steps cache their outputs; `everything` clears the derived case-study caches and the SLD table before it starts, and deleting any other output forces its rebuild.

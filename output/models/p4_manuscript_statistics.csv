@@ -1,4 +1,8 @@
 "statistic","value","n"
+"n_tracts_denver_in_scope",657,657
+"n_tracts_analysis_frame",656,656
+"max_z_residential_segregation",7.82004396348408,654
+"n_jurisdictions_frame",27,656
 "tract_diameter_km_median",1.69417045049221,656
 "pct_tracts_diameter_gt_5km",8.07926829268293,656
 "pct_tracts_diameter_gt_10km",2.4390243902439,656
@@ -9,3 +13,6 @@
 "levels_baseline_common_sample_se",0.0833647088436796,646
 "levels_baseline_common_sample_p",0.0518763068301775,646
 "cor_restrictiveness_retention_jurisdictions",-0.0757372241891042,27
+"n_jurisdictions_layer",51,51
+"n_jurisdictions_never_dominant",10,51
+"n_jurisdictions_dominant_outside_frame_only",14,51

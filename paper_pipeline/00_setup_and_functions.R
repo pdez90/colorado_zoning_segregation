@@ -98,7 +98,8 @@ run_spatial_D <- function(pts, cols, beta, maxdist_km = MAXDIST_KM) {
 }
 
 ## ---- small shared helpers ----------------------------------------------------
-DIR_ROOT   <- path.expand("~/Downloads/LODES")
+# Data root. Override with the LODES_ROOT environment variable.
+DIR_ROOT   <- path.expand(Sys.getenv("LODES_ROOT", "~/Downloads/LODES"))
 DIR_RAW    <- file.path(DIR_ROOT, "raw")
 DIR_CLEAN  <- file.path(DIR_ROOT, "clean")
 DIR_OUT    <- file.path(DIR_ROOT, "output")

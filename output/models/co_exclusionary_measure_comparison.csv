@@ -28,9 +28,9 @@
 "ZD_persistence_reslow_of_res_wins99","reslow_of_res",TRUE,"z_res_seg_2011:z_pct_reslow_of_res",0.152763930986532,0.0422495625862334,0.00126263537903999,644
 "ZA_college_lesshs_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0834471385421436,0.0460536843826651,0.0815596643071987,646
 "ZA_hisp_nonhisp_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0622566197030956,0.0449936461665319,0.17822300097255,646
-"ZA_joint_college_lesshs","res_low",FALSE,"z_pct_res_low",-0.183896893550807,0.0816626201677024,0.0329991318436382,642
-"ZA_joint_hisp_nonhisp","res_low",FALSE,"z_pct_res_low",-0.152853527823828,0.077585058027609,0.0595598994049511,642
-"ZA_joint_whiteblack","res_low",FALSE,"z_pct_res_low",-0.0831348735860087,0.0504100395108655,0.111144272463156,642
+"ZA_joint_college_lesshs","res_low",FALSE,"z_pct_res_low",-0.183876277596167,0.0816604831948287,0.0330129331286481,642
+"ZA_joint_hisp_nonhisp","res_low",FALSE,"z_pct_res_low",-0.152844392148496,0.0776072217902658,0.0596421213981549,642
+"ZA_joint_whiteblack","res_low",FALSE,"z_pct_res_low",-0.083101165400438,0.0504051407667071,0.111249201433686,642
 "ZA_nodens_whiteblack_pct_res_low","res_low",FALSE,"z_pct_res_low",0.0334464331841037,0.0549094110772295,0.547730797457545,646
 "ZA_whiteblack_pct_res_low","res_low",FALSE,"z_pct_res_low",-0.0449142115790565,0.0375377393685334,0.242295506943986,646
 "ZB_aspatial_pct_res_low","res_low",FALSE,"z_pct_res_low",0.0375771800641472,0.0325330110851397,0.258576343595674,646

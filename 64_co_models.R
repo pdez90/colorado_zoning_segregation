@@ -328,5 +328,5 @@ write_codiag(
   "64_model_sign_summary")
 # Eyeball before interpreting: n_obs (Denver-only 2023 in-scope frame is a
 # few hundred tracts -- power is limited; that is WHY jurisd_main clustering
-# with 51 clusters, not county with ~7, is the default).
+# with 27 clusters, not county with ~7, is the default).
 message("64 complete. Tables in ", DIR_CO_MOD)

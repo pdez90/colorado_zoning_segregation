@@ -108,6 +108,11 @@ fit <- lm(log(jobs_per_worker) ~ mean_pct_reslow, data = jur,
           weights = workers_housed)
 message(sprintf("  weighted slope: %.4f log-points per pp res-low (p = %.3f)",
                 coef(fit)[2], summary(fit)$coefficients[2, 4]))
+co_write_stats("86_cervero_jurisdiction",
+  n_jurisdictions = nrow(jur), cor_pearson = cp, cor_spearman = cs,
+  n_job_rich = nrow(jr),
+  cor_restrictive_imported_jobrich = cor(jr$mean_pct_reslow, jr$pct_jobs_imported),
+  weighted_slope = coef(fit)[[2]], weighted_slope_p = summary(fit)$coefficients[2, 4])
 
 ## ---- PART C: the conjunction as a 2x2 ----------------------------------------
 med <- median(jur$mean_pct_reslow)
@@ -130,6 +135,7 @@ write.csv(jur |> select(jurisd_main, jobs_per_worker, mean_pct_reslow,
                         pct_jobs_imported, pct_residents_retained, quadrant),
           file.path(DIR_CO_MOD, "p4_cervero_jurisdiction.csv"), row.names = FALSE)
 print(as.data.frame(quad), digits = 3)
+write.csv(quad, file.path(DIR_CO_MOD, "p4_cervero_quadrants.csv"), row.names = FALSE)
 
 pC <- ggplot(jur, aes(mean_pct_reslow, jobs_per_worker)) +
   geom_hline(yintercept = 1, linetype = 2, colour = "grey55", linewidth = .4) +

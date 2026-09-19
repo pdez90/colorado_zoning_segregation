@@ -19,11 +19,10 @@
 #   - Distances are centroid Euclidean km, IDENTICAL metric for actual and
 #     minimum (within-tract = 0 for both), so the comparison is internally
 #     consistent even though both understate network distance.
-#   - Jobs exceed same-frame resident workers, so job masses are scaled
-#     proportionally to total workers (standard balancing; stated).
-#   - Solved for all workers and separately for low- (CE01/SE01) and
-#     high-earnings (CE03/SE03) workers -- matching workers to jobs of their
-#     own earnings band.
+#   - Supply and demand are the origin and destination margins of the observed
+#     within-frame flow matrix (White 1988), so they balance without rescaling.
+#   - Solved for all workers and separately for low- (SE01) and high-earnings
+#     (SE03) flows -- matching workers to jobs of their own earnings band.
 #   - Per-origin decomposition: the optimal assignment yields a minimum mean
 #     commute for each origin tract; tercile summaries compare actual vs
 #     minimum vs excess. NOTE the minimum is a system optimum -- per-origin

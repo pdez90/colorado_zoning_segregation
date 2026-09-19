@@ -36,9 +36,9 @@ income    <- readRDS(file.path(DIR_CLEAN, "p2_tract_income_panel.rds"))
 aland     <- readRDS(file.path(DIR_CLEAN, "tract_aland_2020.rds"))
 
 sld_file <- file.path(DIR_CLEAN, "p3_tract_sld.rds")
-sld <- if (file.exists(sld_file)) readRDS(sld_file) else NULL
-if (is.null(sld)) message("No SLD file yet (paper_pipeline/53_sld.R) -- ",
-                          "zoning-vs-transit comparisons will be skipped.")
+if (!file.exists(sld_file))
+  stop("p3_tract_sld.rds not found -- run paper_pipeline/53_sld.R first.")
+sld <- readRDS(sld_file)
 
 seg_rac <- seg |> select(tract_id, year, starts_with("d_") & ends_with(
   c("_rac_half", "_rac_aspatial")))

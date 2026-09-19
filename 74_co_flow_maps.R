@@ -199,6 +199,11 @@ if (cand$wexp[pairs$a] > cand$wexp[pairs$b]) { tmp <- tA; tA <- tB; tB <- tmp }
 sA <- cand |> filter(tract_id == tA); sB <- cand |> filter(tract_id == tB)
 message(sprintf("Exemplar pair: A %s (res %.3f, wexp %.4f) vs B %s (res %.3f, wexp %.4f)",
                 tA, sA$res, sA$wexp, tB, sB$res, sB$wexp))
+co_write_stats("74_exemplar_pair",
+  tract_A = tA, res_seg_A = sA$res, wexp_A = sA$wexp,
+  tract_B = tB, res_seg_B = sB$res, wexp_B = sB$wexp,
+  wexp_ratio_B_over_A = sB$wexp / sA$wexp,
+  n_candidate_tracts = nrow(cand))
 
 fan <- function(t, col) {
   f <- od |> filter(h_tract == t, S000 >= 3, h_tract != w_tract) |>

@@ -2,7 +2,12 @@
 # =============================================================================
 # run_all.sh  -- rebuild the upstream pipeline, run the case study, validate.
 #
-#   bash ~/Downloads/LODES/paper_pipeline/run_all.sh
+#   bash paper_pipeline/run_all.sh everything    # the whole analysis, in order
+#
+# Works from either layout: a clone of the repository (paper_pipeline/ inside
+# the case-study folder) or paper_pipeline/ and Colorado/ side by side under
+# the data root. Data and caches live under LODES_ROOT (default
+# ~/Downloads/LODES); set CO_ZONING_SHP to the zoning shapefile.
 #
 # Resumable: every step caches its outputs, so if this stops (or you stop it)
 # just run it again and it picks up where it left off.
@@ -11,14 +16,19 @@
 #   bash run_all.sh upstream     # 10, 20, 32, 35, 53   (~1h45 cold)
 #   bash run_all.sh patch        # point 60 at this machine's paths
 #   bash run_all.sh casestudy    # 61, 62, 63, 64       (~30 min)
-#   bash run_all.sh validate     # compare against the committed results
+#   bash run_all.sh validate     # compare against a reference clone of the repository
+#                                # (REF_DIR, default \$LODES_ROOT/colorado_zoning_segregation)
 #   bash run_all.sh fresh        # rebuild SLD, refit 63-87, influence checks, number dump
 # =============================================================================
 set -o pipefail
 
-LODES="$HOME/Downloads/LODES"
-PIPE="$LODES/paper_pipeline"
-CO="$LODES/Colorado"
+LODES="${LODES_ROOT:-$HOME/Downloads/LODES}"
+PIPE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -n "$CO_DIR" ]; then CO="$CO_DIR"
+elif [ -f "$PIPE/../60_co_setup.R" ]; then CO="$(cd "$PIPE/.." && pwd)"
+else CO="$LODES/Colorado"; fi
+export LODES_ROOT="$LODES" PIPE_DIR="$PIPE" CO_DIR="$CO"
+mkdir -p "$LODES" "$CO/clean" "$CO/output/models" "$CO/output/figures" "$CO/diagnostics"
 LOGS="$PIPE/logs"
 mkdir -p "$LOGS"
 
@@ -106,8 +116,7 @@ run_odcols() {
   ( cd "$CO" && $CAF "$RS" -e "
       for (s in c('66_co_group_flows.R','67_co_group_models.R')) {
         message('\n===== ', s, ' =====')
-        tryCatch(source(s), error = function(e)
-                 message('!! FAILED ', s, ': ', conditionMessage(e)))
+        source(s)
       }" ) 2>&1 | tee -a "$LOGS/odcols.log"
 }
 
@@ -126,8 +135,9 @@ run_repair() {
 }
 
 # Scripts 65-87: figures, SI tables, robustness, accessibility, decentralization,
-# excess commuting, the lot. Each is wrapped so one failure does not stop the
-# rest, and the failures are listed at the end.
+# excess commuting, the lot. Every script is attempted so that all failures are
+# listed together, but any failure makes the stage exit non-zero, which stops
+# the run before the number dump: stale outputs are never passed off as new.
 run_rest() {
   echo "[$(ts)] scripts 65-87 -> $LOGS/rest.log"
   ( cd "$CO" && $CAF "$RS" -e "
@@ -151,6 +161,7 @@ run_rest() {
               round(difftime(Sys.time(), t0, units = 'mins'), 1), ' min')
       if (length(failed)) {
         message('failed:'); for (f in failed) message('  ', f)
+        quit(status = 1)
       }" ) 2>&1 | tee "$LOGS/rest.log"
 }
 
@@ -158,7 +169,7 @@ run_validate() {
   echo "[$(ts)] validating against the committed results"
   "$RS" -e "
     Sys.setenv(CO_DIR  = '$CO',
-               REF_DIR = '$LODES/colorado_zoning_segregation')
+               REF_DIR = '${REF_DIR:-$LODES/colorado_zoning_segregation}')
     source('$PIPE/90_validate_rebuild.R')
     source('$PIPE/91_validate_all_outputs.R')" 2>&1 | tee "$LOGS/validate.log"
 }
@@ -168,7 +179,7 @@ run_validate() {
 # one-file dump of every number the pipeline produces (45).
 run_influence() {
   echo "[$(ts)] influence checks, land-area robustness, number dump -> $LOGS/influence.log"
-  ( cd "$CO" && $CAF "$RS" -e "source('75b_co_access_influence.R'); source('88_co_manuscript_statistics.R')" ) 2>&1 | tee "$LOGS/influence.log"
+  ( cd "$CO" && $CAF "$RS" -e "source('75b_co_access_influence.R'); source('88_co_manuscript_statistics.R')" ) 2>&1 | tee "$LOGS/influence.log" || return 1
   "$RS" -e "setwd('$PIPE'); source('46_land_area_robustness.R'); source('45_manuscript_number_audit.R')" 2>&1 | tee -a "$LOGS/influence.log"
 }
 
@@ -183,6 +194,21 @@ run_fresh() {
 # LODES downloads, geography and ACS income are reused. ~30-40 min.
 run_full() {
   run_sld && run_reseg && run_rest && run_influence
+}
+
+# The whole analysis from the raw inputs, in dependency order. Downloads are
+# and the upstream segregation panel are reused if present (use `full` to
+# rebuild the panel); the SLD table and every derived cache of the case study
+# are cleared first so that nothing stale survives. Validation against a reference copy is separate
+# (`validate`) because it needs a second clone of the repository.
+run_everything() {
+  rm -f "$CO/clean"/co_tract_zoning.rds "$CO/clean"/co_tract_geom.rds \
+        "$CO/clean"/co_zoning_jurisd.rds "$CO/clean"/co_accessibility_2023.rds \
+        "$CO/clean"/co_group_flows_panel.rds "$CO/clean"/co_wac_diversity_panel.rds \
+        "$CO/clean"/co_rac_weights_panel.rds "$CO/clean"/co_wexp_*.rds \
+        "$CO/clean"/co_wres_work_panel.rds "$CO/clean"/co_seg_maxdist_*.rds
+  rm -f "$LODES/clean/p3_tract_sld.rds" "$LODES/clean/p3_tract_sld_variants.rds"
+  run_upstream && run_casestudy && run_rest && run_influence
 }
 
 case "$stage" in
@@ -201,9 +227,12 @@ case "$stage" in
   fresh)      run_fresh ;;
   full)       run_full ;;
   refit)      run_models && run_rest && run_influence ;;
+  everything) run_everything ;;
   all)        run_upstream && run_patch && run_casestudy && run_validate ;;
-  *) echo "usage: bash run_all.sh [full|fresh|refit|influence|upstream|patch|casestudy|sld|income|models|reseg|rest|odcols|repair|validate|all]"
+  *) echo "usage: bash run_all.sh [everything|full|fresh|refit|influence|upstream|patch|casestudy|sld|income|models|reseg|rest|odcols|repair|validate|all]"
      exit 1 ;;
 esac
 
+rc=$?
+if [ $rc -ne 0 ]; then echo "[$(ts)] STOPPED: a step failed (see $LOGS)"; exit $rc; fi
 echo "[$(ts)] done. Logs in $LOGS"

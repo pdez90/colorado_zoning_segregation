@@ -22,10 +22,10 @@
 
 source("50_p3_setup.R")
 
-CO_DIR <- path.expand("~/Downloads/LODES/Colorado")
+CO_DIR <- path.expand(Sys.getenv("CO_DIR", "~/Downloads/LODES/Colorado"))
 DIRS <- c(file.path(CO_DIR, "output/models"),
           file.path(CO_DIR, "diagnostics"),
-          path.expand("~/Downloads/LODES/diagnostics"))
+          file.path(path.expand(Sys.getenv("LODES_ROOT", "~/Downloads/LODES")), "diagnostics"))
 
 files <- unlist(lapply(DIRS[dir.exists(DIRS)], function(d)
   list.files(d, pattern = "[.]csv$", full.names = TRUE)))

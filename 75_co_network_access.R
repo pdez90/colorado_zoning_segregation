@@ -32,8 +32,7 @@
 #    Plus the interaction the exemplar-pair figure invites: does job
 #    accessibility itself moderate res_seg -> wexp (negative = accessibility
 #    loosens the coupling), separately for auto and transit access.
-#    If the SLD file is absent, the same specs run with log_jobs_grav as an
-#    explicitly labeled Euclidean placeholder and the script says so.
+#    The SLD table (paper_pipeline/53_sld.R) is required.
 #
 # LANGUAGE DISCIPLINE (as agreed for position): infrastructure, zoning,
 # residential sorting and employment location co-evolved. All of this is
@@ -133,7 +132,17 @@ res[[2]] <- safe(sprintf(
   "z_sorting_gap ~ z_pct_reslow_of_res + %s | county_fips", COVS),
   "A_gap_on_zoning", "z_pct_reslow_of_res")
 # variance split of realized exposure between opportunity and sorting
+# wexp = accD + gap, so var(wexp) = cov(wexp, accD) + cov(wexp, gap): a
+# covariance allocation, exact by construction; the two parts are correlated.
 vd <- xs |> filter(!is.na(accD), !is.na(sorting_gap))
+write.csv(tibble(
+  n = nrow(vd),
+  pct_var_accessible = 100 * cov(vd$wexp_whiteblack_wac_half, vd$accD) /
+    var(vd$wexp_whiteblack_wac_half),
+  pct_var_sorting_gap = 100 * cov(vd$wexp_whiteblack_wac_half, vd$sorting_gap) /
+    var(vd$wexp_whiteblack_wac_half),
+  cor_accessible_gap = cor(vd$accD, vd$sorting_gap)),
+  file.path(DIR_CO_MOD, "p4_variance_allocation.csv"), row.names = FALSE)
 message(sprintf(
   "var(wexp) split: cov with accD %.0f%% | cov with gap %.0f%% | r(accD,gap)=%.2f",
   100 * cov(vd$wexp_whiteblack_wac_half, vd$accD) /
@@ -156,12 +165,7 @@ if (file.exists(sld_file) || "sld_D5AR" %in% names(xs)) {
   NET <- c(auto_45min = "z_log_d5ar", transit_45min = "z_log_d5br")
   message("SLD network measures found: auto (D5AR) + transit (D5BR).")
 } else {
-  NET <- c(euclid_gravity_placeholder = "z_log_jobs_grav")
-  message(paste(
-    "NOTE: p3_tract_sld.rds not found -- running with the Euclidean gravity",
-    "placeholder. For the NETWORK measures run",
-    "paper_pipeline/53_sld.R (SLD download) first;",
-    "D5AR/D5BR are 45-minute network job-accessibility counts."))
+  stop("p3_tract_sld.rds not found -- run paper_pipeline/53_sld.R first.")
 }
 POS <- sprintf(paste("z_dist_cbd_km + z_dist_empctr_km +",
                      "%s:z_dist_cbd_km + %s:z_dist_empctr_km"), X, X)

@@ -63,7 +63,8 @@ add <- function(x) if (!is.null(x)) res[[length(res) + 1]] <<- x
 
 ## ---- zoning + covariate frame (2023 anchor, as 64) ---------------------------
 zx <- dat |>
-  filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa) |>
+  filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa,
+         n_commuters >= P3_MIN_COMMUTERS) |>   # the 656-tract analysis frame
   select(tract_id, CBSAFP, county_fips, jurisd_main,
          pct_res_low, pct_reslow_of_res, pct_adu_res, zoning_entropy,
          pct_job_zone, d_whiteblack_rac_half,

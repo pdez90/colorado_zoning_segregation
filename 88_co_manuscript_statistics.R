@@ -33,6 +33,14 @@ out <- list()
 add <- function(statistic, value, n = NA_integer_)
   out[[length(out) + 1]] <<- tibble(statistic = statistic, value = value, n = n)
 
+## sample construction and the right tail of residential segregation
+n_scope <- dat |> filter(year == CO_ANCHOR_YEAR, in_scope, denver_msa) |> nrow()
+add("n_tracts_denver_in_scope", n_scope, n_scope)
+add("n_tracts_analysis_frame", nrow(xs), nrow(xs))
+zr <- zscore(xs$d_whiteblack_rac_half)
+add("max_z_residential_segregation", max(zr, na.rm = TRUE), sum(!is.na(zr)))
+add("n_jurisdictions_frame", dplyr::n_distinct(xs$jurisd_main[!is.na(xs$jurisd_main)]), nrow(xs))
+
 ## tract geometry
 diam <- 2 * sqrt(xs$aland_km2 / pi)
 add("tract_diameter_km_median", median(diam, na.rm = TRUE), sum(!is.na(diam)))
@@ -53,20 +61,37 @@ covs <- c("pct_black_rac", "pct_lowincome_rac", "log_worker_density_rac",
 cc <- xs |> filter(if_all(all_of(c("d_whiteblack_rac_half", "pct_reslow_of_res",
                                    covs)), ~ is.finite(.x))) |>
   mutate(z_y = zscore(d_whiteblack_rac_half), z_x = zscore(pct_reslow_of_res))
-fit <- feols(z_y ~ z_x | county_fips, data = cc, cluster = ~jurisd_main)
-ct <- summary(fit)$coeftable
+fit <- feols(z_y ~ z_x | county_fips, data = cc, vcov = ~jurisd_main)
+ct <- fit$coeftable
 add("levels_baseline_common_sample_estimate", ct["z_x", 1], fit$nobs)
 add("levels_baseline_common_sample_se",       ct["z_x", 2], fit$nobs)
 add("levels_baseline_common_sample_p",        ct["z_x", 4], fit$nobs)
 
 ## retention vs restrictiveness across jurisdictions
 jf <- file.path(DIR_CO_MOD, "p4_cervero_jurisdiction.csv")
-if (file.exists(jf)) {
-  j <- read.csv(jf)
-  add("cor_restrictiveness_retention_jurisdictions",
-      cor(j$mean_pct_reslow, j$pct_residents_retained, use = "complete.obs"),
-      nrow(j))
-}
+if (!file.exists(jf)) stop(jf, " not found -- run 86_co_cervero_test.R first.")
+j <- read.csv(jf)
+add("cor_restrictiveness_retention_jurisdictions",
+    cor(j$mean_pct_reslow, j$pct_residents_retained, use = "complete.obs"),
+    nrow(j))
+
+## which of the zoning layer's jurisdictions are any tract's dominant jurisdiction,
+## and which of those fall inside the analysis frame
+zt <- readRDS(file.path(DIR_CO_CLEAN, "co_tract_zoning.rds"))
+jl <- read.csv(file.path(DIR_CO, "diagnostics", "61_zoning_jurisdiction_counts.csv"))
+ja <- tibble(jurisd = as.character(jl$jurisd), polygons = jl$n) |>
+  left_join(zt |> filter(!is.na(jurisd_main)) |> count(jurisd = jurisd_main,
+                                                       name = "tracts_dominant"),
+            by = "jurisd") |>
+  left_join(xs |> filter(!is.na(jurisd_main)) |> count(jurisd = jurisd_main,
+                                                       name = "tracts_in_frame"),
+            by = "jurisd") |>
+  mutate(across(c(tracts_dominant, tracts_in_frame), ~ tidyr::replace_na(.x, 0L)))
+write.csv(ja, file.path(DIR_CO_MOD, "p4_jurisdiction_accounting.csv"), row.names = FALSE)
+add("n_jurisdictions_layer", nrow(ja), nrow(ja))
+add("n_jurisdictions_never_dominant", sum(ja$tracts_dominant == 0), nrow(ja))
+add("n_jurisdictions_dominant_outside_frame_only",
+    sum(ja$tracts_dominant > 0 & ja$tracts_in_frame == 0), nrow(ja))
 
 out <- bind_rows(out)
 write.csv(out, file.path(DIR_CO_MOD, "p4_manuscript_statistics.csv"), row.names = FALSE)

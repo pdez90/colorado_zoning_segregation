@@ -17,7 +17,7 @@
 source("50_p3_setup.R")
 suppressPackageStartupMessages(library(fixest))
 
-CO_DIR <- path.expand("~/Downloads/LODES/Colorado")
+CO_DIR <- path.expand(Sys.getenv("CO_DIR", "~/Downloads/LODES/Colorado"))
 dat <- readRDS(file.path(CO_DIR, "output/co_analysis_home_panel.rds"))
 
 ## ---- 1. find the land-area column --------------------------------------------
@@ -112,5 +112,7 @@ if (nrow(key) >= 3) {
 }
 
 write_diag(res, "46_land_area_robustness")
+# keep a copy with the case-study diagnostics, which is what the repository ships
+write.csv(res, file.path(CO_DIR, "diagnostics", "46_land_area_robustness.csv"), row.names = FALSE)
 
 message("46_land_area_robustness.R complete.")

@@ -16,7 +16,7 @@
 #     present; otherwise 62 downloads Colorado itself -- ~1 min/year)
 #
 # NEW data this pipeline adds:
-#   * ~/Wellbeing/Zoning/ALL_DenverMSA_10.3.23.shp -- harmonized zoning
+#   * ALL_DenverMSA_10.3.23.shp (path in CO_ZONING_SHP below) -- harmonized zoning
 #     districts for the Denver region, October 2023 snapshot.
 #
 # ZONING-DATA FACTS (verified against the DBF, Aug 2026):
@@ -38,9 +38,14 @@
 # ==============================================================================
 
 ## ---- Source the Paper 3 pipeline (relative sources need its wd) --------------
-PIPE_DIR <- path.expand("~/Downloads/LODES/paper_pipeline")
+# Locations can be overridden with the environment variables PIPE_DIR, CO_DIR,
+# LODES_ROOT and CO_ZONING_SHP (run_all.sh sets the first three). In a clone of
+# the repository, paper_pipeline/ sits inside the case-study folder.
+PIPE_DIR <- path.expand(Sys.getenv("PIPE_DIR",
+  if (dir.exists("paper_pipeline")) file.path(getwd(), "paper_pipeline")
+  else "~/Downloads/LODES/paper_pipeline"))
 if (!dir.exists(PIPE_DIR))
-  stop("paper_pipeline not found at ", PIPE_DIR, " -- edit PIPE_DIR in 60.")
+  stop("paper_pipeline not found at ", PIPE_DIR, " -- set the PIPE_DIR environment variable.")
 owd <- setwd(PIPE_DIR)
 source("50_p3_setup.R")     # -> 30_p2_setup.R -> 00_setup_and_functions.R
 setwd(owd)
@@ -71,7 +76,7 @@ if (!file.exists(P4_LODES_COV_FILE))
        "is all non-Black workers).")
 
 ## ---- Colorado-case-study paths (everything new lands HERE) -------------------
-DIR_CO       <- path.expand("~/Downloads/LODES/Colorado")
+DIR_CO       <- path.expand(Sys.getenv("CO_DIR", "~/Downloads/LODES/Colorado"))
 DIR_CO_CLEAN <- file.path(DIR_CO, "clean")
 DIR_CO_OUT   <- file.path(DIR_CO, "output")
 DIR_CO_MOD   <- file.path(DIR_CO_OUT, "models")
@@ -107,8 +112,10 @@ co_diag_map <- function(geom_sf, values_df, id_col, value_col, name,
 pct_of <- function(num, den) ifelse(den > 0, 100 * num / den, NA_real_)
 
 ## ---- Inputs ------------------------------------------------------------------
-CO_ZONING_SHP <- path.expand("~/Wellbeing/data/Zoning/ALL_DenverMSA_10.3.23.shp")
-CO_TIGER_DIR  <- path.expand("~/Downloads/LODES/TIGER2024_TRACT_UNZIPPED/tl_2024_08_tract")
+# The zoning layer is not redistributable; point CO_ZONING_SHP at your copy.
+CO_ZONING_SHP <- path.expand(Sys.getenv("CO_ZONING_SHP",
+                   "~/Wellbeing/data/Zoning/ALL_DenverMSA_10.3.23.shp"))
+CO_TIGER_DIR  <- file.path(DIR_ROOT, "TIGER2024_TRACT_UNZIPPED", "tl_2024_08_tract")
 
 ## ---- Scope -------------------------------------------------------------------
 CO_STATE_FIPS <- "08"
@@ -194,4 +201,15 @@ ggsave <- function(filename, plot = ggplot2::last_plot(), ...) {
       plot + ggplot2::labs(title = NULL, subtitle = NULL, caption = NULL)
   }
   ggplot2::ggsave(filename, plot, ...)
+}
+
+# Write the scalar quantities a script reports to output/models/p4_stats_<name>.csv
+# so that every number quoted in the manuscript exists in a file, not only in a log.
+co_write_stats <- function(name, ...) {
+  v <- list(...)
+  write.csv(data.frame(statistic = names(v),
+                       value = vapply(v, function(z) as.character(z[1]), ""),
+                       stringsAsFactors = FALSE),
+            file.path(DIR_CO_MOD, paste0("p4_stats_", name, ".csv")),
+            row.names = FALSE)
 }

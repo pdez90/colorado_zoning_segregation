@@ -53,7 +53,8 @@ for (yr in P3_YEARS) {
                         lodes_type = "od", job_type = "JT01",
                         segment = "S000", state_part = part,
                         agg_geo = "tract"),
-      error = function(e) { message("  skipped (", conditionMessage(e), ")"); NULL })
+      error = function(e)
+        stop("OD download failed (", part, " ", yr, "): ", conditionMessage(e)))
     if (is.null(d)) next
     nm <- names(d)
     hc <- grep("^h_tract|^h_geocode", nm, value = TRUE)[1]

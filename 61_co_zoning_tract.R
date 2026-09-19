@@ -61,8 +61,13 @@ message("Reading zoning shapefile (100k polygons, ~1 min) ...")
 zon <- st_read(CO_ZONING_SHP, quiet = TRUE) |>
   st_zm(drop = TRUE) |>
   st_transform(CRS_METERS)
+n_polygons_raw <- nrow(zon)
 zon <- st_make_valid(zon)          # 9 invalid polygons in the Oct 2023 layer
 zon <- zon[!st_is_empty(zon), ]
+write_codiag(tibble(polygons_in_layer = n_polygons_raw,
+                    polygons_with_valid_geometry = nrow(zon),
+                    jurisdictions = dplyr::n_distinct(zon$jurisd)),
+             "61_zoning_layer_counts")
 
 # normalize the messy free-text Yes/No flags ("Yes'", "YEs", "N", "" ...)
 norm_yn <- function(x) {
@@ -95,12 +100,10 @@ write_codiag(zon |> st_drop_geometry() |>
                count(jurisd, sort = TRUE), "61_zoning_jurisdiction_counts")
 
 ## ---- 2. tract geometry (2020 vintage) ---------------------------------------
-tr_shp <- if (dir.exists(CO_TIGER_DIR)) {
-  st_read(CO_TIGER_DIR, quiet = TRUE)
-} else {
-  message("TIGER folder not found -- pulling via tigris.")
-  tigris::tracts(state = CO_STATE_FIPS, year = 2023)
-}
+if (!dir.exists(CO_TIGER_DIR))
+  stop("TIGER 2024 tract shapefile not found at ", CO_TIGER_DIR,
+       " -- run paper_pipeline/10_geography.R, which writes it.")
+tr_shp <- st_read(CO_TIGER_DIR, quiet = TRUE)
 tracts <- tr_shp |>
   st_transform(CRS_METERS) |>
   transmute(tract_id  = as.character(GEOID),
@@ -163,12 +166,15 @@ for (g in names(CO_ZONE_GROUPS)) {
 # blank = not coded, not "no")
 res_flag_area <- function(flag_col) {
   pieces_sf |>
-    st_drop_geometry() |>
     filter(zone_group %in% CO_RES_GROUPS, !is.na(.data[[flag_col]])) |>
-    select(tract_id, flag = all_of(flag_col), piece_km2) |>
+    select(tract_id, flag = all_of(flag_col)) |>
+    group_by(tract_id, flag) |>
+    summarise(.groups = "drop") |>              # dissolve: stacked polygons count once
+    mutate(km2 = as.numeric(st_area(geometry)) / 1e6) |>
+    st_drop_geometry() |>
     group_by(tract_id) |>
-    summarise(pct_yes = pct_of(sum(piece_km2[flag == "yes"]),
-                               sum(piece_km2)), .groups = "drop")
+    summarise(pct_yes = pct_of(sum(km2[flag == "yes"]), sum(km2)),
+              .groups = "drop")
 }
 res_measures <- by_group |>
   filter(zone_group %in% CO_RES_GROUPS) |>
@@ -228,9 +234,11 @@ jur_sum <- zon |>
                                  sum(km2)), .groups = "drop") |>
   left_join(
     zon |>
+      filter(zone_group %in% CO_RES_GROUPS, !is.na(adu_yn)) |>
+      group_by(jurisd, adu_yn) |>
+      summarise(.groups = "drop") |>            # dissolve within jurisdiction x flag
       mutate(km2 = as.numeric(st_area(geometry)) / 1e6) |>
       st_drop_geometry() |>
-      filter(zone_group %in% CO_RES_GROUPS, !is.na(adu_yn)) |>
       group_by(jurisd) |>
       summarise(pct_adu_res = pct_of(sum(km2[adu_yn == "yes"]), sum(km2)),
                 .groups = "drop"),

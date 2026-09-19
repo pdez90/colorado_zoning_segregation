@@ -17,7 +17,7 @@
 # output and run again.
 # ==============================================================================
 
-setwd(path.expand("~/Downloads/LODES/paper_pipeline"))
+setwd(path.expand(Sys.getenv("PIPE_DIR", "~/Downloads/LODES/paper_pipeline")))
 
 STEPS <- c("10_geography.R",
            "20_lodes_blocks.R",
@@ -33,7 +33,7 @@ for (s in STEPS) {
                                                conditionMessage(e)); FALSE })
   message("== ", s, if (ok) " ok " else " FAILED ",
           "(", round(difftime(Sys.time(), t0, units = "mins"), 1), " min)")
-  if (!ok && s != "53_sld.R")
+  if (!ok)
     stop("Stopping: ", s, " is required by everything after it.")
 }
 

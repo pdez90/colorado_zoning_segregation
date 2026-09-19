@@ -147,7 +147,12 @@ dest <- wac |>
 message(sum(dest$empctr, na.rm = TRUE), " employment-center tracts (regional top 2%)")
 jmap <- xs |> select(tract_id, jurisd_main)
 
+# same frame as the workplace-exposure measure (Eq. 2): destinations inside the
+# home tract's MSA, which for this sample is the Denver MSA
+msa_tracts <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds")) |>
+  filter(CBSA_Code == CO_CBSA_MAIN) |> pull(GEOID) |> as.character()
 odd <- od |>
+  filter(w_tract %in% msa_tracts) |>
   inner_join(xs |> select(tract_id, tercile), by = c(h_tract = "tract_id")) |>
   inner_join(dest, by = c(w_tract = "tract_id")) |>
   left_join(jmap |> rename(w_jur = jurisd_main), by = c(w_tract = "tract_id"))

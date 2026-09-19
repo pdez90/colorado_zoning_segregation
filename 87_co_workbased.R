@@ -123,6 +123,13 @@ message(sprintf(
   100 * cov(xb$wres_whiteblack_rac_half, xb$sorting_gap) /
         var(xb$wres_whiteblack_rac_half),
   cor(xb$accR, xb$sorting_gap)))
+STATS87 <- list(
+  n_work_tracts = nrow(xb),
+  pct_var_accessible_housing = 100 * cov(xb$wres_whiteblack_rac_half, xb$accR) /
+    var(xb$wres_whiteblack_rac_half),
+  pct_var_sorting_gap = 100 * cov(xb$wres_whiteblack_rac_half, xb$sorting_gap) /
+    var(xb$wres_whiteblack_rac_half),
+  cor_accessible_gap = cor(xb$accR, xb$sorting_gap))
 
 menu <- xb |>
   mutate(dec = ntile(d_whiteblack_wac_half, 10)) |>
@@ -165,6 +172,12 @@ if ("z_mean_dist_km_work" %in% names(xw)) {
       summary(f1)$coeftable["z_pct_reslow_of_res", 4],
       coef(f2)["z_pct_reslow_of_res"],
       summary(f2)$coeftable["z_pct_reslow_of_res", 4]))
+    STATS87[[paste0(y, "_naive_estimate")]]    <- coef(f1)[["z_pct_reslow_of_res"]]
+    STATS87[[paste0(y, "_naive_p")]]           <- summary(f1)$coeftable["z_pct_reslow_of_res", 4]
+    STATS87[[paste0(y, "_position_estimate")]] <- coef(f2)[["z_pct_reslow_of_res"]]
+    STATS87[[paste0(y, "_position_p")]]        <- summary(f2)$coeftable["z_pct_reslow_of_res", 4]
+    STATS87[[paste0(y, "_n_obs")]]             <- f2$nobs
   }
 }
+do.call(co_write_stats, c(list(name = "87_workbased"), STATS87))
 message("87 complete.")

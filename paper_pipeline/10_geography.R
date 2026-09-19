@@ -38,8 +38,9 @@ if (!file.exists(tr_file) || !file.exists(al_file)) {
                 CBSA_Code = as.character(`CBSA Code`)) |>
       filter(!is.na(county_fips))
   }, error = function(e) {
-    message("  delineation download failed (", conditionMessage(e),
-            ") -- falling back to the hard-coded Denver-region crosswalk")
+    warning("delineation download failed (", conditionMessage(e),
+            ") -- using the built-in Denver/Boulder/Greeley county list, which ",
+            "reproduces the 2023 delineation for these three CBSAs")
     tibble(county_fips = c("08001","08005","08014","08019","08031","08035",
                            "08039","08047","08059","08093",          # 19740
                            "08013",                                   # 14500
@@ -66,7 +67,7 @@ if (!file.exists(tr_file) || !file.exists(al_file)) {
 # 61 prefers a TIGER 2024 tract shapefile on disk and falls back to tigris'
 # 2023 vintage. The zoning measures are built on the 2024 vintage, so write the
 # 2024 layer where 60_co_setup.R's CO_TIGER_DIR points.
-tig_dir <- path.expand("~/Downloads/LODES/TIGER2024_TRACT_UNZIPPED/tl_2024_08_tract")
+tig_dir <- file.path(DIR_ROOT, "TIGER2024_TRACT_UNZIPPED", "tl_2024_08_tract")
 tig_shp <- file.path(tig_dir, "tl_2024_08_tract.shp")
 if (!file.exists(tig_shp)) {
   dir.create(tig_dir, showWarnings = FALSE, recursive = TRUE)

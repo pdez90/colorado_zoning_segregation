@@ -129,6 +129,8 @@ pairs <- expand_grid(h_tract = fr$tract_id, w_tract = fr$tract_id) |>
 message(sprintf("Gravity frame: %s ordered tract pairs, %.1f%% with flow > 0",
                 format(nrow(pairs), big.mark = ","),
                 100 * mean(pairs$S000 > 0)))
+co_write_stats("81_gravity_frame", n_pairs = nrow(pairs),
+               pct_pairs_nonzero_flow = 100 * mean(pairs$S000 > 0))
 
 tidy1 <- function(fit, id, keep) {
   ct <- as.data.frame(summary(fit)$coeftable)

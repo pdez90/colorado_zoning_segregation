@@ -10,9 +10,9 @@
 #       randomization.
 #   (b) Conley spatial-HAC standard errors (Bartlett kernel) at 10 / 20 /
 #       50 km cutoffs for every coefficient of the preferred model, computed
-#       manually on the projected km coordinates (same formula fixest's
-#       vcov_conley implements; manual keeps the dependency count at zero
-#       and the kernel explicit).
+#       manually on the projected km coordinates: the textbook
+#       sandwich X'KX with K_ij = max(1 - d_ij / cutoff, 0), no finite-sample
+#       correction. Written out so the kernel and distances are explicit.
 #
 # Residual spatial autocorrelation is reported alongside the Conley SEs;
 # Conley p-values use the same t reference (G - 1 df) as the clustered row.
@@ -119,10 +119,11 @@ for (ck in c(10, 20, 50)) {
 
 ## ---- (c) cross-check the manual estimator against fixest::vcov_conley --------
 # The manual estimator uses a Bartlett kernel on PROJECTED km distances with
-# no finite-sample correction; fixest uses spherical (lat/lon) distances and
-# its own cutoff semantics, so agreement should be close but not exact.
-# This block is a soft check: it messages the comparison and never stops the
-# pipeline (older fixest versions lack vcov_conley).
+# no finite-sample correction; fixest::vcov_conley is a different
+# implementation (spherical distances, its own kernel and adjustments) and
+# returns a SMALLER standard error here. The manuscript reports the manual,
+# more conservative estimate; the fixest value is saved alongside it for
+# transparency. Older fixest versions lack vcov_conley, hence the tryCatch.
 chk <- tryCatch({
   ll <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds")) |>
     transmute(tract_id = as.character(GEOID), X_km, Y_km) |>

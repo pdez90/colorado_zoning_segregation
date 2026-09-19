@@ -11,7 +11,7 @@
 # to the candidate list below rather than editing 60 by hand.
 # ==============================================================================
 
-f60 <- path.expand("~/Downloads/LODES/Colorado/60_co_setup.R")
+f60 <- file.path(path.expand(Sys.getenv("CO_DIR", "~/Downloads/LODES/Colorado")), "60_co_setup.R")
 if (!file.exists(f60)) stop("60_co_setup.R not found at ", f60)
 
 ## ---- 1. the zoning shapefile -------------------------------------------------

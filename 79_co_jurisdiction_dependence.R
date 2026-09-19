@@ -139,6 +139,22 @@ message(sprintf(
   with(excl, weighted.mean(dist_imported, inflow_imported, na.rm = TRUE)),
   with(excl, weighted.mean(dist_retained, inflow_total - inflow_imported,
                            na.rm = TRUE))))
+co_write_stats("79_jurisdiction_dependence",
+  n_jurisdictions_key_test = nrow(key), weighted_r = wcor,
+  slope = coef(fit)[[2]], slope_p = summary(fit)$coefficients[2, 4],
+  n_exclusionary_jurisdictions = nrow(excl),
+  lowwage_jobs_hosted_exclusionary = sum(excl$lowwage_jobs),
+  pct_lowwage_imported_exclusionary = 100 * sum(excl$low_imported) / sum(excl$low_total),
+  pct_lowwage_imported_region = 100 * sum(jur$low_imported, na.rm = TRUE) /
+    sum(jur$low_total, na.rm = TRUE),
+  pct_region_jobs_exclusionary = 100 * sum(excl$jobs_hosted) / sum(jur$jobs_hosted),
+  pct_region_workers_exclusionary = 100 * sum(excl$workers_housed) / sum(jur$workers_housed),
+  lowwage_share_imported = with(excl, 100 * sum(low_imported) / pmax(sum(inflow_imported), 1)),
+  lowwage_share_retained = with(excl, 100 * (sum(low_total) - sum(low_imported)) /
+    pmax(sum(inflow_total) - sum(inflow_imported), 1)),
+  km_imported = with(excl, weighted.mean(dist_imported, inflow_imported, na.rm = TRUE)),
+  km_retained = with(excl, weighted.mean(dist_retained, inflow_total - inflow_imported,
+                                         na.rm = TRUE)))
 
 pK <- ggplot(key, aes(mean_pct_reslow, pct_lowwage_jobs_imported)) +
   geom_smooth(aes(weight = lowwage_jobs), method = "lm", formula = y ~ x,

@@ -63,11 +63,10 @@ grab_co_od <- function(yr) {
       grab_lodes(state = "co", year = yr, version = "LODES8",
                  lodes_type = "od", job_type = "JT01",
                  state_part = part, agg_geo = "tract"),
-      error = function(e) {
-        warning(sprintf("MISSING od %s %s co: %s", part, yr,
-                        conditionMessage(e)))
-        NULL
-      })
+      error = function(e)
+        # never build exposures from an incomplete (e.g. main-only) OD table
+        stop(sprintf("OD download failed (%s %s co): %s", part, yr,
+                     conditionMessage(e))))
     if (is.null(df)) return(NULL)
     df <- df |>
       transmute(w_tract = as.character(w_tract),

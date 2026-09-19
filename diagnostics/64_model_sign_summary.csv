@@ -11,10 +11,10 @@
 "ZC","neg",TRUE,5
 "ZC","pos",FALSE,7
 "ZC","pos",TRUE,6
-"ZD","neg",FALSE,13
-"ZD","neg",TRUE,9
-"ZD","pos",FALSE,22
-"ZD","pos",TRUE,10
+"ZD","neg",FALSE,18
+"ZD","neg",TRUE,16
+"ZD","pos",FALSE,33
+"ZD","pos",TRUE,18
 "ZM","neg",FALSE,14
 "ZM","neg",TRUE,19
 "ZM","pos",FALSE,15
