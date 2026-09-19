@@ -1,7 +1,7 @@
 "block","direction","sig","n"
-"GA","neg",FALSE,49
+"GA","neg",FALSE,47
 "GA","neg",TRUE,51
-"GA","pos",FALSE,84
+"GA","pos",FALSE,86
 "GA","pos",TRUE,48
 "GB","neg",FALSE,34
 "GB","neg",TRUE,49

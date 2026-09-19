@@ -59,7 +59,7 @@ wac <- readRDS(file.path(DIR_CO_CLEAN,
   transmute(tract_id = as.character(tract_id), jobs = C000) |>
   inner_join(cent, by = "tract_id") |>
   filter(CBSA_Code %in% CO_CBSA_KEEP)
-ctr <- wac |> filter(jobs >= quantile(jobs, 0.98))
+ctr <- wac |> filter(tract_id %in% co_employment_centers())  # single definition, 60
 
 # extent: urbanised core (same convention as 70)
 cxy <- suppressWarnings(st_coordinates(st_centroid(
@@ -126,6 +126,11 @@ shed_panel <- function(origins, title) {
   # commutes included even though geom_curve cannot draw them)
   fw     <- with(f_all, sum(d_wac * S000) / sum(S000))
   pct_hi <- with(f_all, 100 * sum(S000[d_wac >= thr]) / sum(S000))
+  # keep the panel's headline statistics so the text can cite a file, not a figure
+  SHED_STATS[[title]] <<- tibble(panel = title, n_origin_tracts = length(origins),
+                                 commuters = sum(f_all$S000),
+                                 pct_to_top_quintile_dest = pct_hi,
+                                 flow_weighted_dest_D = fw)
   f <- f_all |> filter(S000 >= 5, h_tract != w_tract) |>
     mutate(w = S000 / max(S000), hi = d_wac >= thr) |>
     arrange(hi, S000)          # gray first, blue drawn on top
@@ -154,6 +159,7 @@ shed_panel <- function(origins, title) {
                                        color = "#08519c", face = "bold"))
 }
 
+SHED_STATS <- list()
 fr_s <- fr |> arrange(d_whiteblack_rac_half)
 n10  <- ceiling(nrow(fr_s) / 10)
 pF1 <- (shed_panel(head(fr_s, n10)$tract_id,
@@ -173,6 +179,10 @@ pF1 <- (shed_panel(head(fr_s, n10)$tract_id,
                                               hjust = 0)))
 ggsave(file.path(DIR_CO_FIG, "p4_figF1_commute_sheds.png"), pF1,
        width = 13.4, height = 7, dpi = 350, bg = "white")
+
+write.csv(bind_rows(SHED_STATS),
+          file.path(DIR_CO_MOD, "p4_commute_shed_stats.csv"), row.names = FALSE)
+print(as.data.frame(bind_rows(SHED_STATS)))
 
 ## ---- F2: exemplar pair (re-derived, not hard-coded) --------------------------
 cand <- fr |>

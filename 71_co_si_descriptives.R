@@ -49,7 +49,7 @@ wac <- readRDS(file.path(DIR_CO_CLEAN,
                          sprintf("co_wac_tract_%d.rds", CO_ANCHOR_YEAR))) |>
   transmute(tract_id = as.character(tract_id), jobs = C000) |>
   inner_join(cent |> filter(CBSA_Code %in% CO_CBSA_KEEP), by = "tract_id")
-centers <- wac$tract_id[wac$jobs >= quantile(wac$jobs, 0.98)]
+centers <- co_employment_centers()      # single definition, 60_co_setup.R
 message(length(centers), " employment-center tracts")
 
 # 2023 OD, Denver MSA, same-MSA restriction (62's caches, 62's rule)

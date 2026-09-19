@@ -1,7 +1,7 @@
 "estimate","std.error","statistic","p.value","term","model_id","n_obs","pct_of_naive"
-0.37115912368079,0.0593281101957182,6.25604157045232,1.27616215964564e-06,"z_d_whiteblack_wac_half:z_pct_reslow_of_res","W_pct_reslow_of_res_naive",645,NA
-0.124668791554903,0.0548848315489999,2.27146167777889,0.0316314930667179,"z_d_whiteblack_wac_half:z_pct_reslow_of_res","W_pct_reslow_of_res_position",645,33.5890413573999
--0.344048677216882,0.064492960461836,-5.33467024545221,1.3923588043749e-05,"z_d_whiteblack_wac_half:z_pct_job_zone","W_pct_job_zone_naive",645,NA
--0.0624393136376487,0.0620628433888463,-1.00606595231939,0.323655748817999,"z_d_whiteblack_wac_half:z_pct_job_zone","W_pct_job_zone_position",645,18.1483952046379
--0.282273833493613,0.0699736770453403,-4.03400029000492,0.000427816719092738,"z_d_whiteblack_wac_half:z_zoning_entropy","W_zoning_entropy_naive",645,NA
--0.0990347485419242,0.0490443069636444,-2.01929142592099,0.0538775032633481,"z_d_whiteblack_wac_half:z_zoning_entropy","W_zoning_entropy_position",645,35.084636544664
+0.371180326619243,0.0593327793352804,6.25590661313471,1.27660211447805e-06,"z_d_whiteblack_wac_half:z_pct_reslow_of_res","W_pct_reslow_of_res_naive",645,NA
+0.12464836616508,0.0548503507502465,2.27251721201655,0.0315591414999555,"z_d_whiteblack_wac_half:z_pct_reslow_of_res","W_pct_reslow_of_res_position",645,33.5816198289368
+-0.344045706703935,0.0644889034626086,-5.33495978735964,1.39130066793474e-05,"z_d_whiteblack_wac_half:z_pct_job_zone","W_pct_job_zone_naive",645,NA
+-0.0624121382519746,0.0620700977310696,-1.00551055231759,0.323917916950259,"z_d_whiteblack_wac_half:z_pct_job_zone","W_pct_job_zone_position",645,18.1406531271389
+-0.282272223710464,0.0699816470449336,-4.03351786689478,0.000428355894427388,"z_d_whiteblack_wac_half:z_zoning_entropy","W_zoning_entropy_naive",645,NA
+-0.0989719505494984,0.0490348487372349,-2.01840024183339,0.0539761204906852,"z_d_whiteblack_wac_half:z_zoning_entropy","W_zoning_entropy_position",645,35.0625893148513

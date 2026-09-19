@@ -64,10 +64,8 @@ read_od_yr <- function(yr) {
 
 ## ---- ext. 7: the decentralization series -------------------------------------
 wac23 <- grab_wac(CO_ANCHOR_YEAR)
-ctr23 <- wac23 |>
-  filter(tract_id %in% msa_tracts) |>
-  filter(C000 >= quantile(C000, 0.98, na.rm = TRUE)) |>
-  pull(tract_id)
+# single regional definition (60_co_setup.R), restricted to the Denver MSA
+ctr23 <- intersect(co_employment_centers(), msa_tracts)
 message(length(ctr23), " employment-center tracts (2023 definition, held fixed)")
 
 series <- map(CO_YEARS, function(yr) {

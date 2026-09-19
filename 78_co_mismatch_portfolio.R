@@ -143,8 +143,8 @@ dest <- wac |>
   mutate(ind_entropy = norm_entropy({
     m <- as.matrix(wac[, CNS_COLS]); m[is.na(m)] <- 0; m })) |>
   left_join(acc |> select(tract_id, dist_cbd_km), by = "tract_id") |>
-  mutate(empctr = jobs >= quantile(jobs, 0.98, na.rm = TRUE))
-message(sum(dest$empctr, na.rm = TRUE), " employment-center tracts (top 2%)")
+  mutate(empctr = tract_id %in% co_employment_centers())  # single definition, 60
+message(sum(dest$empctr, na.rm = TRUE), " employment-center tracts (regional top 2%)")
 jmap <- xs |> select(tract_id, jurisd_main)
 
 odd <- od |>

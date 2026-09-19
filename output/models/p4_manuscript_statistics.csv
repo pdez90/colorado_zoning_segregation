@@ -1,0 +1,11 @@
+"statistic","value","n"
+"tract_diameter_km_median",1.69417045049221,656
+"pct_tracts_diameter_gt_5km",8.07926829268293,656
+"pct_tracts_diameter_gt_10km",2.4390243902439,656
+"pct_tracts_diameter_gt_20km",0.76219512195122,656
+"cor_log_area_exclusionary",0.414638329253552,656
+"cor_log_area_dist_cbd",0.721177161378649,656
+"levels_baseline_common_sample_estimate",0.169871824119742,646
+"levels_baseline_common_sample_se",0.0833647088436796,646
+"levels_baseline_common_sample_p",0.0518763068301775,646
+"cor_restrictiveness_retention_jurisdictions",-0.0757372241891042,27

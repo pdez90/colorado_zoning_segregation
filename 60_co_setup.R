@@ -107,9 +107,8 @@ co_diag_map <- function(geom_sf, values_df, id_col, value_col, name,
 pct_of <- function(num, den) ifelse(den > 0, 100 * num / den, NA_real_)
 
 ## ---- Inputs ------------------------------------------------------------------
-CO_ZONING_SHP <- path.expand("~/Wellbeing/Zoning/ALL_DenverMSA_10.3.23.shp")
-CO_TIGER_DIR  <- path.expand(
-  "~/Downloads/LODES/TIGER2024_TRACT_UNZIPPED/tl_2024_08_tract")
+CO_ZONING_SHP <- path.expand("~/Wellbeing/data/Zoning/ALL_DenverMSA_10.3.23.shp")
+CO_TIGER_DIR  <- path.expand("~/Downloads/LODES/TIGER2024_TRACT_UNZIPPED/tl_2024_08_tract")
 
 ## ---- Scope -------------------------------------------------------------------
 CO_STATE_FIPS <- "08"
@@ -155,3 +154,44 @@ message(sprintf(
   "60_co_setup.R loaded | zoning snapshot %d | CBSAs %s | min cover %.0f%%",
   CO_ANCHOR_YEAR, paste(CO_CBSA_KEEP, collapse = "+"),
   100 * CO_MIN_ZONED_COVER))
+
+## ---- major employment centers: ONE definition for every script ---------------
+# Top 2% of tracts in the three-CBSA study region by CO_ANCHOR_YEAR workplace
+# jobs (LODES WAC C000); tracts with no recorded jobs count as zero. This is the
+# rule 68 uses to build dist_empctr_km, so every descriptive that mentions
+# "major employment centers" (71, 78, 80) refers to the same set of tracts.
+co_employment_centers <- function() {
+  cent <- readRDS(file.path(DIR_CLEAN, "tract_centroids_km.rds")) |>
+    dplyr::filter(CBSA_Code %in% CO_CBSA_KEEP) |>
+    dplyr::transmute(tract_id = as.character(GEOID))
+  wac <- readRDS(file.path(DIR_CO_CLEAN,
+                           sprintf("co_wac_tract_%d.rds", CO_ANCHOR_YEAR))) |>
+    dplyr::transmute(tract_id = as.character(tract_id), jobs = C000)
+  d <- cent |> dplyr::left_join(wac, by = "tract_id") |>
+    dplyr::mutate(jobs = ifelse(is.na(jobs), 0, jobs))
+  d$tract_id[d$jobs >= stats::quantile(d$jobs, 0.98)]
+}
+
+## ---- manuscript figures: titles live in the captions ---------------------------
+# The figures listed here are placed in the manuscript under a full caption, so
+# their in-plot title, subtitle and caption are dropped at save time. Everything
+# else about the figure (data, panels, legends, size) is untouched. Set
+# CO_FIG_TITLES <- TRUE before sourcing a script to keep the titles (e.g. for
+# slides). Panel titles inside multi-panel figures are never removed.
+if (!exists("CO_FIG_TITLES")) CO_FIG_TITLES <- FALSE
+CO_STRIP_TITLES <- c(
+  "p4_figS2_adu.png", "p4_figS3_accessibility.png",
+  "co_fig5_trends_by_tercile.png", "p4_figF2_exemplar_pair.png",
+  "p4_fig_opportunity_sorting.png", "p4_fig_transit_marginal.png",
+  "p4_fig_cervero_quadrants.png", "p4_fig_lowwage_dependence.png",
+  "p4_fig_balance_matching.png", "p4_fig_decentralization.png",
+  "p4_fig_excess_commuting.png", "p4_fig_workbased_menu.png")
+ggsave <- function(filename, plot = ggplot2::last_plot(), ...) {
+  if (!CO_FIG_TITLES && basename(filename) %in% CO_STRIP_TITLES) {
+    plot <- if (inherits(plot, "patchwork"))
+      plot + patchwork::plot_annotation(title = NULL, subtitle = NULL, caption = NULL)
+    else
+      plot + ggplot2::labs(title = NULL, subtitle = NULL, caption = NULL)
+  }
+  ggplot2::ggsave(filename, plot, ...)
+}
